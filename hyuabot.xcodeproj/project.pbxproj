@@ -8,9 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		C7CF65372AA490B1001EF16F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7CF65362AA490B1001EF16F /* AppDelegate.swift */; };
-		C7CF65392AA490B1001EF16F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7CF65382AA490B1001EF16F /* SceneDelegate.swift */; };
 		C7CF653B2AA490B1001EF16F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7CF653A2AA490B1001EF16F /* ViewController.swift */; };
-		C7CF653E2AA490B1001EF16F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7CF653C2AA490B1001EF16F /* Main.storyboard */; };
 		C7CF65402AA490B2001EF16F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7CF653F2AA490B2001EF16F /* Assets.xcassets */; };
 		C7CF65432AA490B2001EF16F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7CF65412AA490B2001EF16F /* LaunchScreen.storyboard */; };
 		C7CF654E2AA490B2001EF16F /* hyuabotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7CF654D2AA490B2001EF16F /* hyuabotTests.swift */; };
@@ -38,9 +36,7 @@
 /* Begin PBXFileReference section */
 		C7CF65332AA490B1001EF16F /* hyuabot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hyuabot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7CF65362AA490B1001EF16F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C7CF65382AA490B1001EF16F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		C7CF653A2AA490B1001EF16F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		C7CF653D2AA490B1001EF16F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C7CF653F2AA490B2001EF16F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C7CF65422AA490B2001EF16F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C7CF65442AA490B2001EF16F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -100,9 +96,7 @@
 			isa = PBXGroup;
 			children = (
 				C7CF65362AA490B1001EF16F /* AppDelegate.swift */,
-				C7CF65382AA490B1001EF16F /* SceneDelegate.swift */,
 				C7CF653A2AA490B1001EF16F /* ViewController.swift */,
-				C7CF653C2AA490B1001EF16F /* Main.storyboard */,
 				C7CF653F2AA490B2001EF16F /* Assets.xcassets */,
 				C7CF65412AA490B2001EF16F /* LaunchScreen.storyboard */,
 				C7CF65442AA490B2001EF16F /* Info.plist */,
@@ -233,7 +227,6 @@
 			files = (
 				C7CF65432AA490B2001EF16F /* LaunchScreen.storyboard in Resources */,
 				C7CF65402AA490B2001EF16F /* Assets.xcassets in Resources */,
-				C7CF653E2AA490B1001EF16F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,7 +253,6 @@
 			files = (
 				C7CF653B2AA490B1001EF16F /* ViewController.swift in Sources */,
 				C7CF65372AA490B1001EF16F /* AppDelegate.swift in Sources */,
-				C7CF65392AA490B1001EF16F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,14 +289,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		C7CF653C2AA490B1001EF16F /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C7CF653D2AA490B1001EF16F /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		C7CF65412AA490B2001EF16F /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -442,7 +426,6 @@
 				INFOPLIST_FILE = hyuabot/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -470,7 +453,6 @@
 				INFOPLIST_FILE = hyuabot/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
