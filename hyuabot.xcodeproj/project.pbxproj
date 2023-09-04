@@ -14,6 +14,7 @@
 		C7CF654E2AA490B2001EF16F /* hyuabotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7CF654D2AA490B2001EF16F /* hyuabotTests.swift */; };
 		C7CF65582AA490B2001EF16F /* hyuabotUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7CF65572AA490B2001EF16F /* hyuabotUITests.swift */; };
 		C7CF655A2AA490B2001EF16F /* hyuabotUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7CF65592AA490B2001EF16F /* hyuabotUITestsLaunchTests.swift */; };
+		C7CF65672AA57F0D001EF16F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7CF65662AA57F0D001EF16F /* SceneDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,7 @@
 		C7CF65532AA490B2001EF16F /* hyuabotUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = hyuabotUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7CF65572AA490B2001EF16F /* hyuabotUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hyuabotUITests.swift; sourceTree = "<group>"; };
 		C7CF65592AA490B2001EF16F /* hyuabotUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hyuabotUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C7CF65662AA57F0D001EF16F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 				C7CF653F2AA490B2001EF16F /* Assets.xcassets */,
 				C7CF65412AA490B2001EF16F /* LaunchScreen.storyboard */,
 				C7CF65442AA490B2001EF16F /* Info.plist */,
+				C7CF65662AA57F0D001EF16F /* SceneDelegate.swift */,
 			);
 			path = hyuabot;
 			sourceTree = "<group>";
@@ -253,6 +256,7 @@
 			files = (
 				C7CF653B2AA490B1001EF16F /* ViewController.swift in Sources */,
 				C7CF65372AA490B1001EF16F /* AppDelegate.swift in Sources */,
+				C7CF65672AA57F0D001EF16F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
