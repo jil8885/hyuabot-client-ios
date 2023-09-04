@@ -35,6 +35,7 @@
 		C7CF65582AA490B2001EF16F /* hyuabotUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7CF65572AA490B2001EF16F /* hyuabotUITests.swift */; };
 		C7CF655A2AA490B2001EF16F /* hyuabotUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7CF65592AA490B2001EF16F /* hyuabotUITestsLaunchTests.swift */; };
 		C7CF65672AA57F0D001EF16F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7CF65662AA57F0D001EF16F /* SceneDelegate.swift */; };
+		C7CF65692AA59C27001EF16F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C7CF656B2AA59C27001EF16F /* InfoPlist.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,6 +88,9 @@
 		C7CF65572AA490B2001EF16F /* hyuabotUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hyuabotUITests.swift; sourceTree = "<group>"; };
 		C7CF65592AA490B2001EF16F /* hyuabotUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hyuabotUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		C7CF65662AA57F0D001EF16F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		C7CF65682AA59C11001EF16F /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		C7CF656A2AA59C27001EF16F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C7CF656C2AA59C34001EF16F /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +124,14 @@
 				A08D93DC0E81F8832666BA97 /* CustomFont.swift */,
 			);
 			path = Utility;
+			sourceTree = "<group>";
+		};
+		A08D954D805B8E8AE46EBBA6 /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				C7CF656B2AA59C27001EF16F /* InfoPlist.strings */,
+			);
+			path = Localization;
 			sourceTree = "<group>";
 		};
 		A08D994272B2A93FFB8CCC16 /* ViewControllers */ = {
@@ -187,6 +199,7 @@
 				A08D91D20C9F9A2E9343B32B /* ViewController.swift */,
 				A08D9C8E0B0FBB48EDB21AD7 /* Fonts */,
 				A08D929EB1E204F61B36F74D /* Utility */,
+				A08D954D805B8E8AE46EBBA6 /* Localization */,
 			);
 			path = hyuabot;
 			sourceTree = "<group>";
@@ -289,11 +302,12 @@
 			};
 			buildConfigurationList = C7CF652E2AA490B1001EF16F /* Build configuration list for PBXProject "hyuabot" */;
 			compatibilityVersion = "Xcode 14.0";
-			developmentRegion = en;
+			developmentRegion = ko;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
+				ko,
 			);
 			mainGroup = C7CF652A2AA490B1001EF16F;
 			productRefGroup = C7CF65342AA490B1001EF16F /* Products */;
@@ -332,6 +346,7 @@
 				A08D9ACB4F723B1504C35BB5 /* Poppins-SemiBoldItalic.ttf in Resources */,
 				A08D940E87B520C08DC6A313 /* Poppins-Thin.ttf in Resources */,
 				A08D9572B82F61D1E4F2C0A8 /* Poppins-ThinItalic.ttf in Resources */,
+				C7CF65692AA59C27001EF16F /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -401,8 +416,18 @@
 			isa = PBXVariantGroup;
 			children = (
 				C7CF65422AA490B2001EF16F /* Base */,
+				C7CF65682AA59C11001EF16F /* ko */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		C7CF656B2AA59C27001EF16F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C7CF656A2AA59C27001EF16F /* en */,
+				C7CF656C2AA59C34001EF16F /* ko */,
+			);
+			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -412,6 +437,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -472,6 +498,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -527,6 +554,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 9YYP5T2RL4;
@@ -554,6 +582,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 9YYP5T2RL4;
