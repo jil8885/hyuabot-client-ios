@@ -7,14 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A08D9060A6B503B75DA22A85 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A08D91D20C9F9A2E9343B32B /* ViewController.swift */; };
-		A08D907B293A2173B6E179F6 /* AppNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A08D97FFF292F33C23014BE2 /* AppNavigationController.swift */; };
+		A08D907B293A2173B6E179F6 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A08D97FFF292F33C23014BE2 /* TabBarViewController.swift */; };
 		A08D90C36B0109CB159289E9 /* Poppins-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A08D99F6BDF039A4AE174903 /* Poppins-Bold.ttf */; };
 		A08D90E67EDD25043FA63845 /* Poppins-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A08D9772B0B398DFC1D97416 /* Poppins-ExtraLight.ttf */; };
 		A08D91B3EBED549972CA5060 /* Poppins-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A08D9EC7734F993131E40B28 /* Poppins-ExtraLightItalic.ttf */; };
 		A08D923FE3C01291E6A66436 /* Poppins-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A08D9FB6C4319949BCD35FEC /* Poppins-MediumItalic.ttf */; };
 		A08D9271847BAC110C94D407 /* Poppins-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A08D9ECE24103805739F5A1C /* Poppins-Italic.ttf */; };
 		A08D940E87B520C08DC6A313 /* Poppins-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A08D9AD3AA2D720C6F5A852D /* Poppins-Thin.ttf */; };
+		A08D945FA4DB5FAC1469A9BD /* ShuttleRealtimeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A08D9129EA758722AF6B129A /* ShuttleRealtimeViewController.swift */; };
 		A08D94FB58A2C6B2044EC61F /* Poppins-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A08D96BF0977FC8C726E5D60 /* Poppins-BoldItalic.ttf */; };
 		A08D9572B82F61D1E4F2C0A8 /* Poppins-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A08D98347023BC38CCC1771E /* Poppins-ThinItalic.ttf */; };
 		A08D98EBFEE07997A5D800A1 /* Poppins-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A08D92BB1E56D196F86E94B9 /* Poppins-Black.ttf */; };
@@ -28,6 +28,9 @@
 		A08D9ED0F5A47CB3619B4CD0 /* Poppins-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A08D96BB164466F6CA829674 /* Poppins-ExtraBold.ttf */; };
 		A08D9F2E67099DC7BBBFA3EF /* Poppins-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A08D9E822CDD00CD9D66EE31 /* Poppins-Light.ttf */; };
 		A08D9FFD4FB070D483DB725F /* Poppins-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A08D9823993A68E16A24EF1B /* Poppins-SemiBold.ttf */; };
+		C7548F832AA5A5F800C354A2 /* Navigation.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = C7548F822AA5A5F800C354A2 /* Navigation.xcstrings */; };
+		C7548F852AA5A72400C354A2 /* Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7548F842AA5A72400C354A2 /* Localization.swift */; };
+		C7548F872AA5A86900C354A2 /* ShuttleNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7548F862AA5A86900C354A2 /* ShuttleNavigationController.swift */; };
 		C7CF65372AA490B1001EF16F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7CF65362AA490B1001EF16F /* AppDelegate.swift */; };
 		C7CF65402AA490B2001EF16F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7CF653F2AA490B2001EF16F /* Assets.xcassets */; };
 		C7CF65432AA490B2001EF16F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7CF65412AA490B2001EF16F /* LaunchScreen.storyboard */; };
@@ -56,7 +59,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		A08D91D20C9F9A2E9343B32B /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A08D9129EA758722AF6B129A /* ShuttleRealtimeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShuttleRealtimeViewController.swift; sourceTree = "<group>"; };
 		A08D92BB1E56D196F86E94B9 /* Poppins-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file.ttf; path = "Poppins-Black.ttf"; sourceTree = "<group>"; };
 		A08D938F744A95E396C053E5 /* Poppins-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file.ttf; path = "Poppins-Medium.ttf"; sourceTree = "<group>"; };
 		A08D93DC0E81F8832666BA97 /* CustomFont.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomFont.swift; sourceTree = "<group>"; };
@@ -66,7 +69,7 @@
 		A08D96BB164466F6CA829674 /* Poppins-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file.ttf; path = "Poppins-ExtraBold.ttf"; sourceTree = "<group>"; };
 		A08D96BF0977FC8C726E5D60 /* Poppins-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file.ttf; path = "Poppins-BoldItalic.ttf"; sourceTree = "<group>"; };
 		A08D9772B0B398DFC1D97416 /* Poppins-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file.ttf; path = "Poppins-ExtraLight.ttf"; sourceTree = "<group>"; };
-		A08D97FFF292F33C23014BE2 /* AppNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppNavigationController.swift; sourceTree = "<group>"; };
+		A08D97FFF292F33C23014BE2 /* TabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		A08D9823993A68E16A24EF1B /* Poppins-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file.ttf; path = "Poppins-SemiBold.ttf"; sourceTree = "<group>"; };
 		A08D98347023BC38CCC1771E /* Poppins-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file.ttf; path = "Poppins-ThinItalic.ttf"; sourceTree = "<group>"; };
 		A08D99F6BDF039A4AE174903 /* Poppins-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file.ttf; path = "Poppins-Bold.ttf"; sourceTree = "<group>"; };
@@ -77,6 +80,9 @@
 		A08D9ECE24103805739F5A1C /* Poppins-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file.ttf; path = "Poppins-Italic.ttf"; sourceTree = "<group>"; };
 		A08D9F35C13E093067817748 /* Poppins-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file.ttf; path = "Poppins-BlackItalic.ttf"; sourceTree = "<group>"; };
 		A08D9FB6C4319949BCD35FEC /* Poppins-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file.ttf; path = "Poppins-MediumItalic.ttf"; sourceTree = "<group>"; };
+		C7548F822AA5A5F800C354A2 /* Navigation.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Navigation.xcstrings; sourceTree = "<group>"; };
+		C7548F842AA5A72400C354A2 /* Localization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localization.swift; sourceTree = "<group>"; };
+		C7548F862AA5A86900C354A2 /* ShuttleNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShuttleNavigationController.swift; sourceTree = "<group>"; };
 		C7CF65332AA490B1001EF16F /* hyuabot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hyuabot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7CF65362AA490B1001EF16F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C7CF653F2AA490B2001EF16F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -122,14 +128,24 @@
 			isa = PBXGroup;
 			children = (
 				A08D93DC0E81F8832666BA97 /* CustomFont.swift */,
+				C7548F842AA5A72400C354A2 /* Localization.swift */,
 			);
 			path = Utility;
+			sourceTree = "<group>";
+		};
+		A08D94DFA66F21B4AD9F19A3 /* Realtime */ = {
+			isa = PBXGroup;
+			children = (
+				A08D9129EA758722AF6B129A /* ShuttleRealtimeViewController.swift */,
+			);
+			path = Realtime;
 			sourceTree = "<group>";
 		};
 		A08D954D805B8E8AE46EBBA6 /* Localization */ = {
 			isa = PBXGroup;
 			children = (
 				C7CF656B2AA59C27001EF16F /* InfoPlist.strings */,
+				C7548F822AA5A5F800C354A2 /* Navigation.xcstrings */,
 			);
 			path = Localization;
 			sourceTree = "<group>";
@@ -137,7 +153,8 @@
 		A08D994272B2A93FFB8CCC16 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				A08D97FFF292F33C23014BE2 /* AppNavigationController.swift */,
+				A08D97FFF292F33C23014BE2 /* TabBarViewController.swift */,
+				A08D9D7BE982452A59D86F45 /* Shuttle */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -165,6 +182,15 @@
 				A08D98347023BC38CCC1771E /* Poppins-ThinItalic.ttf */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		A08D9D7BE982452A59D86F45 /* Shuttle */ = {
+			isa = PBXGroup;
+			children = (
+				A08D94DFA66F21B4AD9F19A3 /* Realtime */,
+				C7548F862AA5A86900C354A2 /* ShuttleNavigationController.swift */,
+			);
+			path = Shuttle;
 			sourceTree = "<group>";
 		};
 		C7CF652A2AA490B1001EF16F = {
@@ -196,7 +222,6 @@
 				C7CF65442AA490B2001EF16F /* Info.plist */,
 				C7CF65662AA57F0D001EF16F /* SceneDelegate.swift */,
 				A08D994272B2A93FFB8CCC16 /* ViewControllers */,
-				A08D91D20C9F9A2E9343B32B /* ViewController.swift */,
 				A08D9C8E0B0FBB48EDB21AD7 /* Fonts */,
 				A08D929EB1E204F61B36F74D /* Utility */,
 				A08D954D805B8E8AE46EBBA6 /* Localization */,
@@ -329,6 +354,7 @@
 				C7CF65432AA490B2001EF16F /* LaunchScreen.storyboard in Resources */,
 				C7CF65402AA490B2001EF16F /* Assets.xcassets in Resources */,
 				A08D98EBFEE07997A5D800A1 /* Poppins-Black.ttf in Resources */,
+				C7548F832AA5A5F800C354A2 /* Navigation.xcstrings in Resources */,
 				A08D9D7CA3D24F10890DCE64 /* Poppins-BlackItalic.ttf in Resources */,
 				A08D90C36B0109CB159289E9 /* Poppins-Bold.ttf in Resources */,
 				A08D94FB58A2C6B2044EC61F /* Poppins-BoldItalic.ttf in Resources */,
@@ -373,9 +399,11 @@
 			files = (
 				C7CF65372AA490B1001EF16F /* AppDelegate.swift in Sources */,
 				C7CF65672AA57F0D001EF16F /* SceneDelegate.swift in Sources */,
-				A08D907B293A2173B6E179F6 /* AppNavigationController.swift in Sources */,
-				A08D9060A6B503B75DA22A85 /* ViewController.swift in Sources */,
+				C7548F852AA5A72400C354A2 /* Localization.swift in Sources */,
+				A08D907B293A2173B6E179F6 /* TabBarViewController.swift in Sources */,
+				C7548F872AA5A86900C354A2 /* ShuttleNavigationController.swift in Sources */,
 				A08D9B3CC14B7CB1B316B2D4 /* CustomFont.swift in Sources */,
+				A08D945FA4DB5FAC1469A9BD /* ShuttleRealtimeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

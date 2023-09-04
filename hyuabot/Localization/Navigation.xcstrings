@@ -1,0 +1,94 @@
+{
+  "sourceLanguage" : "ko",
+  "strings" : {
+    "bus.realtime" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "노선버스"
+          }
+        }
+      }
+    },
+    "cafeteria" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "학식"
+          }
+        }
+      }
+    },
+    "calendar" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "학사력"
+          }
+        }
+      }
+    },
+    "campus.contact" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "전화부"
+          }
+        }
+      }
+    },
+    "campus.map" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "지도"
+          }
+        }
+      }
+    },
+    "readingRoom" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "열람실"
+          }
+        }
+      }
+    },
+    "shuttle.realtime" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "셔틀버스"
+          }
+        }
+      }
+    },
+    "subway.realtime" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "전철"
+          }
+        }
+      }
+    }
+  },
+  "version" : "1.0"
+}
