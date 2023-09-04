@@ -31,6 +31,7 @@
 		C7548F832AA5A5F800C354A2 /* Navigation.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = C7548F822AA5A5F800C354A2 /* Navigation.xcstrings */; };
 		C7548F852AA5A72400C354A2 /* Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7548F842AA5A72400C354A2 /* Localization.swift */; };
 		C7548F872AA5A86900C354A2 /* ShuttleNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7548F862AA5A86900C354A2 /* ShuttleNavigationController.swift */; };
+		C7548F892AA5B7EE00C354A2 /* StatusBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7548F882AA5B7EE00C354A2 /* StatusBar.swift */; };
 		C7CF65372AA490B1001EF16F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7CF65362AA490B1001EF16F /* AppDelegate.swift */; };
 		C7CF65402AA490B2001EF16F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7CF653F2AA490B2001EF16F /* Assets.xcassets */; };
 		C7CF65432AA490B2001EF16F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7CF65412AA490B2001EF16F /* LaunchScreen.storyboard */; };
@@ -83,6 +84,7 @@
 		C7548F822AA5A5F800C354A2 /* Navigation.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Navigation.xcstrings; sourceTree = "<group>"; };
 		C7548F842AA5A72400C354A2 /* Localization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localization.swift; sourceTree = "<group>"; };
 		C7548F862AA5A86900C354A2 /* ShuttleNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShuttleNavigationController.swift; sourceTree = "<group>"; };
+		C7548F882AA5B7EE00C354A2 /* StatusBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusBar.swift; sourceTree = "<group>"; };
 		C7CF65332AA490B1001EF16F /* hyuabot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hyuabot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7CF65362AA490B1001EF16F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C7CF653F2AA490B2001EF16F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -129,6 +131,7 @@
 			children = (
 				A08D93DC0E81F8832666BA97 /* CustomFont.swift */,
 				C7548F842AA5A72400C354A2 /* Localization.swift */,
+				C7548F882AA5B7EE00C354A2 /* StatusBar.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -400,6 +403,7 @@
 				C7CF65372AA490B1001EF16F /* AppDelegate.swift in Sources */,
 				C7CF65672AA57F0D001EF16F /* SceneDelegate.swift in Sources */,
 				C7548F852AA5A72400C354A2 /* Localization.swift in Sources */,
+				C7548F892AA5B7EE00C354A2 /* StatusBar.swift in Sources */,
 				A08D907B293A2173B6E179F6 /* TabBarViewController.swift in Sources */,
 				C7548F872AA5A86900C354A2 /* ShuttleNavigationController.swift in Sources */,
 				A08D9B3CC14B7CB1B316B2D4 /* CustomFont.swift in Sources */,
