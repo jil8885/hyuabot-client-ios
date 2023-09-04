@@ -32,6 +32,13 @@
 		C7548F852AA5A72400C354A2 /* Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7548F842AA5A72400C354A2 /* Localization.swift */; };
 		C7548F872AA5A86900C354A2 /* ShuttleNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7548F862AA5A86900C354A2 /* ShuttleNavigationController.swift */; };
 		C7548F892AA5B7EE00C354A2 /* StatusBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7548F882AA5B7EE00C354A2 /* StatusBar.swift */; };
+		C7548F8D2AA5E77900C354A2 /* ViewPager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7548F8C2AA5E77900C354A2 /* ViewPager.swift */; };
+		C7548F8F2AA5E7B800C354A2 /* TabbedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7548F8E2AA5E7B800C354A2 /* TabbedView.swift */; };
+		C7548F912AA5E8CB00C354A2 /* TabCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7548F902AA5E8CB00C354A2 /* TabCollectionViewCell.swift */; };
+		C7548F932AA5EF4400C354A2 /* PagedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7548F922AA5EF4400C354A2 /* PagedView.swift */; };
+		C7548F952AA5F0E900C354A2 /* PagedCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7548F942AA5F0E900C354A2 /* PagedCollectionViewCell.swift */; };
+		C7548F972AA5F1C200C354A2 /* AppTabItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7548F962AA5F1C200C354A2 /* AppTabItem.swift */; };
+		C7548F992AA6031500C354A2 /* Shuttle.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = C7548F982AA6031500C354A2 /* Shuttle.xcstrings */; };
 		C7CF65372AA490B1001EF16F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7CF65362AA490B1001EF16F /* AppDelegate.swift */; };
 		C7CF65402AA490B2001EF16F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7CF653F2AA490B2001EF16F /* Assets.xcassets */; };
 		C7CF65432AA490B2001EF16F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7CF65412AA490B2001EF16F /* LaunchScreen.storyboard */; };
@@ -85,6 +92,13 @@
 		C7548F842AA5A72400C354A2 /* Localization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localization.swift; sourceTree = "<group>"; };
 		C7548F862AA5A86900C354A2 /* ShuttleNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShuttleNavigationController.swift; sourceTree = "<group>"; };
 		C7548F882AA5B7EE00C354A2 /* StatusBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusBar.swift; sourceTree = "<group>"; };
+		C7548F8C2AA5E77900C354A2 /* ViewPager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewPager.swift; sourceTree = "<group>"; };
+		C7548F8E2AA5E7B800C354A2 /* TabbedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbedView.swift; sourceTree = "<group>"; };
+		C7548F902AA5E8CB00C354A2 /* TabCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabCollectionViewCell.swift; sourceTree = "<group>"; };
+		C7548F922AA5EF4400C354A2 /* PagedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagedView.swift; sourceTree = "<group>"; };
+		C7548F942AA5F0E900C354A2 /* PagedCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagedCollectionViewCell.swift; sourceTree = "<group>"; };
+		C7548F962AA5F1C200C354A2 /* AppTabItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTabItem.swift; sourceTree = "<group>"; };
+		C7548F982AA6031500C354A2 /* Shuttle.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Shuttle.xcstrings; sourceTree = "<group>"; };
 		C7CF65332AA490B1001EF16F /* hyuabot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hyuabot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7CF65362AA490B1001EF16F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C7CF653F2AA490B2001EF16F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -149,6 +163,7 @@
 			children = (
 				C7CF656B2AA59C27001EF16F /* InfoPlist.strings */,
 				C7548F822AA5A5F800C354A2 /* Navigation.xcstrings */,
+				C7548F982AA6031500C354A2 /* Shuttle.xcstrings */,
 			);
 			path = Localization;
 			sourceTree = "<group>";
@@ -196,6 +211,27 @@
 			path = Shuttle;
 			sourceTree = "<group>";
 		};
+		C7548F8A2AA5E75C00C354A2 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				C7548F8B2AA5E76F00C354A2 /* ViewPager */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		C7548F8B2AA5E76F00C354A2 /* ViewPager */ = {
+			isa = PBXGroup;
+			children = (
+				C7548F8C2AA5E77900C354A2 /* ViewPager.swift */,
+				C7548F8E2AA5E7B800C354A2 /* TabbedView.swift */,
+				C7548F902AA5E8CB00C354A2 /* TabCollectionViewCell.swift */,
+				C7548F922AA5EF4400C354A2 /* PagedView.swift */,
+				C7548F962AA5F1C200C354A2 /* AppTabItem.swift */,
+				C7548F942AA5F0E900C354A2 /* PagedCollectionViewCell.swift */,
+			);
+			path = ViewPager;
+			sourceTree = "<group>";
+		};
 		C7CF652A2AA490B1001EF16F = {
 			isa = PBXGroup;
 			children = (
@@ -219,6 +255,7 @@
 		C7CF65352AA490B1001EF16F /* hyuabot */ = {
 			isa = PBXGroup;
 			children = (
+				C7548F8A2AA5E75C00C354A2 /* Components */,
 				C7CF65362AA490B1001EF16F /* AppDelegate.swift */,
 				C7CF653F2AA490B2001EF16F /* Assets.xcassets */,
 				C7CF65412AA490B2001EF16F /* LaunchScreen.storyboard */,
@@ -363,6 +400,7 @@
 				A08D94FB58A2C6B2044EC61F /* Poppins-BoldItalic.ttf in Resources */,
 				A08D9ED0F5A47CB3619B4CD0 /* Poppins-ExtraBold.ttf in Resources */,
 				A08D9CA1A47441B206883478 /* Poppins-ExtraBoldItalic.ttf in Resources */,
+				C7548F992AA6031500C354A2 /* Shuttle.xcstrings in Resources */,
 				A08D90E67EDD25043FA63845 /* Poppins-ExtraLight.ttf in Resources */,
 				A08D91B3EBED549972CA5060 /* Poppins-ExtraLightItalic.ttf in Resources */,
 				A08D9271847BAC110C94D407 /* Poppins-Italic.ttf in Resources */,
@@ -402,9 +440,15 @@
 			files = (
 				C7CF65372AA490B1001EF16F /* AppDelegate.swift in Sources */,
 				C7CF65672AA57F0D001EF16F /* SceneDelegate.swift in Sources */,
+				C7548F932AA5EF4400C354A2 /* PagedView.swift in Sources */,
 				C7548F852AA5A72400C354A2 /* Localization.swift in Sources */,
 				C7548F892AA5B7EE00C354A2 /* StatusBar.swift in Sources */,
+				C7548F912AA5E8CB00C354A2 /* TabCollectionViewCell.swift in Sources */,
 				A08D907B293A2173B6E179F6 /* TabBarViewController.swift in Sources */,
+				C7548F8D2AA5E77900C354A2 /* ViewPager.swift in Sources */,
+				C7548F952AA5F0E900C354A2 /* PagedCollectionViewCell.swift in Sources */,
+				C7548F8F2AA5E7B800C354A2 /* TabbedView.swift in Sources */,
+				C7548F972AA5F1C200C354A2 /* AppTabItem.swift in Sources */,
 				C7548F872AA5A86900C354A2 /* ShuttleNavigationController.swift in Sources */,
 				A08D9B3CC14B7CB1B316B2D4 /* CustomFont.swift in Sources */,
 				A08D945FA4DB5FAC1469A9BD /* ShuttleRealtimeViewController.swift in Sources */,
