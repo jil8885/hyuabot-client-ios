@@ -15,6 +15,7 @@ class ShuttleEmptyListItemView: UITableViewCell {
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         self.contentView.addSubview(noInfoLabel)
+        self.selectionStyle = .none
         noInfoLabel.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
             noInfoLabel.topAnchor.constraint(equalTo: self.contentView.topAnchor, constant: 10),
