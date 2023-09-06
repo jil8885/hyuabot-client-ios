@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 60;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -28,6 +28,13 @@
 		A08D9ED0F5A47CB3619B4CD0 /* Poppins-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A08D96BB164466F6CA829674 /* Poppins-ExtraBold.ttf */; };
 		A08D9F2E67099DC7BBBFA3EF /* Poppins-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A08D9E822CDD00CD9D66EE31 /* Poppins-Light.ttf */; };
 		A08D9FFD4FB070D483DB725F /* Poppins-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A08D9823993A68E16A24EF1B /* Poppins-SemiBold.ttf */; };
+		C736EB5D2AA87AA4005A42F7 /* QueryAPI in Frameworks */ = {isa = PBXBuildFile; productRef = C736EB5C2AA87AA4005A42F7 /* QueryAPI */; };
+		C736EB602AA87AD4005A42F7 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = C736EB5F2AA87AD4005A42F7 /* Network.swift */; };
+		C736EB632AA87E86005A42F7 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = C736EB622AA87E86005A42F7 /* RxSwift */; };
+		C736EB652AA8863D005A42F7 /* ShuttleRealtimeFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C736EB642AA8863D005A42F7 /* ShuttleRealtimeFooterView.swift */; };
+		C736EB672AA88E4B005A42F7 /* ShuttleRealtimeListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C736EB662AA88E4B005A42F7 /* ShuttleRealtimeListItemView.swift */; };
+		C736EB6A2AA8A883005A42F7 /* ShuttleArrivalItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C736EB692AA8A883005A42F7 /* ShuttleArrivalItem.swift */; };
+		C736EB6C2AA8AA79005A42F7 /* ShuttleEmptyListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C736EB6B2AA8AA79005A42F7 /* ShuttleEmptyListItemView.swift */; };
 		C7548F832AA5A5F800C354A2 /* Navigation.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = C7548F822AA5A5F800C354A2 /* Navigation.xcstrings */; };
 		C7548F852AA5A72400C354A2 /* Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7548F842AA5A72400C354A2 /* Localization.swift */; };
 		C7548F872AA5A86900C354A2 /* ShuttleNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7548F862AA5A86900C354A2 /* ShuttleNavigationController.swift */; };
@@ -39,6 +46,9 @@
 		C7548F952AA5F0E900C354A2 /* PagedCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7548F942AA5F0E900C354A2 /* PagedCollectionViewCell.swift */; };
 		C7548F972AA5F1C200C354A2 /* AppTabItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7548F962AA5F1C200C354A2 /* AppTabItem.swift */; };
 		C7548F992AA6031500C354A2 /* Shuttle.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = C7548F982AA6031500C354A2 /* Shuttle.xcstrings */; };
+		C7548F9B2AA6AE2800C354A2 /* ShuttleRealtimeListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7548F9A2AA6AE2800C354A2 /* ShuttleRealtimeListViewController.swift */; };
+		C7548F9D2AA6B84C00C354A2 /* ShuttleRealtimeHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7548F9C2AA6B84C00C354A2 /* ShuttleRealtimeHeaderView.swift */; };
+		C7548FA02AA6BB3D00C354A2 /* Apollo in Frameworks */ = {isa = PBXBuildFile; productRef = C7548F9F2AA6BB3D00C354A2 /* Apollo */; };
 		C7CF65372AA490B1001EF16F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7CF65362AA490B1001EF16F /* AppDelegate.swift */; };
 		C7CF65402AA490B2001EF16F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7CF653F2AA490B2001EF16F /* Assets.xcassets */; };
 		C7CF65432AA490B2001EF16F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7CF65412AA490B2001EF16F /* LaunchScreen.storyboard */; };
@@ -88,6 +98,11 @@
 		A08D9ECE24103805739F5A1C /* Poppins-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file.ttf; path = "Poppins-Italic.ttf"; sourceTree = "<group>"; };
 		A08D9F35C13E093067817748 /* Poppins-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file.ttf; path = "Poppins-BlackItalic.ttf"; sourceTree = "<group>"; };
 		A08D9FB6C4319949BCD35FEC /* Poppins-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file.ttf; path = "Poppins-MediumItalic.ttf"; sourceTree = "<group>"; };
+		C736EB5F2AA87AD4005A42F7 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		C736EB642AA8863D005A42F7 /* ShuttleRealtimeFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShuttleRealtimeFooterView.swift; sourceTree = "<group>"; };
+		C736EB662AA88E4B005A42F7 /* ShuttleRealtimeListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShuttleRealtimeListItemView.swift; sourceTree = "<group>"; };
+		C736EB692AA8A883005A42F7 /* ShuttleArrivalItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShuttleArrivalItem.swift; sourceTree = "<group>"; };
+		C736EB6B2AA8AA79005A42F7 /* ShuttleEmptyListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShuttleEmptyListItemView.swift; sourceTree = "<group>"; };
 		C7548F822AA5A5F800C354A2 /* Navigation.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Navigation.xcstrings; sourceTree = "<group>"; };
 		C7548F842AA5A72400C354A2 /* Localization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localization.swift; sourceTree = "<group>"; };
 		C7548F862AA5A86900C354A2 /* ShuttleNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShuttleNavigationController.swift; sourceTree = "<group>"; };
@@ -99,6 +114,8 @@
 		C7548F942AA5F0E900C354A2 /* PagedCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagedCollectionViewCell.swift; sourceTree = "<group>"; };
 		C7548F962AA5F1C200C354A2 /* AppTabItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTabItem.swift; sourceTree = "<group>"; };
 		C7548F982AA6031500C354A2 /* Shuttle.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Shuttle.xcstrings; sourceTree = "<group>"; };
+		C7548F9A2AA6AE2800C354A2 /* ShuttleRealtimeListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShuttleRealtimeListViewController.swift; sourceTree = "<group>"; };
+		C7548F9C2AA6B84C00C354A2 /* ShuttleRealtimeHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShuttleRealtimeHeaderView.swift; sourceTree = "<group>"; };
 		C7CF65332AA490B1001EF16F /* hyuabot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hyuabot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7CF65362AA490B1001EF16F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C7CF653F2AA490B2001EF16F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -120,6 +137,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C736EB632AA87E86005A42F7 /* RxSwift in Frameworks */,
+				C736EB5D2AA87AA4005A42F7 /* QueryAPI in Frameworks */,
+				C7548FA02AA6BB3D00C354A2 /* Apollo in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -154,6 +174,12 @@
 			isa = PBXGroup;
 			children = (
 				A08D9129EA758722AF6B129A /* ShuttleRealtimeViewController.swift */,
+				C7548F9A2AA6AE2800C354A2 /* ShuttleRealtimeListViewController.swift */,
+				C7548F9C2AA6B84C00C354A2 /* ShuttleRealtimeHeaderView.swift */,
+				C736EB642AA8863D005A42F7 /* ShuttleRealtimeFooterView.swift */,
+				C736EB662AA88E4B005A42F7 /* ShuttleRealtimeListItemView.swift */,
+				C736EB6B2AA8AA79005A42F7 /* ShuttleEmptyListItemView.swift */,
+				C736EB692AA8A883005A42F7 /* ShuttleArrivalItem.swift */,
 			);
 			path = Realtime;
 			sourceTree = "<group>";
@@ -211,6 +237,14 @@
 			path = Shuttle;
 			sourceTree = "<group>";
 		};
+		C736EB5E2AA87AC0005A42F7 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				C736EB5F2AA87AD4005A42F7 /* Network.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		C7548F8A2AA5E75C00C354A2 /* Components */ = {
 			isa = PBXGroup;
 			children = (
@@ -232,9 +266,17 @@
 			path = ViewPager;
 			sourceTree = "<group>";
 		};
+		C7548FA12AA6C9C900C354A2 /* query */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = query;
+			sourceTree = "<group>";
+		};
 		C7CF652A2AA490B1001EF16F = {
 			isa = PBXGroup;
 			children = (
+				C7548FA12AA6C9C900C354A2 /* query */,
 				C7CF65352AA490B1001EF16F /* hyuabot */,
 				C7CF654C2AA490B2001EF16F /* hyuabotTests */,
 				C7CF65562AA490B2001EF16F /* hyuabotUITests */,
@@ -255,6 +297,7 @@
 		C7CF65352AA490B1001EF16F /* hyuabot */ = {
 			isa = PBXGroup;
 			children = (
+				C736EB5E2AA87AC0005A42F7 /* Services */,
 				C7548F8A2AA5E75C00C354A2 /* Components */,
 				C7CF65362AA490B1001EF16F /* AppDelegate.swift */,
 				C7CF653F2AA490B2001EF16F /* Assets.xcassets */,
@@ -302,6 +345,11 @@
 			dependencies = (
 			);
 			name = hyuabot;
+			packageProductDependencies = (
+				C7548F9F2AA6BB3D00C354A2 /* Apollo */,
+				C736EB5C2AA87AA4005A42F7 /* QueryAPI */,
+				C736EB622AA87E86005A42F7 /* RxSwift */,
+			);
 			productName = hyuabot;
 			productReference = C7CF65332AA490B1001EF16F /* hyuabot.app */;
 			productType = "com.apple.product-type.application";
@@ -375,6 +423,11 @@
 				ko,
 			);
 			mainGroup = C7CF652A2AA490B1001EF16F;
+			packageReferences = (
+				C7548F9E2AA6BB3D00C354A2 /* XCRemoteSwiftPackageReference "apollo-ios" */,
+				C736EB5B2AA87AA4005A42F7 /* XCLocalSwiftPackageReference "query" */,
+				C736EB612AA87E86005A42F7 /* XCRemoteSwiftPackageReference "RxSwift" */,
+			);
 			productRefGroup = C7CF65342AA490B1001EF16F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -440,6 +493,7 @@
 			files = (
 				C7CF65372AA490B1001EF16F /* AppDelegate.swift in Sources */,
 				C7CF65672AA57F0D001EF16F /* SceneDelegate.swift in Sources */,
+				C736EB652AA8863D005A42F7 /* ShuttleRealtimeFooterView.swift in Sources */,
 				C7548F932AA5EF4400C354A2 /* PagedView.swift in Sources */,
 				C7548F852AA5A72400C354A2 /* Localization.swift in Sources */,
 				C7548F892AA5B7EE00C354A2 /* StatusBar.swift in Sources */,
@@ -447,8 +501,14 @@
 				A08D907B293A2173B6E179F6 /* TabBarViewController.swift in Sources */,
 				C7548F8D2AA5E77900C354A2 /* ViewPager.swift in Sources */,
 				C7548F952AA5F0E900C354A2 /* PagedCollectionViewCell.swift in Sources */,
+				C7548F9B2AA6AE2800C354A2 /* ShuttleRealtimeListViewController.swift in Sources */,
+				C736EB602AA87AD4005A42F7 /* Network.swift in Sources */,
+				C7548F9D2AA6B84C00C354A2 /* ShuttleRealtimeHeaderView.swift in Sources */,
 				C7548F8F2AA5E7B800C354A2 /* TabbedView.swift in Sources */,
+				C736EB672AA88E4B005A42F7 /* ShuttleRealtimeListItemView.swift in Sources */,
 				C7548F972AA5F1C200C354A2 /* AppTabItem.swift in Sources */,
+				C736EB6C2AA8AA79005A42F7 /* ShuttleEmptyListItemView.swift in Sources */,
+				C736EB6A2AA8A883005A42F7 /* ShuttleArrivalItem.swift in Sources */,
 				C7548F872AA5A86900C354A2 /* ShuttleNavigationController.swift in Sources */,
 				A08D9B3CC14B7CB1B316B2D4 /* CustomFont.swift in Sources */,
 				A08D945FA4DB5FAC1469A9BD /* ShuttleRealtimeViewController.swift in Sources */,
@@ -801,6 +861,49 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		C736EB5B2AA87AA4005A42F7 /* XCLocalSwiftPackageReference "query" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = query;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C736EB612AA87E86005A42F7 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.6.0;
+			};
+		};
+		C7548F9E2AA6BB3D00C354A2 /* XCRemoteSwiftPackageReference "apollo-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apollographql/apollo-ios.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.4.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C736EB5C2AA87AA4005A42F7 /* QueryAPI */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = QueryAPI;
+		};
+		C736EB622AA87E86005A42F7 /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C736EB612AA87E86005A42F7 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+		C7548F9F2AA6BB3D00C354A2 /* Apollo */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C7548F9E2AA6BB3D00C354A2 /* XCRemoteSwiftPackageReference "apollo-ios" */;
+			productName = Apollo;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C7CF652B2AA490B1001EF16F /* Project object */;
 }

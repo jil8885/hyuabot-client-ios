@@ -1,14 +1,25 @@
 import UIKit
+import QueryAPI
 
 class ShuttleRealtimeViewController: UIViewController {
+    let appDelegate = UIApplication.shared.delegate as! AppDelegate
+    let dateFormatter: DateFormatter = {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "HH:mm"
+        dateFormatter.timeZone = TimeZone(identifier: "Asia/Seoul")
+        dateFormatter.locale = Locale(identifier: "ko_KR")
+        return dateFormatter
+    }()
+    
     lazy var viewPager: ViewPager = {
         let viewPager = ViewPager(
             tabSizeConfiguration: .fixed(width: 150, height: 60, spacing: 0)
         )
         viewPager.translatesAutoresizingMaskIntoConstraints = false
         
-        let view1 = UIView()
-        view1.backgroundColor = .red
+        let dormitoryShuttleListViewController = ShuttleRealtimeListViewController(
+            stopID: .dormitoryOut
+        )
         
         let view2 = UIView()
         view2.backgroundColor = .blue
@@ -27,7 +38,7 @@ class ShuttleRealtimeViewController: UIViewController {
         
         
         viewPager.pagedView.pages = [
-            view1,
+            dormitoryShuttleListViewController.view,
             view2,
             view3,
             view4,
@@ -52,6 +63,7 @@ class ShuttleRealtimeViewController: UIViewController {
         self.title = String.localizedNavTitle(resourceID: "shuttle.realtime")
         self.view.backgroundColor = .systemBackground
         self.view.addSubview(viewPager)
+        fetchArrival()
         
         NSLayoutConstraint.activate([
             viewPager.topAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.topAnchor),
@@ -59,5 +71,17 @@ class ShuttleRealtimeViewController: UIViewController {
             viewPager.rightAnchor.constraint(equalTo: self.view.rightAnchor),
             viewPager.bottomAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.bottomAnchor)
         ])
+    }
+    
+    func fetchArrival() {
+        let startTime = dateFormatter.string(from: Date())
+        Network.shared.apollo.fetch(query: ShuttleRealtimeQuery(start: startTime)) { result in
+            switch result {
+            case .success(let graphQLResult):
+                self.appDelegate.shuttleRealtimeQuery.onNext(graphQLResult.data?.shuttle.stop ?? [])
+            case .failure(let error):
+                print(error)
+            }
+        }
     }
 }

@@ -23,6 +23,138 @@
         }
       }
     },
+    "show_entire_schedule" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "전체 시간표 보기"
+          }
+        }
+      }
+    },
+    "shuttle_destination_campus" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "캠퍼스 방면"
+          }
+        }
+      }
+    },
+    "shuttle_destination_dormitory" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "기숙사 방면"
+          }
+        }
+      }
+    },
+    "shuttle_destination_jungang_station" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "중앙역 방면"
+          }
+        }
+      }
+    },
+    "shuttle_destination_subway" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "한대앞 방면"
+          }
+        }
+      }
+    },
+    "shuttle_destination_terminal" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "예술인 방면"
+          }
+        }
+      }
+    },
+    "shuttle_realtime_empty" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "도착 정보 없음"
+          }
+        }
+      }
+    },
+    "shuttle_tag_C" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "순환"
+          }
+        }
+      }
+    },
+    "shuttle_tag_DH" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "직행"
+          }
+        }
+      }
+    },
+    "shuttle_tag_DJ" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "중앙역(경유)"
+          }
+        }
+      }
+    },
+    "shuttle_tag_DY" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "직행"
+          }
+        }
+      }
+    },
+    "shuttle_time_format_%@_%@" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$@시 %2$@분 출발"
+          }
+        }
+      }
+    },
     "shuttlecock_i" : {
       "extractionState" : "manual",
       "localizations" : {

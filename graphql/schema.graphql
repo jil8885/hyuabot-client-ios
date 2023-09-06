@@ -1,0 +1,185 @@
+"""
+A directive used by the Apollo iOS client to annotate operations or fragments that should be used exclusively for generating local cache mutations instead of as standard operations.
+"""
+directive @apollo_client_ios_localCacheMutation on QUERY | MUTATION | SUBSCRIPTION | FRAGMENT_DEFINITION
+
+type Query {
+  shuttle(stop: [String!] = null, route: [String!] = null, tag: [String!] = null, period: [String!] = null, weekday: [Boolean!] = null, date: DateTime = null, start: Time = null, end: Time = null): ShuttleItem!
+  commuteShuttle(name: String = null): [CommuteShuttleRoute!]!
+  bus(routeStop: [BusRouteStopQuery!]!, weekdays: [String!] = null, date: Date! = "2023-07-24", start: Time = null, end: Time = null): [BusRouteStopItem!]!
+  subway(station: [String!] = null, heading: String = null, weekday: String = null, start: Time = null, end: Time = null): [StationItem!]!
+  readingRoom(campus: Int = null, room: [Int!] = null, active: Boolean = null): [ReadingRoomItem!]!
+  cafeteria(campus: Int = null, restaurant: [Int!] = null, date: Date = null, slot: String = null): [CafeteriaItem!]!
+}
+
+type ShuttleItem {
+  stop: [ShuttleStopItem!]!
+  params: ShuttleQueryItem!
+}
+
+type ShuttleStopItem {
+  stopName: String!
+  location: ShuttleStopLocationItem!
+  route: [ShuttleRouteStopItem!]!
+  tag: [ShuttleTagStopItem!]!
+}
+
+type ShuttleStopLocationItem {
+  latitude: Float!
+  longitude: Float!
+}
+
+type ShuttleRouteStopItem {
+  routeID: String!
+  descriptionKorean: String!
+  descriptionEnglish: String!
+  timetable: [ShuttleArrivalTimeItem!]!
+}
+
+type ShuttleArrivalTimeItem {
+  weekdays: Boolean!
+  time: Time!
+  remainingTime: Float!
+  otherStops: [ShuttleArrivalOtherStopItem!]!
+}
+
+"""Time (isoformat)"""
+scalar Time
+
+type ShuttleArrivalOtherStopItem {
+  stopName: String!
+  timedelta: Int!
+  time: Time!
+}
+
+type ShuttleTagStopItem {
+  tagID: String!
+  timetable: [ShuttleArrivalTimeItem!]!
+}
+
+type ShuttleQueryItem {
+  period: [String!]!
+  weekday: [Boolean!]!
+}
+
+"""Date with time (isoformat)"""
+scalar DateTime
+
+type CommuteShuttleRoute {
+  routeName: String!
+  descriptionKorean: String!
+  descriptionEnglish: String!
+  timetable: [CommuteShuttleTimetable!]!
+}
+
+type CommuteShuttleTimetable {
+  stopName: String!
+  time: String!
+}
+
+type BusRouteStopItem {
+  stopID: Int!
+  stopName: String!
+  routeID: Int!
+  routeName: String!
+  sequence: Int!
+  startStopID: Int!
+  startStopName: String!
+  realtime: [BusRealtime!]!
+  timetable: [BusTimetable!]!
+}
+
+type BusRealtime {
+  remainingStop: Int!
+  remainingTime: Int!
+  remainingSeat: Int!
+  lowFloor: Boolean!
+  updatedAt: DateTime!
+}
+
+type BusTimetable {
+  weekday: String!
+  time: Time!
+}
+
+input BusRouteStopQuery {
+  stop: Int!
+  route: Int!
+}
+
+"""Date (isoformat)"""
+scalar Date
+
+type StationItem {
+  id: String!
+  name: String!
+  lineID: Int!
+  lineName: String!
+  sequence: Int!
+  timetable: TimetableListResponse!
+  realtime: RealtimeListResponse!
+}
+
+type TimetableListResponse {
+  up: [TimetableItemResponse!]!
+  down: [TimetableItemResponse!]!
+}
+
+type TimetableItemResponse {
+  destinationID: String!
+  destinationName: String!
+  weekday: String!
+  time: Time!
+}
+
+type RealtimeListResponse {
+  up: [RealtimeItemResponse!]!
+  down: [RealtimeItemResponse!]!
+}
+
+type RealtimeItemResponse {
+  destinationID: String!
+  destinationName: String!
+  sequence: Int!
+  location: String!
+  remainingStation: Int!
+  remainingTime: Int!
+  trainNo: String!
+  isExpress: Boolean!
+  isLast: Boolean!
+}
+
+type ReadingRoomItem {
+  campusId: Int!
+  id: Int!
+  name: String!
+  status: ReadingRoomInformation!
+  seats: ReadingRoomSeat!
+  updatedAt: DateTime!
+}
+
+type ReadingRoomInformation {
+  active: Boolean!
+  reservable: Boolean!
+}
+
+type ReadingRoomSeat {
+  total: Int!
+  active: Int!
+  occupied: Int!
+  available: Int!
+}
+
+type CafeteriaItem {
+  campus: Int!
+  id: Int!
+  name: String!
+  menu: [MenuItem!]!
+}
+
+type MenuItem {
+  date: Date!
+  slot: String!
+  food: String!
+  price: String!
+}

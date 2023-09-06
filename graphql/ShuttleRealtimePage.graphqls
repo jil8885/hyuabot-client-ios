@@ -1,0 +1,12 @@
+query ShuttleRealtimeQuery($start: Time!) {
+    shuttle(start: $start) {
+        stop {
+          stopName, tag {
+            tagID,
+            timetable {
+              time, remainingTime
+            }
+          }
+        }
+    }
+}

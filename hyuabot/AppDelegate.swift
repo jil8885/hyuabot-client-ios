@@ -6,9 +6,14 @@
 //
 
 import UIKit
+import RxSwift
+import QueryAPI
+
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
+    let shuttleRealtimeQuery = BehaviorSubject<[ShuttleRealtimeQuery.Data.Shuttle.Stop]>(value: [])
+    
     var window: UIWindow?
 
     override init() {
