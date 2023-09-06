@@ -20,30 +20,30 @@ class ShuttleRealtimeViewController: UIViewController {
         let dormitoryShuttleListViewController = ShuttleRealtimeListViewController(
             stopID: .dormitoryOut
         )
-        
-        let view2 = UIView()
-        view2.backgroundColor = .blue
-        
-        let view3 = UIView()
-        view3.backgroundColor = .yellow
-        
-        let view4 = UIView()
-        view4.backgroundColor = .green
-        
-        let view5 = UIView()
-        view5.backgroundColor = .purple
-        
-        let view6 = UIView()
-        view6.backgroundColor = .orange
+        let shuttlecockShuttleListViewController = ShuttleRealtimeListViewController(
+            stopID: .shuttlecockOut
+        )
+        let stationShuttleListViewController = ShuttleRealtimeListViewController(
+            stopID: .station
+        )
+        let terminalShuttleListViewController = ShuttleRealtimeListViewController(
+            stopID: .terminal
+        )
+        let jungangStationShuttleListViewController = ShuttleRealtimeListViewController(
+            stopID: .jungangStation
+        )
+        let shuttlecockInShuttleListViewController = ShuttleRealtimeListViewController(
+            stopID: .shuttlecockIn
+        )
         
         
         viewPager.pagedView.pages = [
             dormitoryShuttleListViewController.view,
-            view2,
-            view3,
-            view4,
-            view5,
-            view6
+            shuttlecockShuttleListViewController.view,
+            stationShuttleListViewController.view,
+            terminalShuttleListViewController.view,
+            jungangStationShuttleListViewController.view,
+            shuttlecockInShuttleListViewController.view,
         ]
         
         viewPager.tabbedView.tabs = [
