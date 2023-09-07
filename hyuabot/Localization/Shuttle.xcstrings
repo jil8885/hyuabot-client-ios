@@ -122,6 +122,17 @@
         }
       }
     },
+    "shuttle_tag_D" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "기숙사"
+          }
+        }
+      }
+    },
     "shuttle_tag_DH" : {
       "extractionState" : "manual",
       "localizations" : {

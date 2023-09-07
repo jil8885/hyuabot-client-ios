@@ -66,22 +66,29 @@ class ShuttleRealtimeListItemView: UITableViewCell {
         fatalError("init(coder:) has not been implemented")
     }
     
-    func setUpCell(item: ShuttleArrivalItem) {
+    func setUpCell(stopType: ShuttleStop, item: ShuttleArrivalItem) {
         let timeValue = item.timetable.time.split(separator: ":")
         let hour = String(timeValue[0])
         let minute = String(timeValue[1])
         timeLabel.text = String.localizedShuttleItem(resourceID: "shuttle_time_format_\(hour)_\(minute)")
         remainingTimeLabel.text = String.localizedShuttleItem(resourceID: "shuttle_remaining_time_format_\(Int(item.timetable.remainingTime / 60))")
 
-        if item.tag == "C" {
-            typeLabel.text = String.localizedShuttleItem(resourceID: "shuttle_tag_C")
+        if stopType == .dormitoryOut || stopType == .shuttlecockOut {
+            if item.tag == "C" {
+                typeLabel.text = String.localizedShuttleItem(resourceID: "shuttle_tag_C")
+                typeLabel.textColor = .darkText
+            } else if (item.tag == "DH" || item.tag == "DY") {
+                typeLabel.text = String.localizedShuttleItem(resourceID: "shuttle_tag_DH")
+                typeLabel.textColor = .red
+            } else {
+                typeLabel.text = String.localizedShuttleItem(resourceID: "shuttle_tag_DJ")
+                typeLabel.textColor = .blue
+            }
+        }
+        
+        if stopType == .shuttlecockIn || stopType == .jungangStation {
+            typeLabel.text = String.localizedShuttleItem(resourceID: "shuttle_tag_D")
             typeLabel.textColor = .darkText
-        } else if (item.tag == "DH" || item.tag == "DY") {
-            typeLabel.text = String.localizedShuttleItem(resourceID: "shuttle_tag_DH")
-            typeLabel.textColor = .red
-        } else {
-            typeLabel.text = String.localizedShuttleItem(resourceID: "shuttle_tag_DJ")
-            typeLabel.textColor = .blue
         }
     }
 }

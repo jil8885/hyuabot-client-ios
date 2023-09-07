@@ -3,16 +3,7 @@ import RxSwift
 import QueryAPI
 
 
-class ShuttleRealtimeListViewController: UIViewController {
-    enum ShuttleStop {
-        case dormitoryOut
-        case shuttlecockOut
-        case station
-        case terminal
-        case jungangStation
-        case shuttlecockIn
-    }
-    
+class ShuttleRealtimeListViewController: UIViewController {    
     let tableView: UITableView = UITableView()
     let disposeBag = DisposeBag()
     let appDelegate = UIApplication.shared.delegate as! AppDelegate
@@ -181,10 +172,9 @@ class ShuttleRealtimeListViewController: UIViewController {
                     })
                 })
             }
-            self.section1List = section1
-            self.section2List = section2
-            self.section3List = section3
-            print("reload")
+            self.section1List = section1.sorted(by: { $0.timetable.time < $1.timetable.time })
+            self.section2List = section2.sorted(by: { $0.timetable.time < $1.timetable.time })
+            self.section3List = section3.sorted(by: { $0.timetable.time < $1.timetable.time })
             self.tableView.reloadData()
             self.refreshControl.endRefreshing()
         }).disposed(by: disposeBag)
@@ -222,12 +212,16 @@ extension ShuttleRealtimeListViewController: UITableViewDelegate {
 extension ShuttleRealtimeListViewController: UITableViewDataSource {
     // Number of rows per section
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        var maxCount = 3
+        if categoryList.count <= 1 {
+            maxCount = 12
+        }
         if section == 0 {
-            return max(min(section1List.count, 3), 1)
+            return max(min(section1List.count, maxCount), 1)
         } else if section == 1 {
-            return max(min(section2List.count, 3), 1)
+            return max(min(section2List.count, maxCount), 1)
         } else {
-            return max(min(section3List.count, 3), 1)
+            return max(min(section3List.count, maxCount), 1)
         }
     }
     
@@ -236,13 +230,13 @@ extension ShuttleRealtimeListViewController: UITableViewDataSource {
         let dataCell = tableView.dequeueReusableCell(withIdentifier: "ShuttleRealtimeListItemView", for: indexPath) as! ShuttleRealtimeListItemView
         let emptyCell = tableView.dequeueReusableCell(withIdentifier: "ShuttleEmptyListItemView", for: indexPath) as! ShuttleEmptyListItemView
         if indexPath.section == 0 && !section1List.isEmpty {
-            dataCell.setUpCell(item: section1List[indexPath.row])
+            dataCell.setUpCell(stopType: self.stopID, item: section1List[indexPath.row])
             return dataCell
         } else if indexPath.section == 1 && !section2List.isEmpty {
-            dataCell.setUpCell(item: section2List[indexPath.row])
+            dataCell.setUpCell(stopType: self.stopID, item: section2List[indexPath.row])
             return dataCell
         } else if indexPath.section == 2 && !section3List.isEmpty {
-            dataCell.setUpCell(item: section3List[indexPath.row])
+            dataCell.setUpCell(stopType: self.stopID, item: section3List[indexPath.row])
             return dataCell
         }        
         return emptyCell

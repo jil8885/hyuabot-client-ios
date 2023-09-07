@@ -20,7 +20,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     let dateFormatter: DateFormatter = {
         let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "HH:mm"
+        dateFormatter.dateFormat = "HH:mm:ss"
         dateFormatter.timeZone = TimeZone(identifier: "Asia/Seoul")
         dateFormatter.locale = Locale(identifier: "ko_KR")
         return dateFormatter

@@ -57,6 +57,7 @@
 		C7CF655A2AA490B2001EF16F /* hyuabotUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7CF65592AA490B2001EF16F /* hyuabotUITestsLaunchTests.swift */; };
 		C7CF65672AA57F0D001EF16F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7CF65662AA57F0D001EF16F /* SceneDelegate.swift */; };
 		C7CF65692AA59C27001EF16F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C7CF656B2AA59C27001EF16F /* InfoPlist.strings */; };
+		C7E9F8232AA99DD30064B873 /* ShuttleStop.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7E9F8222AA99DD30064B873 /* ShuttleStop.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -130,6 +131,7 @@
 		C7CF65682AA59C11001EF16F /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		C7CF656A2AA59C27001EF16F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C7CF656C2AA59C34001EF16F /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C7E9F8222AA99DD30064B873 /* ShuttleStop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShuttleStop.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -179,6 +181,7 @@
 				C736EB642AA8863D005A42F7 /* ShuttleRealtimeFooterView.swift */,
 				C736EB662AA88E4B005A42F7 /* ShuttleRealtimeListItemView.swift */,
 				C736EB6B2AA8AA79005A42F7 /* ShuttleEmptyListItemView.swift */,
+				C7E9F8222AA99DD30064B873 /* ShuttleStop.swift */,
 				C736EB692AA8A883005A42F7 /* ShuttleArrivalItem.swift */,
 			);
 			path = Realtime;
@@ -496,6 +499,7 @@
 				C736EB652AA8863D005A42F7 /* ShuttleRealtimeFooterView.swift in Sources */,
 				C7548F932AA5EF4400C354A2 /* PagedView.swift in Sources */,
 				C7548F852AA5A72400C354A2 /* Localization.swift in Sources */,
+				C7E9F8232AA99DD30064B873 /* ShuttleStop.swift in Sources */,
 				C7548F892AA5B7EE00C354A2 /* StatusBar.swift in Sources */,
 				C7548F912AA5E8CB00C354A2 /* TabCollectionViewCell.swift in Sources */,
 				A08D907B293A2173B6E179F6 /* TabBarViewController.swift in Sources */,
