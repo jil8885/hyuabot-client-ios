@@ -4,7 +4,9 @@ query ShuttleRealtimeQuery($start: Time!) {
           stopName, tag {
             tagID,
             timetable {
-              time, remainingTime
+              time, remainingTime, otherStops {
+                stopName
+              }
             }
           }
         }

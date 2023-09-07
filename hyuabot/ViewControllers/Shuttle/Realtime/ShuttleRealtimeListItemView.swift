@@ -39,6 +39,7 @@ class ShuttleRealtimeListItemView: UITableViewCell {
     
     func setUpCell(stopType: ShuttleStop, item: ShuttleArrivalItem) {
         self.cellView.setUI(stopType: stopType, item: item)
+        self.detailView.setUI(item: item)
     }
 }
 

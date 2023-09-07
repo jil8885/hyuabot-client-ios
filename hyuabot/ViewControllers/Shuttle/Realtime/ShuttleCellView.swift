@@ -75,7 +75,7 @@ final class ShuttleTableCellView: UIView {
         timeLabel.text = String.localizedShuttleItem(resourceID: "shuttle_time_format_\(hour)_\(minute)")
         remainingTimeLabel.text = String.localizedShuttleItem(resourceID: "shuttle_remaining_time_format_\(Int(item.timetable.remainingTime / 60))")
 
-        if stopType == .dormitoryOut || stopType == .shuttlecockOut {
+        if stopType == .dormitoryOut || stopType == .shuttlecockOut || stopType == .station {
             if item.tag == "C" {
                 typeLabel.text = String.localizedShuttleItem(resourceID: "shuttle_tag_C")
                 typeLabel.textColor = .darkText
@@ -86,9 +86,10 @@ final class ShuttleTableCellView: UIView {
                 typeLabel.text = String.localizedShuttleItem(resourceID: "shuttle_tag_DJ")
                 typeLabel.textColor = .blue
             }
-        }
-        
-        if stopType == .shuttlecockIn || stopType == .jungangStation {
+        } else if stopType == .terminal {
+            typeLabel.text = String.localizedShuttleItem(resourceID: "shuttle_tag_DY")
+            typeLabel.textColor = .darkText
+        } else if stopType == .shuttlecockIn || stopType == .jungangStation {
             typeLabel.text = String.localizedShuttleItem(resourceID: "shuttle_tag_D")
             typeLabel.textColor = .darkText
         }
@@ -117,14 +118,14 @@ final class ShuttleTableDetailView: UIView {
         addSubview(lineView)
         NSLayoutConstraint.activate([
             lineView.topAnchor.constraint(equalTo: self.topAnchor, constant: 20),
-            lineView.leftAnchor.constraint(equalTo: self.leftAnchor, constant: 20),
-            lineView.rightAnchor.constraint(equalTo: self.rightAnchor, constant: -20),
-            lineView.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: -20),
+            lineView.leftAnchor.constraint(equalTo: self.leftAnchor, constant: 35),
+            lineView.rightAnchor.constraint(equalTo: self.rightAnchor, constant: -35),
+            lineView.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: -60),
             lineView.heightAnchor.constraint(equalToConstant: 1),
         ])
         
         // Create 6 circular views every 20% of the line
-        let width = UIScreen.main.bounds.width - 40
+        let width = UIScreen.main.bounds.width - 70
         for i in 0..<6 {
             circleViewList[i].backgroundColor = .darkGray
             circleViewList[i].layer.cornerRadius = 5
@@ -142,10 +143,65 @@ final class ShuttleTableDetailView: UIView {
             stopViewList[i].translatesAutoresizingMaskIntoConstraints = false
             addSubview(stopViewList[i])
             NSLayoutConstraint.activate([
-                stopViewList[i].topAnchor.constraint(equalTo: circleViewList[i].bottomAnchor, constant: -15),
+                stopViewList[i].topAnchor.constraint(equalTo: circleViewList[i].bottomAnchor, constant: 15),
                 stopViewList[i].centerXAnchor.constraint(equalTo: circleViewList[i].centerXAnchor),
                 stopViewList[i].bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: -20),
             ])
+        }
+    }
+    
+    func setUI(item: ShuttleArrivalItem) {
+        let otherStops = item.timetable.otherStops
+        
+        if otherStops.count == 3 {
+            circleViewList[1].isHidden = true
+            circleViewList[3].isHidden = true
+            circleViewList[4].isHidden = true
+            stopViewList[0].text = getString(value: otherStops[0].stopName)
+            stopViewList[2].text = getString(value: otherStops[1].stopName)
+            stopViewList[5].text = getString(value: otherStops[2].stopName)
+        } else if otherStops.count == 4 {
+            circleViewList[1].isHidden = true
+            circleViewList[3].isHidden = true
+            stopViewList[0].text = getString(value: otherStops[0].stopName)
+            stopViewList[2].text = getString(value: otherStops[1].stopName)
+            stopViewList[4].text = getString(value: otherStops[2].stopName)
+            stopViewList[5].text = getString(value: otherStops[3].stopName)
+        } else if otherStops.count == 5 {
+            circleViewList[3].isHidden = true
+            stopViewList[0].text = getString(value: otherStops[0].stopName)
+            stopViewList[1].text = getString(value: otherStops[1].stopName)
+            stopViewList[2].text = getString(value: otherStops[2].stopName)
+            stopViewList[4].text = getString(value: otherStops[3].stopName)
+            stopViewList[5].text = getString(value: otherStops[4].stopName)
+        } else if otherStops.count == 6 {
+            stopViewList[0].text = getString(value: otherStops[0].stopName)
+            stopViewList[1].text = getString(value: otherStops[1].stopName)
+            stopViewList[2].text = getString(value: otherStops[2].stopName)
+            stopViewList[3].text = getString(value: otherStops[3].stopName)
+            stopViewList[4].text = getString(value: otherStops[4].stopName)
+            stopViewList[5].text = getString(value: otherStops[5].stopName)
+        }
+    }
+    
+    func getString(value: String) -> String {
+        switch value{
+            case "dormitory_o":
+                return String.localizedShuttleItem(resourceID: "shuttle_stop_dormitory_o")
+            case "shuttlecock_o":
+                return String.localizedShuttleItem(resourceID: "shuttle_stop_shuttlecock_o")
+            case "station":
+                return String.localizedShuttleItem(resourceID: "shuttle_stop_station")
+            case "terminal":
+                return String.localizedShuttleItem(resourceID: "shuttle_stop_terminal")
+            case "shuttlecock_i":
+                return String.localizedShuttleItem(resourceID: "shuttle_stop_shuttlecock_i")
+            case "jungang_stn":
+                return String.localizedShuttleItem(resourceID: "shuttle_stop_jungang_station")
+            case "dormitory_i":
+                return String.localizedShuttleItem(resourceID: "shuttle_stop_dormitory_i")
+            default:
+                return ""
         }
     }
 }

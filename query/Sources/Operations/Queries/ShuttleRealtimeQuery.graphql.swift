@@ -7,7 +7,7 @@ public class ShuttleRealtimeQuery: GraphQLQuery {
   public static let operationName: String = "ShuttleRealtimeQuery"
   public static let operationDocument: ApolloAPI.OperationDocument = .init(
     definition: .init(
-      #"query ShuttleRealtimeQuery($start: Time!) { shuttle(start: $start) { __typename stop { __typename stopName tag { __typename tagID timetable { __typename time remainingTime } } } } }"#
+      #"query ShuttleRealtimeQuery($start: Time!) { shuttle(start: $start) { __typename stop { __typename stopName tag { __typename tagID timetable { __typename time remainingTime otherStops { __typename stopName } } } } } }"#
     ))
 
   public var start: Time
@@ -90,10 +90,28 @@ public class ShuttleRealtimeQuery: GraphQLQuery {
               .field("__typename", String.self),
               .field("time", QueryAPI.Time.self),
               .field("remainingTime", Double.self),
+              .field("otherStops", [OtherStop].self),
             ] }
 
             public var time: QueryAPI.Time { __data["time"] }
             public var remainingTime: Double { __data["remainingTime"] }
+            public var otherStops: [OtherStop] { __data["otherStops"] }
+
+            /// Shuttle.Stop.Tag.Timetable.OtherStop
+            ///
+            /// Parent Type: `ShuttleArrivalOtherStopItem`
+            public struct OtherStop: QueryAPI.SelectionSet {
+              public let __data: DataDict
+              public init(_dataDict: DataDict) { __data = _dataDict }
+
+              public static var __parentType: ApolloAPI.ParentType { QueryAPI.Objects.ShuttleArrivalOtherStopItem }
+              public static var __selections: [ApolloAPI.Selection] { [
+                .field("__typename", String.self),
+                .field("stopName", String.self),
+              ] }
+
+              public var stopName: String { __data["stopName"] }
+            }
           }
         }
       }
