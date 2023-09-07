@@ -58,6 +58,7 @@
 		C7CF65672AA57F0D001EF16F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7CF65662AA57F0D001EF16F /* SceneDelegate.swift */; };
 		C7CF65692AA59C27001EF16F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C7CF656B2AA59C27001EF16F /* InfoPlist.strings */; };
 		C7E9F8232AA99DD30064B873 /* ShuttleStop.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7E9F8222AA99DD30064B873 /* ShuttleStop.swift */; };
+		C7E9F8252AA9E6BA0064B873 /* ShuttleCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7E9F8242AA9E6BA0064B873 /* ShuttleCellView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -132,6 +133,7 @@
 		C7CF656A2AA59C27001EF16F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C7CF656C2AA59C34001EF16F /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C7E9F8222AA99DD30064B873 /* ShuttleStop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShuttleStop.swift; sourceTree = "<group>"; };
+		C7E9F8242AA9E6BA0064B873 /* ShuttleCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShuttleCellView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -183,6 +185,7 @@
 				C736EB6B2AA8AA79005A42F7 /* ShuttleEmptyListItemView.swift */,
 				C7E9F8222AA99DD30064B873 /* ShuttleStop.swift */,
 				C736EB692AA8A883005A42F7 /* ShuttleArrivalItem.swift */,
+				C7E9F8242AA9E6BA0064B873 /* ShuttleCellView.swift */,
 			);
 			path = Realtime;
 			sourceTree = "<group>";
@@ -507,6 +510,7 @@
 				C7548F952AA5F0E900C354A2 /* PagedCollectionViewCell.swift in Sources */,
 				C7548F9B2AA6AE2800C354A2 /* ShuttleRealtimeListViewController.swift in Sources */,
 				C736EB602AA87AD4005A42F7 /* Network.swift in Sources */,
+				C7E9F8252AA9E6BA0064B873 /* ShuttleCellView.swift in Sources */,
 				C7548F9D2AA6B84C00C354A2 /* ShuttleRealtimeHeaderView.swift in Sources */,
 				C7548F8F2AA5E7B800C354A2 /* TabbedView.swift in Sources */,
 				C736EB672AA88E4B005A42F7 /* ShuttleRealtimeListItemView.swift in Sources */,

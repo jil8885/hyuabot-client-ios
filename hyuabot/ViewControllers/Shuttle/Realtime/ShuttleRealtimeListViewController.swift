@@ -187,7 +187,15 @@ class ShuttleRealtimeListViewController: UIViewController {
 
 extension ShuttleRealtimeListViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print("selected")
+        UIView.animate(withDuration: 0.3) {
+            self.tableView.performBatchUpdates(nil)
+        }
+    }
+    
+    func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
+        if let cell = self.tableView.cellForRow(at: indexPath) as? ShuttleRealtimeListItemView {
+            cell.hideDetailView()
+        }
     }
     
     // Section header configuration
