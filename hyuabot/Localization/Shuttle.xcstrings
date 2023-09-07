@@ -100,6 +100,17 @@
         }
       }
     },
+    "shuttle_remaining_time_format_%lld" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld분 후 출발"
+          }
+        }
+      }
+    },
     "shuttle_tag_C" : {
       "extractionState" : "manual",
       "localizations" : {

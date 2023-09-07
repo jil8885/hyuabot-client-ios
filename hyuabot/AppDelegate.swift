@@ -12,7 +12,11 @@ import QueryAPI
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
+    // Query Data from GraphQL
     let shuttleRealtimeQuery = BehaviorSubject<[ShuttleRealtimeQuery.Data.Shuttle.Stop]>(value: [])
+    
+    // Data formatter
+    let showShuttleRemainingTime = BehaviorSubject<Bool>(value: false)
     
     let dateFormatter: DateFormatter = {
         let dateFormatter = DateFormatter()
@@ -42,6 +46,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             case .failure(let error):
                 print(error)
             }
+        }
+    }
+    
+    func toggleShowShuttleRemainingTime() {
+        if let value = try? showShuttleRemainingTime.value() {
+            showShuttleRemainingTime.onNext(!value)
         }
     }
 }

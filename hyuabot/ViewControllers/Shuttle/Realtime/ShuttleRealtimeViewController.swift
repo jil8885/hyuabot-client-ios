@@ -51,18 +51,41 @@ class ShuttleRealtimeViewController: UIViewController {
         return viewPager
     }()
     
+    private lazy var toggleButton: UIButton = {
+        let button = UIButton()
+        
+        var config = UIButton.Configuration.filled()
+        config.baseBackgroundColor = UIColor(named: "HanyangSecondary")
+        config.cornerStyle = .capsule
+        config.image = UIImage(systemName: "clock")?.withConfiguration(UIImage.SymbolConfiguration(pointSize: 25, weight: .medium))
+        config.contentInsets = NSDirectionalEdgeInsets(top: 12, leading: 12, bottom: 12, trailing: 12)
+        button.configuration = config
+        button.layer.cornerRadius = 10
+        button.addTarget(self, action: #selector(toggleButtonClicked), for: .touchUpInside)
+        button.translatesAutoresizingMaskIntoConstraints = false
+        button.titleLabel?.font = .systemFont(ofSize: 40)
+        return button
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = String.localizedNavTitle(resourceID: "shuttle.realtime")
         self.view.backgroundColor = .systemBackground
         self.view.addSubview(viewPager)
+        self.view.addSubview(toggleButton)
         appDelegate.queryShuttleRealtimePage()
         
         NSLayoutConstraint.activate([
+            toggleButton.rightAnchor.constraint(equalTo: self.view.rightAnchor, constant: -20),
+            toggleButton.bottomAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.bottomAnchor, constant: -20),
             viewPager.topAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.topAnchor),
             viewPager.leftAnchor.constraint(equalTo: self.view.leftAnchor),
             viewPager.rightAnchor.constraint(equalTo: self.view.rightAnchor),
-            viewPager.bottomAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.bottomAnchor)
+            viewPager.bottomAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.bottomAnchor),
         ])
+    }
+    
+    @objc func toggleButtonClicked(_ sender: UIButton) {
+        appDelegate.toggleShowShuttleRemainingTime()
     }
 }
