@@ -1,8 +1,10 @@
 import UIKit
 import QueryAPI
+import RxSwift
 
 class ShuttleRealtimeViewController: UIViewController {
     let appDelegate = UIApplication.shared.delegate as! AppDelegate
+    let disposeBag = DisposeBag()
     
     lazy var viewPager: ViewPager = {
         let viewPager = ViewPager(
@@ -87,5 +89,15 @@ class ShuttleRealtimeViewController: UIViewController {
     
     @objc func toggleButtonClicked(_ sender: UIButton) {
         appDelegate.toggleShowShuttleRemainingTime()
+    }
+    
+    // Polling Query every 1 minute
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        Observable<Int>.interval(.seconds(60), scheduler: MainScheduler.instance)
+            .subscribe(onNext: { [weak self] _ in
+                self?.appDelegate.queryShuttleRealtimePage()
+            })
+            .disposed(by: disposeBag)
     }
 }
