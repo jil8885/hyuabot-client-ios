@@ -14,6 +14,14 @@ import QueryAPI
 class AppDelegate: UIResponder, UIApplicationDelegate {
     let shuttleRealtimeQuery = BehaviorSubject<[ShuttleRealtimeQuery.Data.Shuttle.Stop]>(value: [])
     
+    let dateFormatter: DateFormatter = {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "HH:mm"
+        dateFormatter.timeZone = TimeZone(identifier: "Asia/Seoul")
+        dateFormatter.locale = Locale(identifier: "ko_KR")
+        return dateFormatter
+    }()
+    
     var window: UIWindow?
 
     override init() {
@@ -23,5 +31,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
         return true
+    }
+    
+    func queryShuttleRealtimePage() {
+        let startTime = dateFormatter.string(from: Date())
+        Network.shared.apollo.fetch(query: ShuttleRealtimeQuery(start: startTime)) { result in
+            switch result {
+            case .success(let graphQLResult):
+                self.shuttleRealtimeQuery.onNext(graphQLResult.data?.shuttle.stop ?? [])
+            case .failure(let error):
+                print(error)
+            }
+        }
     }
 }

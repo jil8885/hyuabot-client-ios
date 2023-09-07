@@ -16,6 +16,7 @@ class ShuttleRealtimeListViewController: UIViewController {
     let tableView: UITableView = UITableView()
     let disposeBag = DisposeBag()
     let appDelegate = UIApplication.shared.delegate as! AppDelegate
+    let refreshControl = UIRefreshControl()
     private var stopID: ShuttleStop = ShuttleStop.dormitoryOut
     private var stopKey: String = ""
     private var categoryList: [String] = []
@@ -81,6 +82,8 @@ class ShuttleRealtimeListViewController: UIViewController {
     func configureTableView(){
         tableView.delegate = self
         tableView.dataSource = self
+        tableView.refreshControl = refreshControl
+        tableView.refreshControl?.addTarget(self, action: #selector(refreshTableView(_:)), for: .valueChanged)
         tableView.register(ShuttleRealtimeHeaderView.self, forHeaderFooterViewReuseIdentifier: ShuttleRealtimeHeaderView.identifier)
         tableView.register(ShuttleRealtimeFooterView.self, forHeaderFooterViewReuseIdentifier: ShuttleRealtimeFooterView.identifier)
         tableView.register(ShuttleEmptyListItemView.self, forCellReuseIdentifier: ShuttleEmptyListItemView.identifier)
@@ -181,8 +184,14 @@ class ShuttleRealtimeListViewController: UIViewController {
             self.section1List = section1
             self.section2List = section2
             self.section3List = section3
+            print("reload")
             self.tableView.reloadData()
+            self.refreshControl.endRefreshing()
         }).disposed(by: disposeBag)
+    }
+    
+    @objc func refreshTableView(_ sender: Any)  {
+        appDelegate.queryShuttleRealtimePage()
     }
 }
 

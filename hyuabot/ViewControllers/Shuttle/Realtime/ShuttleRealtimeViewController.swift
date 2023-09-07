@@ -3,13 +3,6 @@ import QueryAPI
 
 class ShuttleRealtimeViewController: UIViewController {
     let appDelegate = UIApplication.shared.delegate as! AppDelegate
-    let dateFormatter: DateFormatter = {
-        let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "HH:mm"
-        dateFormatter.timeZone = TimeZone(identifier: "Asia/Seoul")
-        dateFormatter.locale = Locale(identifier: "ko_KR")
-        return dateFormatter
-    }()
     
     lazy var viewPager: ViewPager = {
         let viewPager = ViewPager(
@@ -63,7 +56,7 @@ class ShuttleRealtimeViewController: UIViewController {
         self.title = String.localizedNavTitle(resourceID: "shuttle.realtime")
         self.view.backgroundColor = .systemBackground
         self.view.addSubview(viewPager)
-        fetchArrival()
+        appDelegate.queryShuttleRealtimePage()
         
         NSLayoutConstraint.activate([
             viewPager.topAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.topAnchor),
@@ -71,17 +64,5 @@ class ShuttleRealtimeViewController: UIViewController {
             viewPager.rightAnchor.constraint(equalTo: self.view.rightAnchor),
             viewPager.bottomAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.bottomAnchor)
         ])
-    }
-    
-    func fetchArrival() {
-        let startTime = dateFormatter.string(from: Date())
-        Network.shared.apollo.fetch(query: ShuttleRealtimeQuery(start: startTime)) { result in
-            switch result {
-            case .success(let graphQLResult):
-                self.appDelegate.shuttleRealtimeQuery.onNext(graphQLResult.data?.shuttle.stop ?? [])
-            case .failure(let error):
-                print(error)
-            }
-        }
     }
 }
