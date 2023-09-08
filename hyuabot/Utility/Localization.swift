@@ -6,4 +6,8 @@ extension String {
     static func localizedShuttleItem(resourceID: String.LocalizationValue) -> String {
         return String(localized: resourceID, table: "Shuttle")
     }
+    
+    static func localizedItem(resourceID: String.LocalizationValue) -> String {
+        return String(localized: resourceID, table: "Localizable")
+    }
 }

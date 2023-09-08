@@ -1,10 +1,20 @@
 import UIKit
 import QueryAPI
 import RxSwift
+import CoreLocation
 
-class ShuttleRealtimeViewController: UIViewController {
+class ShuttleRealtimeViewController: UIViewController, CLLocationManagerDelegate {
     let appDelegate = UIApplication.shared.delegate as! AppDelegate
     let disposeBag = DisposeBag()
+    let locationManager = CLLocationManager()
+    let stopLocation = [
+        CLLocation(latitude: 37.29339607529377, longitude: 126.83630604103446),
+        CLLocation(latitude:37.29875417910844, longitude: 126.83784054072336),
+        CLLocation(latitude:37.308494476826155, longitude: 126.85310236423418),
+        CLLocation(latitude:37.3147818, longitude: 126.8397399),
+        CLLocation(latitude:37.31945164682341, longitude: 126.8455453372041),
+        CLLocation(latitude:37.29869328231496, longitude: 126.8377767466817),
+    ]
     
     lazy var viewPager: ViewPager = {
         let viewPager = ViewPager(
@@ -71,7 +81,16 @@ class ShuttleRealtimeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.title = String.localizedNavTitle(resourceID: "shuttle.realtime")
+        locationManager.delegate = self
+        locationManager.desiredAccuracy = kCLLocationAccuracyBest
+        locationManager.requestWhenInUseAuthorization()
+        DispatchQueue.global().async {
+            if CLLocationManager.locationServicesEnabled(){
+                self.locationManager.startUpdatingLocation()
+            } else {
+                self.showToast(message: String.localizedItem(resourceID: "location_disabled"))
+            }
+        }
         self.view.backgroundColor = .systemBackground
         self.view.addSubview(viewPager)
         self.view.addSubview(toggleButton)
@@ -99,5 +118,28 @@ class ShuttleRealtimeViewController: UIViewController {
                 self?.appDelegate.queryShuttleRealtimePage()
             })
             .disposed(by: disposeBag)
+    }
+    
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        if let location = locations.first {
+            closestStop(userLocation: location)
+        }
+    }
+    
+    func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
+        showToast(message: String.localizedItem(resourceID: "location.permission.denied"))
+    }
+
+    func closestStop(userLocation:CLLocation){
+        var distances = [CLLocationDistance]()
+        for location in self.stopLocation {
+            let coord = CLLocation(latitude: location.coordinate.latitude, longitude: location.coordinate.longitude)
+            distances.append(coord.distance(from: userLocation))
+        }
+        let closest = distances.min()
+        let position = distances.firstIndex(of: closest!)
+        self.viewPager.tabbedView.moveToTab(at: position!)
+        self.viewPager.pagedView.moveToPage(at: position!)
+        locationManager.stopUpdatingLocation()
     }
 }

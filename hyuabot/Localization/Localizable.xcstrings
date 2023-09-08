@@ -1,0 +1,111 @@
+{
+  "sourceLanguage" : "ko",
+  "strings" : {
+    "dormitory_o" : {
+
+    },
+    "jungang_station" : {
+
+    },
+    "location_disabled" : {
+
+    },
+    "location.permission.denied" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "위치 권한이 거부되었습니다."
+          }
+        }
+      }
+    },
+    "show_entire_schedule" : {
+
+    },
+    "shuttle_destination_campus" : {
+
+    },
+    "shuttle_destination_dormitory" : {
+
+    },
+    "shuttle_destination_jungang_station" : {
+
+    },
+    "shuttle_destination_subway" : {
+
+    },
+    "shuttle_destination_terminal" : {
+
+    },
+    "shuttle_realtime_empty" : {
+
+    },
+    "shuttle_remaining_time_format_%lld" : {
+
+    },
+    "shuttle_stop_dormitory_i" : {
+
+    },
+    "shuttle_stop_dormitory_o" : {
+
+    },
+    "shuttle_stop_jungang_station" : {
+
+    },
+    "shuttle_stop_shuttlecock_i" : {
+
+    },
+    "shuttle_stop_shuttlecock_o" : {
+
+    },
+    "shuttle_stop_station" : {
+
+    },
+    "shuttle_stop_terminal" : {
+
+    },
+    "shuttle_tag_C" : {
+
+    },
+    "shuttle_tag_D" : {
+
+    },
+    "shuttle_tag_DH" : {
+
+    },
+    "shuttle_tag_DJ" : {
+
+    },
+    "shuttle_tag_DY" : {
+
+    },
+    "shuttle_time_format_%@_%@" : {
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "shuttle_time_format_%1$@_%2$@"
+          }
+        }
+      }
+    },
+    "shuttle.realtime" : {
+
+    },
+    "shuttlecock_i" : {
+
+    },
+    "shuttlecock_o" : {
+
+    },
+    "station" : {
+
+    },
+    "terminal" : {
+
+    }
+  },
+  "version" : "1.0"
+}

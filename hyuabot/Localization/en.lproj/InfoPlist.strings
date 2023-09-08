@@ -1,2 +1,3 @@
 "CFBundleDisplayName" = "HYUabot";
 "CFBundleName" = "HYUabot";
+"NSLocationWhenInUseUsageDescription" = "HYUabot needs your location to find the nearest shuttle stop.";
