@@ -18,6 +18,7 @@ class TabBarViewController: UITabBarController {
                 
         // Set navigation item for each view controller
         shuttleNC.tabBarItem = UITabBarItem(title: String.localizedNavTitle(resourceID: "shuttle.realtime"), image: UIImage(systemName: "bus"), tag: 0)
+        shuttleNC.navigationBar.topItem?.title = String.localizedNavTitle(resourceID: "shuttle.realtime")
         
         // Set view controllers
         self.viewControllers = [shuttleNC]
