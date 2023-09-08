@@ -21,38 +21,38 @@ class ShuttleRealtimeListViewController: UIViewController {
         switch stopID {
         case .dormitoryOut:
             categoryList = [
-                String.localizedShuttleItem(resourceID: "shuttle_destination_subway"),
-                String.localizedShuttleItem(resourceID: "shuttle_destination_terminal"),
-                String.localizedShuttleItem(resourceID: "shuttle_destination_jungang_station"),
+                "shuttle_destination_subway",
+                "shuttle_destination_terminal",
+                "shuttle_destination_jungang_station",
             ]
             stopKey = "dormitory_o"
         case .shuttlecockOut:
             categoryList = [
-                String.localizedShuttleItem(resourceID: "shuttle_destination_subway"),
-                String.localizedShuttleItem(resourceID: "shuttle_destination_terminal"),
-                String.localizedShuttleItem(resourceID: "shuttle_destination_jungang_station"),
+                "shuttle_destination_subway",
+                "shuttle_destination_terminal",
+                "shuttle_destination_jungang_station",
             ]
             stopKey = "shuttlecock_o"
         case .station:
             categoryList = [
-                String.localizedShuttleItem(resourceID: "shuttle_destination_campus"),
-                String.localizedShuttleItem(resourceID: "shuttle_destination_terminal"),
-                String.localizedShuttleItem(resourceID: "shuttle_destination_jungang_station"),
+                "shuttle_destination_campus",
+                "shuttle_destination_terminal",
+                "shuttle_destination_jungang_station",
             ]
             stopKey = "station"
         case .terminal:
             categoryList = [
-                String.localizedShuttleItem(resourceID: "shuttle_destination_campus"),
+                "shuttle_destination_campus",
             ]
             stopKey = "terminal"
         case .jungangStation:
             categoryList = [
-                String.localizedShuttleItem(resourceID: "shuttle_destination_campus"),
+                "shuttle_destination_campus",
             ]
             stopKey = "jungang_stn"
         case .shuttlecockIn:
             categoryList = [
-                String.localizedShuttleItem(resourceID: "shuttle_destination_dormitory"),
+                "shuttle_destination_dormitory",
             ]
             stopKey = "shuttlecock_i"
         }
@@ -203,8 +203,8 @@ extension ShuttleRealtimeListViewController: UITableViewDelegate {
          guard let headerView = tableView.dequeueReusableHeaderFooterView(withIdentifier: ShuttleRealtimeHeaderView.identifier) as? ShuttleRealtimeHeaderView else {
              return UIView()
          }
-         headerView.setUpHeaderView(label: categoryList[section])
-         return headerView
+        headerView.setUpHeaderView(label: String.localizedShuttleItem(resourceID: String.LocalizationValue(categoryList[section])))
+        return headerView
      }
     
     // Section footer configuration

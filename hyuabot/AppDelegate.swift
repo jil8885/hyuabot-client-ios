@@ -18,6 +18,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     // Data formatter
     let showShuttleRemainingTime = BehaviorSubject<Bool>(value: false)
     
+    // Query to move timetable page
+    let shuttleTimetableQueryParams = BehaviorSubject<ShuttleTimetableQueryParams?>(value: nil)
+    
+    
     let dateFormatter: DateFormatter = {
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "HH:mm:ss"

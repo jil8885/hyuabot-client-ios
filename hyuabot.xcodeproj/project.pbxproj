@@ -59,6 +59,7 @@
 		C7CF65692AA59C27001EF16F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C7CF656B2AA59C27001EF16F /* InfoPlist.strings */; };
 		C7DD8F032AAAD66B006958D7 /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7DD8F022AAAD66B006958D7 /* Toast.swift */; };
 		C7DD8F052AAAD695006958D7 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = C7DD8F042AAAD695006958D7 /* Localizable.xcstrings */; };
+		C7DD8F072AAAED36006958D7 /* ShuttleTimetableQueryParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7DD8F062AAAED36006958D7 /* ShuttleTimetableQueryParams.swift */; };
 		C7E9F8232AA99DD30064B873 /* ShuttleStop.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7E9F8222AA99DD30064B873 /* ShuttleStop.swift */; };
 		C7E9F8252AA9E6BA0064B873 /* ShuttleCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7E9F8242AA9E6BA0064B873 /* ShuttleCellView.swift */; };
 /* End PBXBuildFile section */
@@ -136,6 +137,7 @@
 		C7CF656C2AA59C34001EF16F /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C7DD8F022AAAD66B006958D7 /* Toast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Toast.swift; sourceTree = "<group>"; };
 		C7DD8F042AAAD695006958D7 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		C7DD8F062AAAED36006958D7 /* ShuttleTimetableQueryParams.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShuttleTimetableQueryParams.swift; sourceTree = "<group>"; };
 		C7E9F8222AA99DD30064B873 /* ShuttleStop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShuttleStop.swift; sourceTree = "<group>"; };
 		C7E9F8242AA9E6BA0064B873 /* ShuttleCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShuttleCellView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -345,6 +347,7 @@
 		C7E9F8262AA9F92D0064B873 /* Timetable */ = {
 			isa = PBXGroup;
 			children = (
+				C7DD8F062AAAED36006958D7 /* ShuttleTimetableQueryParams.swift */,
 			);
 			path = Timetable;
 			sourceTree = "<group>";
@@ -523,6 +526,7 @@
 				C7548F912AA5E8CB00C354A2 /* TabCollectionViewCell.swift in Sources */,
 				A08D907B293A2173B6E179F6 /* TabBarViewController.swift in Sources */,
 				C7548F8D2AA5E77900C354A2 /* ViewPager.swift in Sources */,
+				C7DD8F072AAAED36006958D7 /* ShuttleTimetableQueryParams.swift in Sources */,
 				C7548F952AA5F0E900C354A2 /* PagedCollectionViewCell.swift in Sources */,
 				C7548F9B2AA6AE2800C354A2 /* ShuttleRealtimeListViewController.swift in Sources */,
 				C736EB602AA87AD4005A42F7 /* Network.swift in Sources */,
