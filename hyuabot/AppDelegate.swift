@@ -14,6 +14,8 @@ import QueryAPI
 class AppDelegate: UIResponder, UIApplicationDelegate {
     // Query Data from GraphQL
     let shuttleRealtimeQuery = BehaviorSubject<[ShuttleRealtimeQuery.Data.Shuttle.Stop]>(value: [])
+    let shuttleTimetableQuery = BehaviorSubject<[ShuttleTimetableQuery.Data.Shuttle.Stop]>(value: [])
+    
     
     // Data formatter
     let showShuttleRemainingTime = BehaviorSubject<Bool>(value: false)
@@ -47,6 +49,53 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             switch result {
             case .success(let graphQLResult):
                 self.shuttleRealtimeQuery.onNext(graphQLResult.data?.shuttle.stop ?? [])
+            case .failure(let error):
+                print(error)
+            }
+        }
+    }
+    
+    func queryShuttleTimetablePage(stopID: String, destination: String) {
+        var tags = [String]()
+        switch stopID {
+        case "dormitory_o":
+            if destination == "shuttle_destination_subway" {
+                tags = ["DH", "DJ", "C"]
+            } else if destination == "shuttle_destination_terminal" {
+                tags = ["DY", "C"]
+            } else if destination == "shuttle_destination_jungang_station" {
+                tags = ["DJ"]
+            }
+        case "shuttlecock_o":
+            if destination == "shuttle_destination_subway" {
+                tags = ["DH", "DJ", "C"]
+            } else if destination == "shuttle_destination_terminal" {
+                tags = ["DY", "C"]
+            } else if destination == "shuttle_destination_jungang_station" {
+                tags = ["DJ"]
+            }
+        case "station":
+            if destination == "shuttle_destination_campus" {
+                tags = ["DH", "DJ", "C"]
+            } else if destination == "shuttle_destination_terminal" {
+                tags = ["DY", "C"]
+            } else if destination == "shuttle_destination_jungang_station" {
+                tags = ["DJ"]
+            }
+        case "terminal":
+            tags = ["DY", "C"]
+        case "jungang_stn":
+            tags = ["DJ", "C"]
+        case "shuttlecock_i":
+            tags = ["DH", "DY", "DJ", "C"]
+        default:
+            tags = []
+        }
+        
+        Network.shared.apollo.fetch(query: ShuttleTimetableQuery(stop: stopID, tags: tags)) { result in
+            switch result {
+            case .success(let graphQLResult):
+                self.shuttleTimetableQuery.onNext(graphQLResult.data?.shuttle.stop ?? [])
             case .failure(let error):
                 print(error)
             }

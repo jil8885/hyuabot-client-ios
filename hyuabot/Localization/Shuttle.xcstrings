@@ -23,6 +23,17 @@
         }
       }
     },
+    "jungang_stn" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "중앙역"
+          }
+        }
+      }
+    },
     "show_entire_schedule" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -45,6 +56,17 @@
         }
       }
     },
+    "shuttle_destination_campus_shorten" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "캠퍼스"
+          }
+        }
+      }
+    },
     "shuttle_destination_dormitory" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -52,6 +74,17 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "기숙사 방면"
+          }
+        }
+      }
+    },
+    "shuttle_destination_dormitory_shorten" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "기숙사"
           }
         }
       }
@@ -67,6 +100,17 @@
         }
       }
     },
+    "shuttle_destination_jungang_station_shorten" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "중앙역"
+          }
+        }
+      }
+    },
     "shuttle_destination_subway" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -74,6 +118,17 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "한대앞 방면"
+          }
+        }
+      }
+    },
+    "shuttle_destination_subway_shorten" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "한대앞"
           }
         }
       }
@@ -89,13 +144,24 @@
         }
       }
     },
+    "shuttle_destination_terminal_shorten" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "예술인"
+          }
+        }
+      }
+    },
     "shuttle_realtime_empty" : {
       "extractionState" : "manual",
       "localizations" : {
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "도착 정보 없음"
+            "value" : "운행 정보 없음"
           }
         }
       }
@@ -250,6 +316,39 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%1$@시 %2$@분 출발"
+          }
+        }
+      }
+    },
+    "shuttle.days.weekdays" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "평일"
+          }
+        }
+      }
+    },
+    "shuttle.days.weekends" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "주말"
+          }
+        }
+      }
+    },
+    "shuttle.timetable.%@.%@" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$@ → %2$@"
           }
         }
       }

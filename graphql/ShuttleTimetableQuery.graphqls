@@ -1,0 +1,15 @@
+query ShuttleTimetableQuery($stop: String!, $tags: [String!]!) {
+    shuttle(stop: [$stop], weekday: [true, false], tag: $tags) {
+        stop {
+          stopName, tag {
+            tagID,
+            timetable {
+              time, weekdays
+            }
+          }
+        },
+    		params {
+          period
+        }
+    }
+}

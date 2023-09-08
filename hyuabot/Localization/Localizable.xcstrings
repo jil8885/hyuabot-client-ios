@@ -76,8 +76,24 @@
         }
       }
     },
+    "shuttle.days.weekdays" : {
+
+    },
+    "shuttle.days.weekends" : {
+
+    },
     "shuttle.realtime" : {
 
+    },
+    "shuttle.timetable.%@.%@" : {
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "shuttle.timetable.%1$@.%2$@"
+          }
+        }
+      }
     },
     "shuttlecock_i" : {
 
