@@ -154,27 +154,70 @@ final class ShuttleTableDetailView: UIView {
         let otherStops = item.timetable.otherStops
         
         if otherStops.count == 3 {
+            circleViewList[0].isHidden = false
             circleViewList[1].isHidden = true
+            circleViewList[2].isHidden = false
             circleViewList[3].isHidden = true
             circleViewList[4].isHidden = true
+            circleViewList[5].isHidden = false
+            stopViewList[0].isHidden = false
+            stopViewList[1].isHidden = true
+            stopViewList[2].isHidden = false
+            stopViewList[3].isHidden = true
+            stopViewList[4].isHidden = true
+            stopViewList[5].isHidden = false
+            
             stopViewList[0].text = getString(value: otherStops[0].stopName)
             stopViewList[2].text = getString(value: otherStops[1].stopName)
             stopViewList[5].text = getString(value: otherStops[2].stopName)
         } else if otherStops.count == 4 {
+            circleViewList[0].isHidden = false
             circleViewList[1].isHidden = true
+            circleViewList[2].isHidden = false
             circleViewList[3].isHidden = true
+            circleViewList[4].isHidden = false
+            circleViewList[5].isHidden = false
+            stopViewList[0].isHidden = false
+            stopViewList[1].isHidden = true
+            stopViewList[2].isHidden = false
+            stopViewList[3].isHidden = true
+            stopViewList[4].isHidden = false
+            stopViewList[5].isHidden = false
             stopViewList[0].text = getString(value: otherStops[0].stopName)
             stopViewList[2].text = getString(value: otherStops[1].stopName)
             stopViewList[4].text = getString(value: otherStops[2].stopName)
             stopViewList[5].text = getString(value: otherStops[3].stopName)
         } else if otherStops.count == 5 {
+            circleViewList[0].isHidden = false
+            circleViewList[1].isHidden = false
+            circleViewList[2].isHidden = false
             circleViewList[3].isHidden = true
+            circleViewList[4].isHidden = false
+            circleViewList[5].isHidden = false
+            stopViewList[0].isHidden = false
+            stopViewList[1].isHidden = false
+            stopViewList[2].isHidden = false
+            stopViewList[3].isHidden = true
+            stopViewList[4].isHidden = false
+            stopViewList[5].isHidden = false
             stopViewList[0].text = getString(value: otherStops[0].stopName)
             stopViewList[1].text = getString(value: otherStops[1].stopName)
             stopViewList[2].text = getString(value: otherStops[2].stopName)
             stopViewList[4].text = getString(value: otherStops[3].stopName)
             stopViewList[5].text = getString(value: otherStops[4].stopName)
         } else if otherStops.count == 6 {
+            circleViewList[0].isHidden = false
+            circleViewList[1].isHidden = false
+            circleViewList[2].isHidden = false
+            circleViewList[3].isHidden = false
+            circleViewList[4].isHidden = false
+            circleViewList[5].isHidden = false
+            stopViewList[0].isHidden = false
+            stopViewList[1].isHidden = false
+            stopViewList[2].isHidden = false
+            stopViewList[3].isHidden = false
+            stopViewList[4].isHidden = false
+            stopViewList[5].isHidden = false
             stopViewList[0].text = getString(value: otherStops[0].stopName)
             stopViewList[1].text = getString(value: otherStops[1].stopName)
             stopViewList[2].text = getString(value: otherStops[2].stopName)
