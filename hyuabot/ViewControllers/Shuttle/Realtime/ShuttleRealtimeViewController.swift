@@ -69,7 +69,7 @@ class ShuttleRealtimeViewController: UIViewController, CLLocationManagerDelegate
         var config = UIButton.Configuration.filled()
         config.baseBackgroundColor = UIColor(named: "HanyangSecondary")
         config.cornerStyle = .capsule
-        config.image = UIImage(systemName: "clock")?.withConfiguration(UIImage.SymbolConfiguration(pointSize: 25, weight: .medium))
+        config.image = UIImage(systemName: "clock")?.withConfiguration(UIImage.SymbolConfiguration(pointSize: 20, weight: .medium))
         config.contentInsets = NSDirectionalEdgeInsets(top: 12, leading: 12, bottom: 12, trailing: 12)
         button.configuration = config
         button.layer.cornerRadius = 10
