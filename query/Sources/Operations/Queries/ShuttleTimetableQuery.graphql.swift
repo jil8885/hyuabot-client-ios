@@ -7,23 +7,27 @@ public class ShuttleTimetableQuery: GraphQLQuery {
   public static let operationName: String = "ShuttleTimetableQuery"
   public static let operationDocument: ApolloAPI.OperationDocument = .init(
     definition: .init(
-      #"query ShuttleTimetableQuery($stop: String!, $tags: [String!]!) { shuttle(stop: [$stop], weekday: [true, false], tag: $tags) { __typename stop { __typename stopName tag { __typename tagID timetable { __typename time weekdays } } } params { __typename period } } }"#
+      #"query ShuttleTimetableQuery($stop: String!, $tags: [String!]!, $period: [String!]) { shuttle(stop: [$stop], weekday: [true, false], tag: $tags, period: $period) { __typename stop { __typename stopName tag { __typename tagID timetable { __typename time weekdays } } } params { __typename period } } }"#
     ))
 
   public var stop: String
   public var tags: [String]
+  public var period: GraphQLNullable<[String]>
 
   public init(
     stop: String,
-    tags: [String]
+    tags: [String],
+    period: GraphQLNullable<[String]>
   ) {
     self.stop = stop
     self.tags = tags
+    self.period = period
   }
 
   public var __variables: Variables? { [
     "stop": stop,
-    "tags": tags
+    "tags": tags,
+    "period": period
   ] }
 
   public struct Data: QueryAPI.SelectionSet {
@@ -35,7 +39,8 @@ public class ShuttleTimetableQuery: GraphQLQuery {
       .field("shuttle", Shuttle.self, arguments: [
         "stop": [.variable("stop")],
         "weekday": [true, false],
-        "tag": .variable("tags")
+        "tag": .variable("tags"),
+        "period": .variable("period")
       ]),
     ] }
 

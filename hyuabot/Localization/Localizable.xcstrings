@@ -85,6 +85,15 @@
     "shuttle.realtime" : {
 
     },
+    "shuttle.search.option" : {
+
+    },
+    "shuttle.search.option.cancel" : {
+
+    },
+    "shuttle.search.option.ok" : {
+
+    },
     "shuttle.timetable.%@.%@" : {
       "localizations" : {
         "ko" : {

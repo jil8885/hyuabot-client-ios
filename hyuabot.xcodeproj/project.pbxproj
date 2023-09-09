@@ -65,6 +65,7 @@
 		C7E751E02AAB3B9B001FD1B3 /* ShuttleTimetableListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7E751DF2AAB3B9B001FD1B3 /* ShuttleTimetableListViewController.swift */; };
 		C7E751E22AAB3D2B001FD1B3 /* ShuttleTimetableItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7E751E12AAB3D2B001FD1B3 /* ShuttleTimetableItem.swift */; };
 		C7E751E42AAB3E34001FD1B3 /* ShuttleTimetableListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7E751E32AAB3E34001FD1B3 /* ShuttleTimetableListItemView.swift */; };
+		C7E751E62AAC90FA001FD1B3 /* ShuttleTimetableParamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7E751E52AAC90FA001FD1B3 /* ShuttleTimetableParamViewController.swift */; };
 		C7E9F8232AA99DD30064B873 /* ShuttleStop.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7E9F8222AA99DD30064B873 /* ShuttleStop.swift */; };
 		C7E9F8252AA9E6BA0064B873 /* ShuttleCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7E9F8242AA9E6BA0064B873 /* ShuttleCellView.swift */; };
 /* End PBXBuildFile section */
@@ -148,6 +149,7 @@
 		C7E751DF2AAB3B9B001FD1B3 /* ShuttleTimetableListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShuttleTimetableListViewController.swift; sourceTree = "<group>"; };
 		C7E751E12AAB3D2B001FD1B3 /* ShuttleTimetableItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShuttleTimetableItem.swift; sourceTree = "<group>"; };
 		C7E751E32AAB3E34001FD1B3 /* ShuttleTimetableListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShuttleTimetableListItemView.swift; sourceTree = "<group>"; };
+		C7E751E52AAC90FA001FD1B3 /* ShuttleTimetableParamViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShuttleTimetableParamViewController.swift; sourceTree = "<group>"; };
 		C7E9F8222AA99DD30064B873 /* ShuttleStop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShuttleStop.swift; sourceTree = "<group>"; };
 		C7E9F8242AA9E6BA0064B873 /* ShuttleCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShuttleCellView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -363,6 +365,7 @@
 				C7E751DF2AAB3B9B001FD1B3 /* ShuttleTimetableListViewController.swift */,
 				C7E751E12AAB3D2B001FD1B3 /* ShuttleTimetableItem.swift */,
 				C7E751E32AAB3E34001FD1B3 /* ShuttleTimetableListItemView.swift */,
+				C7E751E52AAC90FA001FD1B3 /* ShuttleTimetableParamViewController.swift */,
 			);
 			path = Timetable;
 			sourceTree = "<group>";
@@ -560,6 +563,7 @@
 				C7E751DA2AAB2F90001FD1B3 /* ShuttleTimetableViewController.swift in Sources */,
 				C7E751E02AAB3B9B001FD1B3 /* ShuttleTimetableListViewController.swift in Sources */,
 				A08D945FA4DB5FAC1469A9BD /* ShuttleRealtimeViewController.swift in Sources */,
+				C7E751E62AAC90FA001FD1B3 /* ShuttleTimetableParamViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

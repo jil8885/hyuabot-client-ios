@@ -1,5 +1,5 @@
-query ShuttleTimetableQuery($stop: String!, $tags: [String!]!) {
-    shuttle(stop: [$stop], weekday: [true, false], tag: $tags) {
+query ShuttleTimetableQuery($stop: String!, $tags: [String!]!, $period: [String!]) {
+    shuttle(stop: [$stop], weekday: [true, false], tag: $tags, period: $period) {
         stop {
           stopName, tag {
             tagID,

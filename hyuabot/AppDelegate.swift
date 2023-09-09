@@ -8,6 +8,7 @@
 import UIKit
 import RxSwift
 import QueryAPI
+import Apollo
 
 
 @main
@@ -15,7 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     // Query Data from GraphQL
     let shuttleRealtimeQuery = BehaviorSubject<[ShuttleRealtimeQuery.Data.Shuttle.Stop]>(value: [])
     let shuttleTimetableQuery = BehaviorSubject<[ShuttleTimetableQuery.Data.Shuttle.Stop]>(value: [])
-    
+    let shuttleTimetablePeriod = BehaviorSubject<String?>(value: nil)
     
     // Data formatter
     let showShuttleRemainingTime = BehaviorSubject<Bool>(value: false)
@@ -55,7 +56,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
     }
     
-    func queryShuttleTimetablePage(stopID: String, destination: String) {
+    func queryShuttleTimetablePage(stopID: String, destination: String, period: String? = nil) {
         var tags = [String]()
         switch stopID {
         case "dormitory_o":
@@ -92,12 +93,27 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             tags = []
         }
         
-        Network.shared.apollo.fetch(query: ShuttleTimetableQuery(stop: stopID, tags: tags)) { result in
-            switch result {
-            case .success(let graphQLResult):
-                self.shuttleTimetableQuery.onNext(graphQLResult.data?.shuttle.stop ?? [])
-            case .failure(let error):
-                print(error)
+        if period == nil {
+            Network.shared.apollo.fetch(query: ShuttleTimetableQuery(stop: stopID, tags: tags, period: nil)) { result in
+                switch result {
+                case .success(let graphQLResult):
+                    self.shuttleTimetableQuery.onNext(graphQLResult.data?.shuttle.stop ?? [])
+                    if (graphQLResult.data?.shuttle.params.period.count ?? 0 > 0) {
+                        self.shuttleTimetablePeriod.onNext(graphQLResult.data?.shuttle.params.period[0])
+                    }
+                case .failure(let error):
+                    print(error)
+                }
+            }
+        } else {
+            let periodQuery: GraphQLNullable<[String]> = GraphQLNullable(arrayLiteral: period!)
+            Network.shared.apollo.fetch(query: ShuttleTimetableQuery(stop: stopID, tags: tags, period: periodQuery)) { result in
+                switch result {
+                case .success(let graphQLResult):
+                    self.shuttleTimetableQuery.onNext(graphQLResult.data?.shuttle.stop ?? [])
+                case .failure(let error):
+                    print(error)
+                }
             }
         }
     }
