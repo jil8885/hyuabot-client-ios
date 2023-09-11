@@ -56,6 +56,17 @@
         }
       }
     },
+    "show.stop.info" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "정류장 정보 보기"
+          }
+        }
+      }
+    },
     "shuttle_destination_campus" : {
       "extractionState" : "manual",
       "localizations" : {

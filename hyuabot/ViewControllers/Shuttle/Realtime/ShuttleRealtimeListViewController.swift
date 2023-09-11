@@ -79,6 +79,10 @@ class ShuttleRealtimeListViewController: UIViewController {
         tableView.register(ShuttleRealtimeFooterView.self, forHeaderFooterViewReuseIdentifier: ShuttleRealtimeFooterView.identifier)
         tableView.register(ShuttleEmptyListItemView.self, forCellReuseIdentifier: ShuttleEmptyListItemView.identifier)
         tableView.register(ShuttleRealtimeListItemView.self, forCellReuseIdentifier: ShuttleRealtimeListItemView.identifier)
+        
+        let footerView = ShuttleFooterView(parentView: self.view)
+        footerView.setUpFooterView(stopID: self.stopID)
+        tableView.tableFooterView = footerView
     }
     
     func configureView() {

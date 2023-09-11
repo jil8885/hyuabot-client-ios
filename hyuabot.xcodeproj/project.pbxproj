@@ -54,6 +54,7 @@
 		C7874FC62AAEB01A00BB9EF5 /* BusDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7874FC52AAEB01A00BB9EF5 /* BusDate.swift */; };
 		C7874FC92AAEB04F00BB9EF5 /* BusTimetableListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7874FC82AAEB04F00BB9EF5 /* BusTimetableListViewController.swift */; };
 		C7874FCB2AAECB6100BB9EF5 /* BusTimetableListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7874FCA2AAECB6100BB9EF5 /* BusTimetableListItemView.swift */; };
+		C7874FCD2AAEDAFF00BB9EF5 /* ShuttleFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7874FCC2AAEDAFF00BB9EF5 /* ShuttleFooterView.swift */; };
 		C7CF65372AA490B1001EF16F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7CF65362AA490B1001EF16F /* AppDelegate.swift */; };
 		C7CF65402AA490B2001EF16F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7CF653F2AA490B2001EF16F /* Assets.xcassets */; };
 		C7CF65432AA490B2001EF16F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7CF65412AA490B2001EF16F /* LaunchScreen.storyboard */; };
@@ -148,6 +149,7 @@
 		C7874FC52AAEB01A00BB9EF5 /* BusDate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusDate.swift; sourceTree = "<group>"; };
 		C7874FC82AAEB04F00BB9EF5 /* BusTimetableListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusTimetableListViewController.swift; sourceTree = "<group>"; };
 		C7874FCA2AAECB6100BB9EF5 /* BusTimetableListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusTimetableListItemView.swift; sourceTree = "<group>"; };
+		C7874FCC2AAEDAFF00BB9EF5 /* ShuttleFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShuttleFooterView.swift; sourceTree = "<group>"; };
 		C7CF65332AA490B1001EF16F /* hyuabot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hyuabot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7CF65362AA490B1001EF16F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C7CF653F2AA490B2001EF16F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -232,6 +234,7 @@
 				C7548F9A2AA6AE2800C354A2 /* ShuttleRealtimeListViewController.swift */,
 				C7548F9C2AA6B84C00C354A2 /* ShuttleRealtimeHeaderView.swift */,
 				C736EB642AA8863D005A42F7 /* ShuttleRealtimeFooterView.swift */,
+				C7874FCC2AAEDAFF00BB9EF5 /* ShuttleFooterView.swift */,
 				C736EB662AA88E4B005A42F7 /* ShuttleRealtimeListItemView.swift */,
 				C736EB6B2AA8AA79005A42F7 /* ShuttleEmptyListItemView.swift */,
 				C7E9F8222AA99DD30064B873 /* ShuttleStop.swift */,
@@ -650,6 +653,7 @@
 				C7874FC92AAEB04F00BB9EF5 /* BusTimetableListViewController.swift in Sources */,
 				C7E751E02AAB3B9B001FD1B3 /* ShuttleTimetableListViewController.swift in Sources */,
 				A08D945FA4DB5FAC1469A9BD /* ShuttleRealtimeViewController.swift in Sources */,
+				C7874FCD2AAEDAFF00BB9EF5 /* ShuttleFooterView.swift in Sources */,
 				C7E751E62AAC90FA001FD1B3 /* ShuttleTimetableParamViewController.swift in Sources */,
 				C7E751FC2AAD98FD001FD1B3 /* BusRealtimeFooterView.swift in Sources */,
 			);

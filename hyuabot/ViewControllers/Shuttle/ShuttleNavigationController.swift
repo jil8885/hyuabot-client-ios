@@ -9,6 +9,7 @@ class ShuttleNavigationController: UINavigationController {
         super.viewDidLoad()
         configureNavigationBar()
         subscribeTimetableQueryParams()
+        subscribeStopQueryParams()
     }
     
     // Configure navigation bar
@@ -33,5 +34,20 @@ class ShuttleNavigationController: UINavigationController {
                 }
             })
             .disposed(by: disposeBag)
+    }
+    
+    // Listen stop query params
+    func subscribeStopQueryParams(){
+        appDelegate.shuttleStopQueryParams
+            .subscribe(onNext: {(params) in
+                if (params != nil) {
+                    print(params!)
+//                    let shuttleStopVC = ShuttleStopViewController()
+//                    guard let stopID = params?.stopID else { return }
+//                    let stop = String.localizedShuttleItem(resourceID: String.LocalizationValue(stopID))
+//                    shuttleStopVC.navigationItem.title = String.localizedShuttleItem(resourceID: "shuttle.stop.\(stop)")
+//                    self.pushViewController(shuttleStopVC, animated: true)
+                }
+            }).disposed(by: disposeBag)
     }
 }
