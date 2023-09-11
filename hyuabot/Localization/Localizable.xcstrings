@@ -34,8 +34,27 @@
         }
       }
     },
+    "bus.days.saturdays" : {
+
+    },
+    "bus.days.sundays" : {
+
+    },
+    "bus.days.weekdays" : {
+
+    },
     "bus.realtime" : {
 
+    },
+    "bus.time.format.%@.%@" : {
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "bus.time.format.%1$@.%2$@"
+          }
+        }
+      }
     },
     "bus.type.local" : {
 

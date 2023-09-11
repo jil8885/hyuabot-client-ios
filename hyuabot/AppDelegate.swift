@@ -18,6 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     let shuttleTimetableQuery = BehaviorSubject<[ShuttleTimetableQuery.Data.Shuttle.Stop]>(value: [])
     let shuttleTimetablePeriod = BehaviorSubject<String?>(value: nil)
     let busRealtimeQuery = BehaviorSubject<[BusRealtimeQuery.Data.Bus]>(value: [])
+    let busTimetableQuery = BehaviorSubject<[BusTimetableQuery.Data.Bus]>(value: [])
     
     // Data formatter
     let showShuttleRemainingTime = BehaviorSubject<Bool>(value: false)
@@ -148,6 +149,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             switch result {
             case .success(let graphQLResult):
                 self.busRealtimeQuery.onNext(graphQLResult.data?.bus ?? [])
+            case .failure(let error):
+                print(error)
+            }
+        }
+    }
+    
+    func queryBusTimetablePage(query: [BusRouteStopQuery]) {
+        Network.shared.apollo.fetch(query: BusTimetableQuery(stopList: query)) { result in
+            switch result {
+            case .success(let graphQLResult):
+                self.busTimetableQuery.onNext(graphQLResult.data?.bus ?? [])
             case .failure(let error):
                 print(error)
             }

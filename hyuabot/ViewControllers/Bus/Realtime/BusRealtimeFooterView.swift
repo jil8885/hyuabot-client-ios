@@ -41,6 +41,8 @@ final class BusRealtimeFooterView: UITableViewHeaderFooterView {
         
         if busType == .suwon && sectionIndex == 1 {
             showEntireScheduleButton.isEnabled = false
+        } else {
+            showEntireScheduleButton.isEnabled = true
         }
     }
     

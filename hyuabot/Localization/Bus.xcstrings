@@ -45,6 +45,39 @@
         }
       }
     },
+    "bus.days.saturdays" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "토요일"
+          }
+        }
+      }
+    },
+    "bus.days.sundays" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "일요일"
+          }
+        }
+      }
+    },
+    "bus.days.weekdays" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "평일"
+          }
+        }
+      }
+    },
     "bus.route.10-1.purgio" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -118,6 +151,17 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "110 / 707 / 909번"
+          }
+        }
+      }
+    },
+    "bus.time.format.%@.%@" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$@시 %2$@분"
           }
         }
       }

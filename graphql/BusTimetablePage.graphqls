@@ -1,0 +1,7 @@
+query BusTimetableQuery($stopList: [BusRouteStopQuery!]!) {
+    bus(routeStop: $stopList, weekdays: ["weekdays", "saturday", "sunday"]) {
+      timetable {
+      	weekday, time
+    	}
+    }
+}
