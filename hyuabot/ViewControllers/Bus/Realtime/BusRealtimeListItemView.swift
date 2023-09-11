@@ -89,6 +89,7 @@ class BusRealtimeListItemView: UITableViewCell {
             let timeValue = timetable.time.split(separator: ":")
             let hour = String(timeValue[0])
             let minute = String(timeValue[1])
+            typeLabel.isHidden = false
             typeLabel.text = String.localizedBusItem(resourceID: "bus.arrival.timetable")
             remainingTimeLabel.isHidden = true
             timeLabel.isHidden = false
