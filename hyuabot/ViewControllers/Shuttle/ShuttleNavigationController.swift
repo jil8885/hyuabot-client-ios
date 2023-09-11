@@ -41,12 +41,10 @@ class ShuttleNavigationController: UINavigationController {
         appDelegate.shuttleStopQueryParams
             .subscribe(onNext: {(params) in
                 if (params != nil) {
-                    print(params!)
-//                    let shuttleStopVC = ShuttleStopViewController()
-//                    guard let stopID = params?.stopID else { return }
-//                    let stop = String.localizedShuttleItem(resourceID: String.LocalizationValue(stopID))
-//                    shuttleStopVC.navigationItem.title = String.localizedShuttleItem(resourceID: "shuttle.stop.\(stop)")
-//                    self.pushViewController(shuttleStopVC, animated: true)
+                    let shuttleStopVC = ShuttleStopViewController(shuttleStop: params)
+                    let shuttleStopNC = UINavigationController(rootViewController: shuttleStopVC)
+                    shuttleStopNC.modalPresentationStyle = .automatic
+                    self.present(shuttleStopNC, animated: true, completion: nil)
                 }
             }).disposed(by: disposeBag)
     }

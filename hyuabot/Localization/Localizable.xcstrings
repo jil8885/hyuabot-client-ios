@@ -152,6 +152,16 @@
     "shuttle.days.weekends" : {
 
     },
+    "shuttle.first.last.%@.%@.%@.%@" : {
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "shuttle.first.last.%1$@.%2$@.%3$@.%4$@"
+          }
+        }
+      }
+    },
     "shuttle.realtime" : {
 
     },

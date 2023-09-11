@@ -364,6 +364,17 @@
         }
       }
     },
+    "shuttle.first.last.%@.%@.%@.%@" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$@시 %2$@분 (첫차) / %3$@시 %4$@분 (막차)"
+          }
+        }
+      }
+    },
     "shuttle.search.option" : {
       "extractionState" : "manual",
       "localizations" : {

@@ -55,6 +55,9 @@
 		C7874FC92AAEB04F00BB9EF5 /* BusTimetableListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7874FC82AAEB04F00BB9EF5 /* BusTimetableListViewController.swift */; };
 		C7874FCB2AAECB6100BB9EF5 /* BusTimetableListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7874FCA2AAECB6100BB9EF5 /* BusTimetableListItemView.swift */; };
 		C7874FCD2AAEDAFF00BB9EF5 /* ShuttleFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7874FCC2AAEDAFF00BB9EF5 /* ShuttleFooterView.swift */; };
+		C7874FD02AAEE21000BB9EF5 /* ShuttleStopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7874FCF2AAEE21000BB9EF5 /* ShuttleStopViewController.swift */; };
+		C7874FD52AAF0B2500BB9EF5 /* ShuttleStopTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7874FD42AAF0B2500BB9EF5 /* ShuttleStopTableCell.swift */; };
+		C7874FD72AAF0C7800BB9EF5 /* ShuttleFirstLastItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7874FD62AAF0C7800BB9EF5 /* ShuttleFirstLastItem.swift */; };
 		C7CF65372AA490B1001EF16F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7CF65362AA490B1001EF16F /* AppDelegate.swift */; };
 		C7CF65402AA490B2001EF16F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7CF653F2AA490B2001EF16F /* Assets.xcassets */; };
 		C7CF65432AA490B2001EF16F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7CF65412AA490B2001EF16F /* LaunchScreen.storyboard */; };
@@ -150,6 +153,9 @@
 		C7874FC82AAEB04F00BB9EF5 /* BusTimetableListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusTimetableListViewController.swift; sourceTree = "<group>"; };
 		C7874FCA2AAECB6100BB9EF5 /* BusTimetableListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusTimetableListItemView.swift; sourceTree = "<group>"; };
 		C7874FCC2AAEDAFF00BB9EF5 /* ShuttleFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShuttleFooterView.swift; sourceTree = "<group>"; };
+		C7874FCF2AAEE21000BB9EF5 /* ShuttleStopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShuttleStopViewController.swift; sourceTree = "<group>"; };
+		C7874FD42AAF0B2500BB9EF5 /* ShuttleStopTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShuttleStopTableCell.swift; sourceTree = "<group>"; };
+		C7874FD62AAF0C7800BB9EF5 /* ShuttleFirstLastItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShuttleFirstLastItem.swift; sourceTree = "<group>"; };
 		C7CF65332AA490B1001EF16F /* hyuabot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hyuabot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7CF65362AA490B1001EF16F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C7CF653F2AA490B2001EF16F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -294,6 +300,7 @@
 		A08D9D7BE982452A59D86F45 /* Shuttle */ = {
 			isa = PBXGroup;
 			children = (
+				C7874FCE2AAEE1FB00BB9EF5 /* Stop */,
 				C7E9F8262AA9F92D0064B873 /* Timetable */,
 				A08D94DFA66F21B4AD9F19A3 /* Realtime */,
 				C7548F862AA5A86900C354A2 /* ShuttleNavigationController.swift */,
@@ -347,6 +354,16 @@
 				C7874FCA2AAECB6100BB9EF5 /* BusTimetableListItemView.swift */,
 			);
 			path = Timetable;
+			sourceTree = "<group>";
+		};
+		C7874FCE2AAEE1FB00BB9EF5 /* Stop */ = {
+			isa = PBXGroup;
+			children = (
+				C7874FCF2AAEE21000BB9EF5 /* ShuttleStopViewController.swift */,
+				C7874FD42AAF0B2500BB9EF5 /* ShuttleStopTableCell.swift */,
+				C7874FD62AAF0C7800BB9EF5 /* ShuttleFirstLastItem.swift */,
+			);
+			path = Stop;
 			sourceTree = "<group>";
 		};
 		C7CF652A2AA490B1001EF16F = {
@@ -631,6 +648,7 @@
 				C7E751EB2AAD8BB4001FD1B3 /* BusRealtimeViewController.swift in Sources */,
 				C7DD8F072AAAED36006958D7 /* ShuttleTimetableQueryParams.swift in Sources */,
 				C7548F952AA5F0E900C354A2 /* PagedCollectionViewCell.swift in Sources */,
+				C7874FD72AAF0C7800BB9EF5 /* ShuttleFirstLastItem.swift in Sources */,
 				C7E751FA2AAD98EE001FD1B3 /* BusRealtimeHeaderView.swift in Sources */,
 				C7E751F62AAD95E2001FD1B3 /* BusRealtimeListViewController.swift in Sources */,
 				C7548F9B2AA6AE2800C354A2 /* ShuttleRealtimeListViewController.swift in Sources */,
@@ -638,6 +656,7 @@
 				C736EB602AA87AD4005A42F7 /* Network.swift in Sources */,
 				C7E9F8252AA9E6BA0064B873 /* ShuttleCellView.swift in Sources */,
 				C7548F9D2AA6B84C00C354A2 /* ShuttleRealtimeHeaderView.swift in Sources */,
+				C7874FD52AAF0B2500BB9EF5 /* ShuttleStopTableCell.swift in Sources */,
 				C7548F8F2AA5E7B800C354A2 /* TabbedView.swift in Sources */,
 				C736EB672AA88E4B005A42F7 /* ShuttleRealtimeListItemView.swift in Sources */,
 				C7E752002AADAD72001FD1B3 /* BusRealtimeListItemView.swift in Sources */,
@@ -646,6 +665,7 @@
 				C736EB6C2AA8AA79005A42F7 /* ShuttleEmptyListItemView.swift in Sources */,
 				C736EB6A2AA8A883005A42F7 /* ShuttleArrivalItem.swift in Sources */,
 				C7548F872AA5A86900C354A2 /* ShuttleNavigationController.swift in Sources */,
+				C7874FD02AAEE21000BB9EF5 /* ShuttleStopViewController.swift in Sources */,
 				C7E751E22AAB3D2B001FD1B3 /* ShuttleTimetableItem.swift in Sources */,
 				A08D9B3CC14B7CB1B316B2D4 /* CustomFont.swift in Sources */,
 				C7874FCB2AAECB6100BB9EF5 /* BusTimetableListItemView.swift in Sources */,

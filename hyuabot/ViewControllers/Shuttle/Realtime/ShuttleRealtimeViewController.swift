@@ -10,9 +10,9 @@ class ShuttleRealtimeViewController: UIViewController, CLLocationManagerDelegate
     let stopLocation = [
         CLLocation(latitude: 37.29339607529377, longitude: 126.83630604103446),
         CLLocation(latitude:37.29875417910844, longitude: 126.83784054072336),
-        CLLocation(latitude:37.308494476826155, longitude: 126.85310236423418),
-        CLLocation(latitude:37.3147818, longitude: 126.8397399),
+        CLLocation(latitude:37.3096539, longitude: 126.8520997),
         CLLocation(latitude:37.31945164682341, longitude: 126.8455453372041),
+        CLLocation(latitude:37.3147818, longitude: 126.8397399),
         CLLocation(latitude:37.29869328231496, longitude: 126.8377767466817),
     ]
     
