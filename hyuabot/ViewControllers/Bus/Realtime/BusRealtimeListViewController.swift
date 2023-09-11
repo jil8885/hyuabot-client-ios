@@ -69,13 +69,13 @@ class BusRealtimeListViewController: UIViewController {
         appDelegate.busRealtimeQuery.subscribe(onNext: { busRealtime in
             var section1List: [BusArrivalItem] = []
             var section1RealtimeList: [BusRealtimeArrivalItem] = []
-            var section1TimetableList: [BusRealtimeQuery.Data.Bus.Timetable] = []
+            var section1TimetableList: [BusTimetableArrivalItem] = []
             var section2List: [BusArrivalItem] = []
             var section2RealtimeList: [BusRealtimeArrivalItem] = []
-            var section2TimetableList: [BusRealtimeQuery.Data.Bus.Timetable] = []
+            var section2TimetableList: [BusTimetableArrivalItem] = []
             var section3List: [BusArrivalItem] = []
             var section3RealtimeList: [BusRealtimeArrivalItem] = []
-            var section3TimetableList: [BusRealtimeQuery.Data.Bus.Timetable] = []
+            var section3TimetableList: [BusTimetableArrivalItem] = []
             
             if self.busType == .local {
                 busRealtime.filter({ $0.routeID == 216000068 && $0.stopID == 216000138 }).forEach { bus in
@@ -83,7 +83,11 @@ class BusRealtimeListViewController: UIViewController {
                         section1RealtimeList.append(BusRealtimeArrivalItem(routeName: bus.routeName, realtime: realtime))
                     }
                     bus.timetable.forEach { timetable in
-                        section1TimetableList.append(timetable)
+                        if timetable.time.starts(with: "00:") {
+                            section1TimetableList.append(BusTimetableArrivalItem(time: "24" + timetable.time.dropFirst(2)))
+                        } else {
+                            section1TimetableList.append(BusTimetableArrivalItem(time: timetable.time))
+                        }
                     }
                 }
                 busRealtime.filter({ $0.routeID == 216000068 && $0.stopID == 216000379 }).forEach { bus in
@@ -91,7 +95,11 @@ class BusRealtimeListViewController: UIViewController {
                         section2RealtimeList.append(BusRealtimeArrivalItem(routeName: bus.routeName, realtime: realtime))
                     }
                     bus.timetable.forEach { timetable in
-                        section2TimetableList.append(timetable)
+                        if timetable.time.starts(with: "00:") {
+                            section2TimetableList.append(BusTimetableArrivalItem(time: "24" + timetable.time.dropFirst(2)))
+                        } else {
+                            section2TimetableList.append(BusTimetableArrivalItem(time: timetable.time))
+                        }
                     }
                 }
             } else if self.busType == .seoul {
@@ -100,7 +108,11 @@ class BusRealtimeListViewController: UIViewController {
                         section1RealtimeList.append(BusRealtimeArrivalItem(routeName: bus.routeName, realtime: realtime))
                     }
                     bus.timetable.forEach { timetable in
-                        section1TimetableList.append(timetable)
+                        if timetable.time.starts(with: "00:") {
+                            section1TimetableList.append(BusTimetableArrivalItem(time: "24" + timetable.time.dropFirst(2)))
+                        } else {
+                            section1TimetableList.append(BusTimetableArrivalItem(time: timetable.time))
+                        }
                     }
                 }
                 busRealtime.filter({ ($0.routeID == 216000026 || $0.routeID == 216000096 ) && $0.stopID == 216000719 }).forEach { bus in
@@ -108,7 +120,11 @@ class BusRealtimeListViewController: UIViewController {
                         section2RealtimeList.append(BusRealtimeArrivalItem(routeName: bus.routeName, realtime: realtime))
                     }
                     bus.timetable.forEach { timetable in
-                        section2TimetableList.append(timetable)
+                        if timetable.time.starts(with: "00:") {
+                            section2TimetableList.append(BusTimetableArrivalItem(time: "24" + timetable.time.dropFirst(2)))
+                        } else {
+                            section2TimetableList.append(BusTimetableArrivalItem(time: timetable.time))
+                        }
                     }
                 }
                 busRealtime.filter({ $0.routeID == 216000043 && $0.stopID == 216000719 }).forEach { bus in
@@ -116,7 +132,11 @@ class BusRealtimeListViewController: UIViewController {
                         section3RealtimeList.append(BusRealtimeArrivalItem(routeName: bus.routeName, realtime: realtime))
                     }
                     bus.timetable.forEach { timetable in
-                        section3TimetableList.append(timetable)
+                        if timetable.time.starts(with: "00:") {
+                            section3TimetableList.append(BusTimetableArrivalItem(time: "24" + timetable.time.dropFirst(2)))
+                        } else {
+                            section3TimetableList.append(BusTimetableArrivalItem(time: timetable.time))
+                        }
                     }
                 }
             } else if self.busType == .suwon {
@@ -125,7 +145,11 @@ class BusRealtimeListViewController: UIViewController {
                         section1RealtimeList.append(BusRealtimeArrivalItem(routeName: bus.routeName, realtime: realtime))
                     }
                     bus.timetable.forEach { timetable in
-                        section1TimetableList.append(timetable)
+                        if timetable.time.starts(with: "00:") {
+                            section1TimetableList.append(BusTimetableArrivalItem(time: "24" + timetable.time.dropFirst(2)))
+                        } else {
+                            section1TimetableList.append(BusTimetableArrivalItem(time: timetable.time))
+                        }
                     }
                 }
                 busRealtime.filter({ $0.stopID == 216000070 }).forEach { bus in
@@ -133,7 +157,11 @@ class BusRealtimeListViewController: UIViewController {
                         section2RealtimeList.append(BusRealtimeArrivalItem(routeName: bus.routeName, realtime: realtime))
                     }
                     bus.timetable.forEach { timetable in
-                        section2TimetableList.append(timetable)
+                        if timetable.time.starts(with: "00:") {
+                            section2TimetableList.append(BusTimetableArrivalItem(time: "24" + timetable.time.dropFirst(2)))
+                        } else {
+                            section2TimetableList.append(BusTimetableArrivalItem(time: timetable.time))
+                        }
                     }
                 }
             }
