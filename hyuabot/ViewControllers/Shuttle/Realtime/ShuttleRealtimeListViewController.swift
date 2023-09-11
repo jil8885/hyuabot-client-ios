@@ -252,7 +252,7 @@ extension ShuttleRealtimeListViewController: UITableViewDataSource {
     
     // Section header height
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return 60
+        return 40
     }
     
     // Number of sections
