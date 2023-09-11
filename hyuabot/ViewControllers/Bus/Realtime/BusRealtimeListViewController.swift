@@ -211,6 +211,7 @@ extension BusRealtimeListViewController: UITableViewDelegate {
         guard let footerView = tableView.dequeueReusableHeaderFooterView(withIdentifier: BusRealtimeFooterView.identifier) as? BusRealtimeFooterView else {
             return UIView()
         }
+        footerView.setUpFooterView(busType: self.busType, sectionIndex: section)
         return footerView
     }
 }

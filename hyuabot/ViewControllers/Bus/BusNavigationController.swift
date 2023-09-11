@@ -19,19 +19,26 @@ class BusNavigationController: UINavigationController {
     
     // Listen timetable query params
     func subscribeTimetableQueryParams(){
-//        appDelegate.shuttleTimetableQueryParams
-//            .subscribe(onNext: {(params) in
-//                if (params != nil) {
-//                    let shuttleTimetableVC = ShuttleTimetableViewController()
-//                    guard let stopID = params?.stopID else { return }
-//                    guard let destinationID = params?.destination else { return }
-//                    let destinationKey = "\(destinationID)_shorten"
-//                    let stop = String.localizedShuttleItem(resourceID: String.LocalizationValue(stopID))
-//                    let destination = String.localizedShuttleItem(resourceID: String.LocalizationValue(destinationKey))
-//                    shuttleTimetableVC.navigationItem.title = String.localizedShuttleItem(resourceID: "shuttle.timetable.\(stop).\(destination)")
-//                    self.pushViewController(shuttleTimetableVC, animated: true)
-//                }
-//            })
-//            .disposed(by: disposeBag)
+        appDelegate.busTimetableQueryParams
+            .subscribe(onNext: {(params) in
+                if (params != nil) {
+                    let busTimetableVC = BusTimetableViewController()
+                    self.pushViewController(busTimetableVC, animated: true)
+                    
+                    var sectionList: [String] = []
+                    guard let busType = params?.busType else { return }
+                    switch busType {
+                    case .local:
+                        sectionList = ["bus.route.10-1.sangnoksu", "bus.route.10-1.purgio"]
+                    case .seoul:
+                        sectionList = ["bus.route.3102", "bus.route.3100", "bus.route.3101"]
+                    case .suwon:
+                        sectionList = ["bus.route.707-1", "bus.route.suwon"]
+                    }
+                    busTimetableVC.navigationItem.title = String.localizedBusItem(resourceID: String.LocalizationValue(sectionList[params!.sectionIndex]))
+                    
+                }
+            })
+            .disposed(by: disposeBag)
     }
 }

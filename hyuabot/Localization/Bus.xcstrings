@@ -165,6 +165,17 @@
           }
         }
       }
+    },
+    "show_entire_schedule" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "전체 시간표 보기"
+          }
+        }
+      }
     }
   },
   "version" : "1.0"

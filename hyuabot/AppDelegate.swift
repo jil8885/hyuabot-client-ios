@@ -24,6 +24,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     // Query to move timetable page
     let shuttleTimetableQueryParams = BehaviorSubject<ShuttleTimetableQueryParams?>(value: nil)
+    let busTimetableQueryParams = BehaviorSubject<BusTimetableQueryParams?>(value: nil)
     
     
     let timeFormatter: DateFormatter = {

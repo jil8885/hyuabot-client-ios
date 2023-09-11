@@ -49,6 +49,8 @@
 		C7548F9B2AA6AE2800C354A2 /* ShuttleRealtimeListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7548F9A2AA6AE2800C354A2 /* ShuttleRealtimeListViewController.swift */; };
 		C7548F9D2AA6B84C00C354A2 /* ShuttleRealtimeHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7548F9C2AA6B84C00C354A2 /* ShuttleRealtimeHeaderView.swift */; };
 		C7548FA02AA6BB3D00C354A2 /* Apollo in Frameworks */ = {isa = PBXBuildFile; productRef = C7548F9F2AA6BB3D00C354A2 /* Apollo */; };
+		C7874FC22AAEAC4200BB9EF5 /* BusTimetableQueryParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7874FC12AAEAC4200BB9EF5 /* BusTimetableQueryParams.swift */; };
+		C7874FC42AAEAC9500BB9EF5 /* BusTimetableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7874FC32AAEAC9500BB9EF5 /* BusTimetableViewController.swift */; };
 		C7CF65372AA490B1001EF16F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7CF65362AA490B1001EF16F /* AppDelegate.swift */; };
 		C7CF65402AA490B2001EF16F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7CF653F2AA490B2001EF16F /* Assets.xcassets */; };
 		C7CF65432AA490B2001EF16F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7CF65412AA490B2001EF16F /* LaunchScreen.storyboard */; };
@@ -138,6 +140,8 @@
 		C7548F982AA6031500C354A2 /* Shuttle.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Shuttle.xcstrings; sourceTree = "<group>"; };
 		C7548F9A2AA6AE2800C354A2 /* ShuttleRealtimeListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShuttleRealtimeListViewController.swift; sourceTree = "<group>"; };
 		C7548F9C2AA6B84C00C354A2 /* ShuttleRealtimeHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShuttleRealtimeHeaderView.swift; sourceTree = "<group>"; };
+		C7874FC12AAEAC4200BB9EF5 /* BusTimetableQueryParams.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusTimetableQueryParams.swift; sourceTree = "<group>"; };
+		C7874FC32AAEAC9500BB9EF5 /* BusTimetableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusTimetableViewController.swift; sourceTree = "<group>"; };
 		C7CF65332AA490B1001EF16F /* hyuabot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hyuabot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7CF65362AA490B1001EF16F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C7CF653F2AA490B2001EF16F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -324,6 +328,15 @@
 			path = query;
 			sourceTree = "<group>";
 		};
+		C7874FC02AAEAC3300BB9EF5 /* Timetable */ = {
+			isa = PBXGroup;
+			children = (
+				C7874FC12AAEAC4200BB9EF5 /* BusTimetableQueryParams.swift */,
+				C7874FC32AAEAC9500BB9EF5 /* BusTimetableViewController.swift */,
+			);
+			path = Timetable;
+			sourceTree = "<group>";
+		};
 		C7CF652A2AA490B1001EF16F = {
 			isa = PBXGroup;
 			children = (
@@ -383,6 +396,7 @@
 		C7E751E72AAD8B25001FD1B3 /* Bus */ = {
 			isa = PBXGroup;
 			children = (
+				C7874FC02AAEAC3300BB9EF5 /* Timetable */,
 				C7E751EC2AAD8BCF001FD1B3 /* Realtime */,
 				C7E751E82AAD8B3C001FD1B3 /* BusNavigationController.swift */,
 			);
@@ -588,9 +602,11 @@
 				C7DD8F032AAAD66B006958D7 /* Toast.swift in Sources */,
 				C7CF65672AA57F0D001EF16F /* SceneDelegate.swift in Sources */,
 				C736EB652AA8863D005A42F7 /* ShuttleRealtimeFooterView.swift in Sources */,
+				C7874FC22AAEAC4200BB9EF5 /* BusTimetableQueryParams.swift in Sources */,
 				C7548F932AA5EF4400C354A2 /* PagedView.swift in Sources */,
 				C7548F852AA5A72400C354A2 /* Localization.swift in Sources */,
 				C7E751FE2AAD9BF2001FD1B3 /* BusEmptyListView.swift in Sources */,
+				C7874FC42AAEAC9500BB9EF5 /* BusTimetableViewController.swift in Sources */,
 				C7E9F8232AA99DD30064B873 /* ShuttleStop.swift in Sources */,
 				C7548F892AA5B7EE00C354A2 /* StatusBar.swift in Sources */,
 				C7E751F42AAD95B8001FD1B3 /* BusType.swift in Sources */,

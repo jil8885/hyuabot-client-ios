@@ -2,8 +2,9 @@ import UIKit
 
 final class BusRealtimeFooterView: UITableViewHeaderFooterView {
     private let appDelegate = UIApplication.shared.delegate as! AppDelegate
-    private var stopID: String?
-    private var destination: String?
+    private var busType: BusType?
+    private var sectionIndex: Int?
+    
     
     static let identifier = "BusRealtimeFooterView"
     private let showEntireScheduleButton: UIButton = {
@@ -23,26 +24,27 @@ final class BusRealtimeFooterView: UITableViewHeaderFooterView {
         fatalError("init(coder:) has not been implemented")
     }
     
-    func setUpFooterView(stopID: String, destination: String){
-        showEntireScheduleButton.titleLabel?.text = String.localizedShuttleItem(resourceID: "show_entire_schedule")
+    func setUpFooterView(busType: BusType, sectionIndex: Int){
+        showEntireScheduleButton.titleLabel?.text = String.localizedBusItem(resourceID: "show_entire_schedule")
         showEntireScheduleButton.translatesAutoresizingMaskIntoConstraints = false
         showEntireScheduleButton.addTarget(self, action: #selector(clickShowEntireScheduleButton), for: .touchUpInside)
+        self.busType = busType
+        self.sectionIndex = sectionIndex
         self.contentView.addSubview(showEntireScheduleButton)
         self.contentView.backgroundColor = .systemBackground
-        self.stopID = stopID
-        self.destination = destination
         NSLayoutConstraint.activate([
             showEntireScheduleButton.topAnchor.constraint(equalTo: self.contentView.topAnchor),
             showEntireScheduleButton.leftAnchor.constraint(equalTo: self.contentView.leftAnchor),
             showEntireScheduleButton.rightAnchor.constraint(equalTo: self.contentView.rightAnchor),
             showEntireScheduleButton.bottomAnchor.constraint(equalTo: self.contentView.bottomAnchor)
         ])
+        
+        if busType == .suwon && sectionIndex == 1 {
+            showEntireScheduleButton.isEnabled = false
+        }
     }
     
     @objc func clickShowEntireScheduleButton(sender: UIButton){
-        guard let stopID = self.stopID else { return }
-        guard let destination = self.destination else { return }
-        
-        appDelegate.shuttleTimetableQueryParams.onNext(ShuttleTimetableQueryParams(stopID: stopID, destination: destination))
+        appDelegate.busTimetableQueryParams.onNext(BusTimetableQueryParams(busType: self.busType!, sectionIndex: self.sectionIndex!))
     }
 }
