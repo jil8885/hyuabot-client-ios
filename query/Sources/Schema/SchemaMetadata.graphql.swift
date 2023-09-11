@@ -29,6 +29,9 @@ public enum SchemaMetadata: ApolloAPI.SchemaMetadata {
     case "ShuttleArrivalTimeItem": return QueryAPI.Objects.ShuttleArrivalTimeItem
     case "ShuttleQueryItem": return QueryAPI.Objects.ShuttleQueryItem
     case "ShuttleArrivalOtherStopItem": return QueryAPI.Objects.ShuttleArrivalOtherStopItem
+    case "BusRouteStopItem": return QueryAPI.Objects.BusRouteStopItem
+    case "BusRealtime": return QueryAPI.Objects.BusRealtime
+    case "BusTimetable": return QueryAPI.Objects.BusTimetable
     default: return nil
     }
   }

@@ -1,0 +1,9 @@
+query BusRealtimeQuery($stopList: [BusRouteStopQuery!]!, $date: Date, $start: Time) {
+    bus(routeStop: $stopList, date: $date, start: $start) {
+      stopID, stopName, routeID, routeName realtime {
+        remainingStop, remainingTime, remainingSeat
+      }, timetable {
+      	weekday, time
+    	}
+    }
+}

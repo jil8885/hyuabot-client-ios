@@ -10,4 +10,8 @@ extension String {
     static func localizedItem(resourceID: String.LocalizationValue) -> String {
         return String(localized: resourceID, table: "Localizable")
     }
+    
+    static func localizedBusItem(resourceID: String.LocalizationValue) -> String {
+        return String(localized: resourceID, table: "Bus")
+    }
 }

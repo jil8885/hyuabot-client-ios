@@ -1,6 +1,51 @@
 {
   "sourceLanguage" : "ko",
   "strings" : {
+    "bus.arrival.realtime.no.seat.%@.%@" : {
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "bus.arrival.realtime.no.seat.%1$@.%2$@"
+          }
+        }
+      }
+    },
+    "bus.arrival.realtime.seat.%@.%@.%@" : {
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "bus.arrival.realtime.seat.%1$@.%2$@.%3$@"
+          }
+        }
+      }
+    },
+    "bus.arrival.timetable" : {
+
+    },
+    "bus.arrival.timetable.%@.%@" : {
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "bus.arrival.timetable.%1$@.%2$@"
+          }
+        }
+      }
+    },
+    "bus.realtime" : {
+
+    },
+    "bus.type.local" : {
+
+    },
+    "bus.type.seoul" : {
+
+    },
+    "bus.type.suwon" : {
+
+    },
     "dormitory_o" : {
 
     },
@@ -20,6 +65,9 @@
           }
         }
       }
+    },
+    "out.of.service" : {
+
     },
     "show_entire_schedule" : {
 

@@ -17,6 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     let shuttleRealtimeQuery = BehaviorSubject<[ShuttleRealtimeQuery.Data.Shuttle.Stop]>(value: [])
     let shuttleTimetableQuery = BehaviorSubject<[ShuttleTimetableQuery.Data.Shuttle.Stop]>(value: [])
     let shuttleTimetablePeriod = BehaviorSubject<String?>(value: nil)
+    let busRealtimeQuery = BehaviorSubject<[BusRealtimeQuery.Data.Bus]>(value: [])
     
     // Data formatter
     let showShuttleRemainingTime = BehaviorSubject<Bool>(value: false)
@@ -25,9 +26,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     let shuttleTimetableQueryParams = BehaviorSubject<ShuttleTimetableQueryParams?>(value: nil)
     
     
-    let dateFormatter: DateFormatter = {
+    let timeFormatter: DateFormatter = {
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "HH:mm:ss"
+        dateFormatter.timeZone = TimeZone(identifier: "Asia/Seoul")
+        dateFormatter.locale = Locale(identifier: "ko_KR")
+        return dateFormatter
+    }()
+    
+    let dateFormatter: DateFormatter = {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "yyyy-MM-dd"
         dateFormatter.timeZone = TimeZone(identifier: "Asia/Seoul")
         dateFormatter.locale = Locale(identifier: "ko_KR")
         return dateFormatter
@@ -45,7 +54,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     func queryShuttleRealtimePage() {
-        let startTime = dateFormatter.string(from: Date())
+        let startTime = timeFormatter.string(from: Date())
         Network.shared.apollo.fetch(query: ShuttleRealtimeQuery(start: startTime)) { result in
             switch result {
             case .success(let graphQLResult):
@@ -117,6 +126,33 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             }
         }
     }
+    
+    func queryBusRealtimePage() {
+        let stops: [BusRouteStopQuery] = [
+            BusRouteStopQuery(stop: 216000138, route: 216000068),
+            BusRouteStopQuery(stop: 216000379, route: 216000068),
+            BusRouteStopQuery(stop: 216000379, route: 216000061),
+            BusRouteStopQuery(stop: 216000719, route: 216000026),
+            BusRouteStopQuery(stop: 216000719, route: 216000043),
+            BusRouteStopQuery(stop: 216000719, route: 216000096),
+            BusRouteStopQuery(stop: 216000719, route: 216000070),
+            BusRouteStopQuery(stop: 216000070, route: 217000014),
+            BusRouteStopQuery(stop: 216000070, route: 216000001),
+          BusRouteStopQuery(stop: 216000070, route: 200000015),
+        ]
+        let now = Foundation.Date()
+        let date: GraphQLNullable<String> = GraphQLNullable(stringLiteral: dateFormatter.string(from: now))
+        let time: GraphQLNullable<String> = GraphQLNullable(stringLiteral: timeFormatter.string(from: now))
+        Network.shared.apollo.fetch(query: BusRealtimeQuery(stopList: stops, date: date, start: time)) { result in
+            switch result {
+            case .success(let graphQLResult):
+                self.busRealtimeQuery.onNext(graphQLResult.data?.bus ?? [])
+            case .failure(let error):
+                print(error)
+            }
+        }
+    }
+    
     
     func toggleShowShuttleRemainingTime() {
         if let value = try? showShuttleRemainingTime.value() {

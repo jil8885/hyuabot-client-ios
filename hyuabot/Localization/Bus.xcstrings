@@ -1,0 +1,171 @@
+{
+  "sourceLanguage" : "ko",
+  "strings" : {
+    "bus.arrival.realtime.no.seat.%@.%@" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$@ 분 후 도착 (%2$@전)"
+          }
+        }
+      }
+    },
+    "bus.arrival.realtime.seat.%@.%@.%@" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$@ 분 후 도착 (%2$@전, %3$@석 남음)"
+          }
+        }
+      }
+    },
+    "bus.arrival.timetable" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "종점 대기"
+          }
+        }
+      }
+    },
+    "bus.arrival.timetable.%@.%@" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$@시 %2$@분 출발"
+          }
+        }
+      }
+    },
+    "bus.route.10-1.purgio" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "10-1번 (한양대컨벤션센터)"
+          }
+        }
+      }
+    },
+    "bus.route.10-1.sangnoksu" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "10-1번 (상록수역 3번출구)"
+          }
+        }
+      }
+    },
+    "bus.route.707-1" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "707-1번 (한양대정문)"
+          }
+        }
+      }
+    },
+    "bus.route.3100" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "3100번 (한양대정문)"
+          }
+        }
+      }
+    },
+    "bus.route.3101" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "3101번 (한양대정문)"
+          }
+        }
+      }
+    },
+    "bus.route.3102" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "3102번 (한양대컨벤션센터)"
+          }
+        }
+      }
+    },
+    "bus.route.suwon" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "110 / 707 / 909번"
+          }
+        }
+      }
+    },
+    "bus.type.local" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "시내버스"
+          }
+        }
+      }
+    },
+    "bus.type.seoul" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "강남역"
+          }
+        }
+      }
+    },
+    "bus.type.suwon" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "수원역"
+          }
+        }
+      }
+    },
+    "out.of.service" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "운행 종료"
+          }
+        }
+      }
+    }
+  },
+  "version" : "1.0"
+}
