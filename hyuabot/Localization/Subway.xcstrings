@@ -1,0 +1,248 @@
+{
+  "sourceLanguage" : "ko",
+  "strings" : {
+    "out.of.service" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "운행 종료"
+          }
+        }
+      }
+    },
+    "show.entire.schedule" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "전체 시간표 보기"
+          }
+        }
+      }
+    },
+    "skyblue" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "4호선"
+          }
+        }
+      }
+    },
+    "subway.arrival.destination.K210" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "왕십리"
+          }
+        }
+      }
+    },
+    "subway.arrival.destination.K233" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "죽전"
+          }
+        }
+      }
+    },
+    "subway.arrival.destination.K246" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "고색"
+          }
+        }
+      }
+    },
+    "subway.arrival.destination.K258" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "오이도"
+          }
+        }
+      }
+    },
+    "subway.arrival.destination.K272" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "인천"
+          }
+        }
+      }
+    },
+    "subway.arrival.destination.K409" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "당고개"
+          }
+        }
+      }
+    },
+    "subway.arrival.destination.K411" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "노원"
+          }
+        }
+      }
+    },
+    "subway.arrival.destination.K453" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "안산"
+          }
+        }
+      }
+    },
+    "subway.arrival.destination.K456" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "오이도"
+          }
+        }
+      }
+    },
+    "subway.arrival.information.%@.%@" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%2$@전 역 도착 (%1$@ 분)"
+          }
+        }
+      }
+    },
+    "subway.arrival.timetable.%@.%@" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$@시 %2$@분 도착 예정"
+          }
+        }
+      }
+    },
+    "subway.skyblue.down" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "4호선 (안산, 오이도)"
+          }
+        }
+      }
+    },
+    "subway.skyblue.up" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "4호선 (사당, 당고개)"
+          }
+        }
+      }
+    },
+    "subway.transfer.down" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "환승 (한대앞 ➝ 인천)"
+          }
+        }
+      }
+    },
+    "subway.transfer.up" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "환승 (인천 ➝ 한대앞)"
+          }
+        }
+      }
+    },
+    "subway.yellow.down" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "수인분당선 (오이도, 인천)"
+          }
+        }
+      }
+    },
+    "subway.yellow.up" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "수인분당선 (수원, 왕십리)"
+          }
+        }
+      }
+    },
+    "transfer" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "4호선 ⇄ 수인선"
+          }
+        }
+      }
+    },
+    "yellow" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "수인분당선"
+          }
+        }
+      }
+    }
+  },
+  "version" : "1.0"
+}

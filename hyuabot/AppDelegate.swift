@@ -19,6 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     let shuttleTimetablePeriod = BehaviorSubject<String?>(value: nil)
     let busRealtimeQuery = BehaviorSubject<[BusRealtimeQuery.Data.Bus]>(value: [])
     let busTimetableQuery = BehaviorSubject<[BusTimetableQuery.Data.Bus]>(value: [])
+    let subwayRealtimeQuery = BehaviorSubject<[SubwayRealtimeQuery.Data.Subway]>(value: [])
     
     // Data formatter
     let showShuttleRemainingTime = BehaviorSubject<Bool>(value: false)
@@ -27,6 +28,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     let shuttleTimetableQueryParams = BehaviorSubject<ShuttleTimetableQueryParams?>(value: nil)
     let shuttleStopQueryParams = BehaviorSubject<ShuttleStop?>(value: nil)
     let busTimetableQueryParams = BehaviorSubject<BusTimetableQueryParams?>(value: nil)
+    let subwayTimetableQueryParams = BehaviorSubject<SubwayTimetableQueryParams?>(value: nil)
     
     
     let timeFormatter: DateFormatter = {
@@ -161,6 +163,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             switch result {
             case .success(let graphQLResult):
                 self.busTimetableQuery.onNext(graphQLResult.data?.bus ?? [])
+            case .failure(let error):
+                print(error)
+            }
+        }
+    }
+    
+    func querySubwayRealtimePage() {
+        Network.shared.apollo.fetch(query: SubwayRealtimeQuery(station: ["K251", "K449", "K258", "K456"], start: "00:00")) {
+            result in
+            switch result {
+            case .success(let graphQLResult):
+                self.subwayRealtimeQuery.onNext(graphQLResult.data?.subway ?? [])
             case .failure(let error):
                 print(error)
             }

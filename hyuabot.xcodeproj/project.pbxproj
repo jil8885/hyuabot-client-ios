@@ -58,6 +58,17 @@
 		C7874FD02AAEE21000BB9EF5 /* ShuttleStopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7874FCF2AAEE21000BB9EF5 /* ShuttleStopViewController.swift */; };
 		C7874FD52AAF0B2500BB9EF5 /* ShuttleStopTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7874FD42AAF0B2500BB9EF5 /* ShuttleStopTableCell.swift */; };
 		C7874FD72AAF0C7800BB9EF5 /* ShuttleFirstLastItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7874FD62AAF0C7800BB9EF5 /* ShuttleFirstLastItem.swift */; };
+		C7874FDA2AAF212C00BB9EF5 /* SubwayNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7874FD92AAF212C00BB9EF5 /* SubwayNavigationController.swift */; };
+		C7874FDD2AAF217200BB9EF5 /* SubwayRealtimeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7874FDC2AAF217200BB9EF5 /* SubwayRealtimeViewController.swift */; };
+		C7874FDF2AAF223D00BB9EF5 /* Subway.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = C7874FDE2AAF223D00BB9EF5 /* Subway.xcstrings */; };
+		C7874FE12AAF2E1500BB9EF5 /* SubwayType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7874FE02AAF2E1500BB9EF5 /* SubwayType.swift */; };
+		C7874FE32AAF2E8000BB9EF5 /* SubwayEmptyListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7874FE22AAF2E8000BB9EF5 /* SubwayEmptyListView.swift */; };
+		C7874FE52AAF2EAE00BB9EF5 /* SubwayRealtimeFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7874FE42AAF2EAE00BB9EF5 /* SubwayRealtimeFooterView.swift */; };
+		C7874FE82AAF2F5000BB9EF5 /* SubwayTimetableQueryParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7874FE72AAF2F5000BB9EF5 /* SubwayTimetableQueryParams.swift */; };
+		C7874FEA2AAF305900BB9EF5 /* SubwayRealtimeHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7874FE92AAF305900BB9EF5 /* SubwayRealtimeHeaderView.swift */; };
+		C7874FEC2AAF307E00BB9EF5 /* SubwayRealtimeListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7874FEB2AAF307E00BB9EF5 /* SubwayRealtimeListViewController.swift */; };
+		C7874FEE2AAF313800BB9EF5 /* SubwayRealtimeListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7874FED2AAF313800BB9EF5 /* SubwayRealtimeListItemView.swift */; };
+		C7874FF02AAF316A00BB9EF5 /* SubwayRealtimeItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7874FEF2AAF316A00BB9EF5 /* SubwayRealtimeItem.swift */; };
 		C7CF65372AA490B1001EF16F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7CF65362AA490B1001EF16F /* AppDelegate.swift */; };
 		C7CF65402AA490B2001EF16F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7CF653F2AA490B2001EF16F /* Assets.xcassets */; };
 		C7CF65432AA490B2001EF16F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7CF65412AA490B2001EF16F /* LaunchScreen.storyboard */; };
@@ -156,6 +167,17 @@
 		C7874FCF2AAEE21000BB9EF5 /* ShuttleStopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShuttleStopViewController.swift; sourceTree = "<group>"; };
 		C7874FD42AAF0B2500BB9EF5 /* ShuttleStopTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShuttleStopTableCell.swift; sourceTree = "<group>"; };
 		C7874FD62AAF0C7800BB9EF5 /* ShuttleFirstLastItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShuttleFirstLastItem.swift; sourceTree = "<group>"; };
+		C7874FD92AAF212C00BB9EF5 /* SubwayNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubwayNavigationController.swift; sourceTree = "<group>"; };
+		C7874FDC2AAF217200BB9EF5 /* SubwayRealtimeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubwayRealtimeViewController.swift; sourceTree = "<group>"; };
+		C7874FDE2AAF223D00BB9EF5 /* Subway.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Subway.xcstrings; sourceTree = "<group>"; };
+		C7874FE02AAF2E1500BB9EF5 /* SubwayType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubwayType.swift; sourceTree = "<group>"; };
+		C7874FE22AAF2E8000BB9EF5 /* SubwayEmptyListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubwayEmptyListView.swift; sourceTree = "<group>"; };
+		C7874FE42AAF2EAE00BB9EF5 /* SubwayRealtimeFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubwayRealtimeFooterView.swift; sourceTree = "<group>"; };
+		C7874FE72AAF2F5000BB9EF5 /* SubwayTimetableQueryParams.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubwayTimetableQueryParams.swift; sourceTree = "<group>"; };
+		C7874FE92AAF305900BB9EF5 /* SubwayRealtimeHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubwayRealtimeHeaderView.swift; sourceTree = "<group>"; };
+		C7874FEB2AAF307E00BB9EF5 /* SubwayRealtimeListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubwayRealtimeListViewController.swift; sourceTree = "<group>"; };
+		C7874FED2AAF313800BB9EF5 /* SubwayRealtimeListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubwayRealtimeListItemView.swift; sourceTree = "<group>"; };
+		C7874FEF2AAF316A00BB9EF5 /* SubwayRealtimeItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubwayRealtimeItem.swift; sourceTree = "<group>"; };
 		C7CF65332AA490B1001EF16F /* hyuabot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hyuabot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7CF65362AA490B1001EF16F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C7CF653F2AA490B2001EF16F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -258,6 +280,7 @@
 				C7548F982AA6031500C354A2 /* Shuttle.xcstrings */,
 				C7DD8F042AAAD695006958D7 /* Localizable.xcstrings */,
 				C7E751F02AAD929F001FD1B3 /* Bus.xcstrings */,
+				C7874FDE2AAF223D00BB9EF5 /* Subway.xcstrings */,
 			);
 			path = Localization;
 			sourceTree = "<group>";
@@ -265,9 +288,10 @@
 		A08D994272B2A93FFB8CCC16 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				C7E751E72AAD8B25001FD1B3 /* Bus */,
 				A08D97FFF292F33C23014BE2 /* TabBarViewController.swift */,
+				C7E751E72AAD8B25001FD1B3 /* Bus */,
 				A08D9D7BE982452A59D86F45 /* Shuttle */,
+				C7874FD82AAF20DB00BB9EF5 /* Subway */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -364,6 +388,39 @@
 				C7874FD62AAF0C7800BB9EF5 /* ShuttleFirstLastItem.swift */,
 			);
 			path = Stop;
+			sourceTree = "<group>";
+		};
+		C7874FD82AAF20DB00BB9EF5 /* Subway */ = {
+			isa = PBXGroup;
+			children = (
+				C7874FE62AAF2F2F00BB9EF5 /* Timetable */,
+				C7874FDB2AAF215800BB9EF5 /* Realtime */,
+				C7874FD92AAF212C00BB9EF5 /* SubwayNavigationController.swift */,
+			);
+			path = Subway;
+			sourceTree = "<group>";
+		};
+		C7874FDB2AAF215800BB9EF5 /* Realtime */ = {
+			isa = PBXGroup;
+			children = (
+				C7874FDC2AAF217200BB9EF5 /* SubwayRealtimeViewController.swift */,
+				C7874FE02AAF2E1500BB9EF5 /* SubwayType.swift */,
+				C7874FE22AAF2E8000BB9EF5 /* SubwayEmptyListView.swift */,
+				C7874FE42AAF2EAE00BB9EF5 /* SubwayRealtimeFooterView.swift */,
+				C7874FE92AAF305900BB9EF5 /* SubwayRealtimeHeaderView.swift */,
+				C7874FEB2AAF307E00BB9EF5 /* SubwayRealtimeListViewController.swift */,
+				C7874FED2AAF313800BB9EF5 /* SubwayRealtimeListItemView.swift */,
+				C7874FEF2AAF316A00BB9EF5 /* SubwayRealtimeItem.swift */,
+			);
+			path = Realtime;
+			sourceTree = "<group>";
+		};
+		C7874FE62AAF2F2F00BB9EF5 /* Timetable */ = {
+			isa = PBXGroup;
+			children = (
+				C7874FE72AAF2F5000BB9EF5 /* SubwayTimetableQueryParams.swift */,
+			);
+			path = Timetable;
 			sourceTree = "<group>";
 		};
 		C7CF652A2AA490B1001EF16F = {
@@ -590,6 +647,7 @@
 				A08D9CA1A47441B206883478 /* Poppins-ExtraBoldItalic.ttf in Resources */,
 				C7548F992AA6031500C354A2 /* Shuttle.xcstrings in Resources */,
 				C7E751F12AAD929F001FD1B3 /* Bus.xcstrings in Resources */,
+				C7874FDF2AAF223D00BB9EF5 /* Subway.xcstrings in Resources */,
 				A08D90E67EDD25043FA63845 /* Poppins-ExtraLight.ttf in Resources */,
 				A08D91B3EBED549972CA5060 /* Poppins-ExtraLightItalic.ttf in Resources */,
 				A08D9271847BAC110C94D407 /* Poppins-Italic.ttf in Resources */,
@@ -630,13 +688,17 @@
 				C7CF65372AA490B1001EF16F /* AppDelegate.swift in Sources */,
 				C7DD8F032AAAD66B006958D7 /* Toast.swift in Sources */,
 				C7CF65672AA57F0D001EF16F /* SceneDelegate.swift in Sources */,
+				C7874FE52AAF2EAE00BB9EF5 /* SubwayRealtimeFooterView.swift in Sources */,
 				C736EB652AA8863D005A42F7 /* ShuttleRealtimeFooterView.swift in Sources */,
 				C7874FC22AAEAC4200BB9EF5 /* BusTimetableQueryParams.swift in Sources */,
+				C7874FEE2AAF313800BB9EF5 /* SubwayRealtimeListItemView.swift in Sources */,
 				C7548F932AA5EF4400C354A2 /* PagedView.swift in Sources */,
 				C7548F852AA5A72400C354A2 /* Localization.swift in Sources */,
+				C7874FEC2AAF307E00BB9EF5 /* SubwayRealtimeListViewController.swift in Sources */,
 				C7E751FE2AAD9BF2001FD1B3 /* BusEmptyListView.swift in Sources */,
 				C7874FC42AAEAC9500BB9EF5 /* BusTimetableViewController.swift in Sources */,
 				C7E9F8232AA99DD30064B873 /* ShuttleStop.swift in Sources */,
+				C7874FEA2AAF305900BB9EF5 /* SubwayRealtimeHeaderView.swift in Sources */,
 				C7548F892AA5B7EE00C354A2 /* StatusBar.swift in Sources */,
 				C7E751F42AAD95B8001FD1B3 /* BusType.swift in Sources */,
 				C7548F912AA5E8CB00C354A2 /* TabCollectionViewCell.swift in Sources */,
@@ -644,12 +706,14 @@
 				C7548F8D2AA5E77900C354A2 /* ViewPager.swift in Sources */,
 				C7E751E42AAB3E34001FD1B3 /* ShuttleTimetableListItemView.swift in Sources */,
 				C7874FC62AAEB01A00BB9EF5 /* BusDate.swift in Sources */,
+				C7874FDD2AAF217200BB9EF5 /* SubwayRealtimeViewController.swift in Sources */,
 				C7E751F82AAD96F6001FD1B3 /* BusArrivalItem.swift in Sources */,
 				C7E751EB2AAD8BB4001FD1B3 /* BusRealtimeViewController.swift in Sources */,
 				C7DD8F072AAAED36006958D7 /* ShuttleTimetableQueryParams.swift in Sources */,
 				C7548F952AA5F0E900C354A2 /* PagedCollectionViewCell.swift in Sources */,
 				C7874FD72AAF0C7800BB9EF5 /* ShuttleFirstLastItem.swift in Sources */,
 				C7E751FA2AAD98EE001FD1B3 /* BusRealtimeHeaderView.swift in Sources */,
+				C7874FE12AAF2E1500BB9EF5 /* SubwayType.swift in Sources */,
 				C7E751F62AAD95E2001FD1B3 /* BusRealtimeListViewController.swift in Sources */,
 				C7548F9B2AA6AE2800C354A2 /* ShuttleRealtimeListViewController.swift in Sources */,
 				C7E751DE2AAB3002001FD1B3 /* ShuttleDate.swift in Sources */,
@@ -661,9 +725,12 @@
 				C736EB672AA88E4B005A42F7 /* ShuttleRealtimeListItemView.swift in Sources */,
 				C7E752002AADAD72001FD1B3 /* BusRealtimeListItemView.swift in Sources */,
 				C7548F972AA5F1C200C354A2 /* AppTabItem.swift in Sources */,
+				C7874FDA2AAF212C00BB9EF5 /* SubwayNavigationController.swift in Sources */,
 				C7E751E92AAD8B3C001FD1B3 /* BusNavigationController.swift in Sources */,
 				C736EB6C2AA8AA79005A42F7 /* ShuttleEmptyListItemView.swift in Sources */,
 				C736EB6A2AA8A883005A42F7 /* ShuttleArrivalItem.swift in Sources */,
+				C7874FE32AAF2E8000BB9EF5 /* SubwayEmptyListView.swift in Sources */,
+				C7874FE82AAF2F5000BB9EF5 /* SubwayTimetableQueryParams.swift in Sources */,
 				C7548F872AA5A86900C354A2 /* ShuttleNavigationController.swift in Sources */,
 				C7874FD02AAEE21000BB9EF5 /* ShuttleStopViewController.swift in Sources */,
 				C7E751E22AAB3D2B001FD1B3 /* ShuttleTimetableItem.swift in Sources */,
@@ -676,6 +743,7 @@
 				C7874FCD2AAEDAFF00BB9EF5 /* ShuttleFooterView.swift in Sources */,
 				C7E751E62AAC90FA001FD1B3 /* ShuttleTimetableParamViewController.swift in Sources */,
 				C7E751FC2AAD98FD001FD1B3 /* BusRealtimeFooterView.swift in Sources */,
+				C7874FF02AAF316A00BB9EF5 /* SubwayRealtimeItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,0 +1,21 @@
+query SubwayRealtimeQuery($station: [String!]!, $start: Time) {
+  subway(station: $station, start: $start) {
+    id,
+    realtime {
+      up {
+        destinationID, destinationName, remainingTime, remainingStation, isExpress
+      }
+      down {
+        destinationID, destinationName, remainingTime, remainingStation, isExpress
+      }
+    },
+    timetable {
+      up {
+        destinationID, destinationName, weekday, time
+      },
+      down {
+        destinationID, destinationName, weekday, time
+      }
+    }
+  }
+}

@@ -14,4 +14,8 @@ extension String {
     static func localizedBusItem(resourceID: String.LocalizationValue) -> String {
         return String(localized: resourceID, table: "Bus")
     }
+    
+    static func localizedSubwayItem(resourceID: String.LocalizationValue) -> String {
+        return String(localized: resourceID, table: "Subway")
+    }
 }

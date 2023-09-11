@@ -91,6 +91,9 @@
     "show_entire_schedule" : {
 
     },
+    "show.entire.schedule" : {
+
+    },
     "show.stop.info" : {
 
     },
@@ -190,10 +193,42 @@
     "shuttlecock_o" : {
 
     },
+    "skyblue" : {
+
+    },
     "station" : {
 
     },
+    "subway.arrival.information.%@.%@" : {
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "subway.arrival.information.%1$@.%2$@"
+          }
+        }
+      }
+    },
+    "subway.arrival.timetable.%@.%@" : {
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "subway.arrival.timetable.%1$@.%2$@"
+          }
+        }
+      }
+    },
+    "subway.realtime" : {
+
+    },
     "terminal" : {
+
+    },
+    "transfer" : {
+
+    },
+    "yellow" : {
 
     }
   },
