@@ -72,6 +72,9 @@ class SubwayRealtimeListViewController: UIViewController {
             var section2List: [SubwayArrivalItem] = []
             var section2RealtimeList: [SubwayRealtimeQuery.Data.Subway.Realtime.Down] = []
             var section2TimetableList: [SubwayTimetableArrivalItem] = []
+            var section1TransferList: [TransferItem] = []
+            var section2TransferList: [TransferItem] = []
+            
             var upMaxReminaingTime: Int = 0
             var downMaxReminaingTime: Int = 0
             let now = Foundation.Date()
@@ -87,27 +90,27 @@ class SubwayRealtimeListViewController: UIViewController {
                     downMaxReminaingTime = $0.remainingTime
                 }
                 stationItem.timetable.up.filter({
-                    self.caculateRemainingTime(current: now, departureTime: $0.time, maxTime: upMaxReminaingTime)
+                    self.caculateRemainingTime(current: now, departureTime: $0.time) > upMaxReminaingTime + 2
                 }).forEach{
                     section1TimetableList.append(SubwayTimetableArrivalItem(destinationID: $0.destinationID, destinationName: $0.destinationName, time: $0.time))
                 }
                 stationItem.timetable.down.filter({
-                    self.caculateRemainingTime(current: now, departureTime: $0.time, maxTime: downMaxReminaingTime)
+                    self.caculateRemainingTime(current: now, departureTime: $0.time) > downMaxReminaingTime + 2
                 }).forEach{
                     section2TimetableList.append(SubwayTimetableArrivalItem(destinationID: $0.destinationID, destinationName: $0.destinationName, time: $0.time))
                 }
                 
                 section1RealtimeList.forEach{
-                    section1List.append(SubwayArrivalItem(upRealtime: $0, downRealtime: nil, timetable: nil))
+                    section1List.append(SubwayArrivalItem(upRealtime: $0, downRealtime: nil, timetable: nil, transferItem: nil))
                 }
                 section1TimetableList.forEach{
-                    section1List.append(SubwayArrivalItem(upRealtime: nil, downRealtime: nil, timetable: $0))
+                    section1List.append(SubwayArrivalItem(upRealtime: nil, downRealtime: nil, timetable: $0, transferItem: nil))
                 }
                 section2RealtimeList.forEach{
-                    section2List.append(SubwayArrivalItem(upRealtime: nil, downRealtime: $0, timetable: nil))
+                    section2List.append(SubwayArrivalItem(upRealtime: nil, downRealtime: $0, timetable: nil, transferItem: nil))
                 }
                 section2TimetableList.forEach{
-                    section2List.append(SubwayArrivalItem(upRealtime: nil, downRealtime: nil, timetable: $0))
+                    section2List.append(SubwayArrivalItem(upRealtime: nil, downRealtime: nil, timetable: $0, transferItem: nil))
                 }
             } else if self.subwayType == .yellow {
                 guard let stationItem = stationList.filter({ $0.id == "K251" }).first else { return }
@@ -121,28 +124,56 @@ class SubwayRealtimeListViewController: UIViewController {
                 }
                 
                 stationItem.timetable.up.filter({
-                    self.caculateRemainingTime(current: now, departureTime: $0.time, maxTime: upMaxReminaingTime)
+                    self.caculateRemainingTime(current: now, departureTime: $0.time) > upMaxReminaingTime + 2
                 }).forEach{
                     section1TimetableList.append(SubwayTimetableArrivalItem(destinationID: $0.destinationID, destinationName: $0.destinationName, time: $0.time))
                 }
                 stationItem.timetable.down.filter({
-                    self.caculateRemainingTime(current: now, departureTime: $0.time, maxTime: downMaxReminaingTime)
+                    self.caculateRemainingTime(current: now, departureTime: $0.time) > downMaxReminaingTime + 2
                 }).forEach{
                     section2TimetableList.append(SubwayTimetableArrivalItem(destinationID: $0.destinationID, destinationName: $0.destinationName, time: $0.time))
                 }
                 
                 section1RealtimeList.forEach{
-                    section1List.append(SubwayArrivalItem(upRealtime: $0, downRealtime: nil, timetable: nil))
+                    section1List.append(SubwayArrivalItem(upRealtime: $0, downRealtime: nil, timetable: nil, transferItem: nil))
                 }
                 section1TimetableList.forEach{
-                    section1List.append(SubwayArrivalItem(upRealtime: nil, downRealtime: nil, timetable: $0))
+                    section1List.append(SubwayArrivalItem(upRealtime: nil, downRealtime: nil, timetable: $0, transferItem: nil))
                 }
                 section2RealtimeList.forEach{
-                    section2List.append(SubwayArrivalItem(upRealtime: nil, downRealtime: $0, timetable: nil))
+                    section2List.append(SubwayArrivalItem(upRealtime: nil, downRealtime: $0, timetable: nil, transferItem: nil))
                 }
                 section2TimetableList.forEach{
-                    section2List.append(SubwayArrivalItem(upRealtime: nil, downRealtime: nil, timetable: $0))
+                    section2List.append(SubwayArrivalItem(upRealtime: nil, downRealtime: nil, timetable: $0, transferItem: nil))
                 }
+            } else if self.subwayType == .transfer {
+                guard let yellowOido = stationList.filter({ $0.id == "K258" }).first else { return }
+                guard let skyblueOido = stationList.filter({ $0.id == "K456" }).first else { return }
+                yellowOido.realtime.up.filter({ $0.destinationID < "K251" }).forEach { item in
+                    section1TransferList.append(TransferItem(upFrom: item, upTo: nil, downFrom: nil, downTo: nil))
+                }
+                yellowOido.realtime.up.filter({ $0.destinationID == "K258" }).forEach{  item in
+                    guard let firstItem = skyblueOido.timetable.up.filter({ self.caculateRemainingTime(current: now, departureTime: $0.time) > item.remainingTime }).first else { return }
+                    section1TransferList.append(TransferItem(upFrom: item, upTo: firstItem, downFrom: nil, downTo: nil))
+                }
+                yellowOido.realtime.down.filter({ $0.destinationID == "K272" && $0.remainingTime > 20 }).forEach { item in
+                    section2TransferList.append(TransferItem(upFrom: nil, upTo: nil, downFrom: item, downTo: nil))
+                }
+                skyblueOido.realtime.down.filter({ $0.remainingTime > 20 }).forEach{ item in
+                    guard let firstItem = yellowOido.timetable.down.filter({ self.caculateRemainingTime(current: now, departureTime: $0.time) > item.remainingTime }).first else { return }
+                    section2TransferList.append(TransferItem(upFrom: nil, upTo: nil, downFrom: item, downTo: firstItem))
+                }
+                
+                
+                
+                section1TransferList.forEach{
+                    section1List.append(SubwayArrivalItem(upRealtime: nil, downRealtime: nil, timetable: nil, transferItem: $0))
+                }
+                section2TransferList.forEach{
+                    section2List.append(SubwayArrivalItem(upRealtime: nil, downRealtime: nil, timetable: nil, transferItem: $0))
+                }
+                section1List.sort(by: { $0.transferItem!.upFrom!.remainingTime < $1.transferItem!.upFrom!.remainingTime })
+                section2List.sort(by: { $0.transferItem!.downFrom!.remainingTime < $1.transferItem!.downFrom!.remainingTime })
             }
 
             self.section1List = section1List
@@ -153,7 +184,7 @@ class SubwayRealtimeListViewController: UIViewController {
     
     @objc private func refreshTableView(_ sender: AnyObject) {}
     
-    func caculateRemainingTime(current: Foundation.Date, departureTime: String, maxTime: Int) -> Bool {
+    func caculateRemainingTime(current: Foundation.Date, departureTime: String) -> Int {
         let splitTime = departureTime.split(separator: ":")
         var hour = Int(splitTime[0])!
         if hour < 4 {
@@ -163,7 +194,7 @@ class SubwayRealtimeListViewController: UIViewController {
         let minute = Int(splitTime[1])!
         let timeDelta = 60 * (hour - Calendar.current.component(.hour, from: current)) + (minute - Calendar.current.component(.minute, from: current))
         
-        return timeDelta > maxTime + 2
+        return timeDelta
     }
 }
 

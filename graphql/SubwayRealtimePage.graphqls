@@ -3,10 +3,10 @@ query SubwayRealtimeQuery($station: [String!]!, $start: Time) {
     id,
     realtime {
       up {
-        destinationID, destinationName, remainingTime, remainingStation, isExpress
+        destinationID, destinationName, remainingTime, remainingStation, isExpress, location
       }
       down {
-        destinationID, destinationName, remainingTime, remainingStation, isExpress
+        destinationID, destinationName, remainingTime, remainingStation, isExpress, location
       }
     },
     timetable {

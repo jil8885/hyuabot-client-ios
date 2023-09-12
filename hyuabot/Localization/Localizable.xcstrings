@@ -222,11 +222,44 @@
     "subway.realtime" : {
 
     },
+    "subway.timetable.item.%@.%@" : {
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "subway.timetable.item.%1$@.%2$@"
+          }
+        }
+      }
+    },
+    "suin.direct" : {
+
+    },
     "terminal" : {
 
     },
     "transfer" : {
 
+    },
+    "transfer.realtime.%@.%@" : {
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "transfer.realtime.%1$@.%2$@"
+          }
+        }
+      }
+    },
+    "transfer.realtime.%@.%@.%@.%@" : {
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "transfer.realtime.%1$@.%2$@.%3$@.%4$@"
+          }
+        }
+      }
     },
     "yellow" : {
 

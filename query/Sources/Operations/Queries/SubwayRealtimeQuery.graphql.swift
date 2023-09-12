@@ -7,7 +7,7 @@ public class SubwayRealtimeQuery: GraphQLQuery {
   public static let operationName: String = "SubwayRealtimeQuery"
   public static let operationDocument: ApolloAPI.OperationDocument = .init(
     definition: .init(
-      #"query SubwayRealtimeQuery($station: [String!]!, $start: Time) { subway(station: $station, start: $start) { __typename id realtime { __typename up { __typename destinationID destinationName remainingTime remainingStation isExpress } down { __typename destinationID destinationName remainingTime remainingStation isExpress } } timetable { __typename up { __typename destinationID destinationName weekday time } down { __typename destinationID destinationName weekday time } } } }"#
+      #"query SubwayRealtimeQuery($station: [String!]!, $start: Time) { subway(station: $station, start: $start) { __typename id realtime { __typename up { __typename destinationID destinationName remainingTime remainingStation isExpress location } down { __typename destinationID destinationName remainingTime remainingStation isExpress location } } timetable { __typename up { __typename destinationID destinationName weekday time } down { __typename destinationID destinationName weekday time } } } }"#
     ))
 
   public var station: [String]
@@ -91,6 +91,7 @@ public class SubwayRealtimeQuery: GraphQLQuery {
             .field("remainingTime", Int.self),
             .field("remainingStation", Int.self),
             .field("isExpress", Bool.self),
+            .field("location", String.self),
           ] }
 
           public var destinationID: String { __data["destinationID"] }
@@ -98,6 +99,7 @@ public class SubwayRealtimeQuery: GraphQLQuery {
           public var remainingTime: Int { __data["remainingTime"] }
           public var remainingStation: Int { __data["remainingStation"] }
           public var isExpress: Bool { __data["isExpress"] }
+          public var location: String { __data["location"] }
         }
 
         /// Subway.Realtime.Down
@@ -115,6 +117,7 @@ public class SubwayRealtimeQuery: GraphQLQuery {
             .field("remainingTime", Int.self),
             .field("remainingStation", Int.self),
             .field("isExpress", Bool.self),
+            .field("location", String.self),
           ] }
 
           public var destinationID: String { __data["destinationID"] }
@@ -122,6 +125,7 @@ public class SubwayRealtimeQuery: GraphQLQuery {
           public var remainingTime: Int { __data["remainingTime"] }
           public var remainingStation: Int { __data["remainingStation"] }
           public var isExpress: Bool { __data["isExpress"] }
+          public var location: String { __data["location"] }
         }
       }
 

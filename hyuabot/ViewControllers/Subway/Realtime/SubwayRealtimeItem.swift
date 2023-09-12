@@ -4,6 +4,7 @@ struct SubwayArrivalItem {
     let upRealtime: SubwayRealtimeQuery.Data.Subway.Realtime.Up?
     let downRealtime: SubwayRealtimeQuery.Data.Subway.Realtime.Down?
     let timetable: SubwayTimetableArrivalItem?
+    let transferItem: TransferItem?
 }
 
 struct SubwayTimetableArrivalItem {

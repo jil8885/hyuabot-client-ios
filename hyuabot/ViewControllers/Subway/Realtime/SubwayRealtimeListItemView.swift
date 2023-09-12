@@ -92,6 +92,42 @@ class SubwayRealtimeListItemView: UITableViewCell {
             remainingTimeLabel.isHidden = true
             timeLabel.isHidden = false
             timeLabel.text = String.localizedSubwayItem(resourceID: "subway.arrival.timetable.\(hour).\(minute)")
+        } else if item.transferItem != nil {
+            guard let transferItem = item.transferItem else { return }
+            remainingTimeLabel.isHidden = true
+            timeLabel.isHidden = false
+            typeLabel.isHidden = true
+            if transferItem.upFrom != nil {
+                if transferItem.upTo != nil {
+                    let realtimeDestination = String.localizedSubwayItem(resourceID: String.LocalizationValue(String("subway.arrival.destination.\(transferItem.upFrom!.destinationID)")))
+                    let timetableDestination = String.localizedSubwayItem(resourceID: String.LocalizationValue(String("subway.arrival.destination.\(transferItem.upTo!.destinationID)")))
+                    let timeValue = transferItem.upTo!.time.split(separator: ":")
+                    let hour = String(timeValue[0])
+                    let minute = String(timeValue[1])
+                    let location = transferItem.upFrom!.location.replacingOccurrences(of: "인더스파크", with: "공단")
+                    let timeString = String.localizedSubwayItem(resourceID: "subway.timetable.item.\(hour).\(minute)")
+                    timeLabel.text = String.localizedSubwayItem(resourceID: "transfer.realtime.\(realtimeDestination).\(location).\(timetableDestination).\(timeString)")
+                } else {
+                    let destination = String.localizedSubwayItem(resourceID: String.LocalizationValue(String("subway.arrival.destination.\(transferItem.upFrom!.destinationID)")))
+                    typeLabel.text = String.localizedSubwayItem(resourceID: "suin.direct")
+                    timeLabel.text = String.localizedSubwayItem(resourceID: "transfer.realtime.\(destination).\(String(transferItem.upFrom!.location))")
+                }
+            } else if transferItem.downFrom != nil {
+                if transferItem.downTo != nil {
+                    typeLabel.isHidden = true
+                    let realtimeDestination = String.localizedSubwayItem(resourceID: String.LocalizationValue(String("subway.arrival.destination.\(transferItem.downFrom!.destinationID)")))
+                    let timetableDestination = String.localizedSubwayItem(resourceID: String.LocalizationValue(String("subway.arrival.destination.\(transferItem.downTo!.destinationID)")))
+                    let timeValue = transferItem.downTo!.time.split(separator: ":")
+                    let hour = String(timeValue[0])
+                    let minute = String(timeValue[1])
+                    let timeString = String.localizedSubwayItem(resourceID: "subway.timetable.item.\(hour).\(minute)")
+                    timeLabel.text = String.localizedSubwayItem(resourceID: "transfer.realtime.\(realtimeDestination).\(String(transferItem.downFrom!.location)).\(timetableDestination).\(timeString)")
+                } else {
+                    let destination = String.localizedSubwayItem(resourceID: String.LocalizationValue(String("subway.arrival.destination.\(transferItem.downFrom!.destinationID)")))
+                    typeLabel.text = String.localizedSubwayItem(resourceID: "suin.direct")
+                    timeLabel.text = String.localizedSubwayItem(resourceID: "transfer.realtime.\(destination).\(transferItem.downFrom!.location)")
+                }
+            }
         }
     }
 }

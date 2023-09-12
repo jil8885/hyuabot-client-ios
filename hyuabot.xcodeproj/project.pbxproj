@@ -35,6 +35,7 @@
 		C736EB672AA88E4B005A42F7 /* ShuttleRealtimeListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C736EB662AA88E4B005A42F7 /* ShuttleRealtimeListItemView.swift */; };
 		C736EB6A2AA8A883005A42F7 /* ShuttleArrivalItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C736EB692AA8A883005A42F7 /* ShuttleArrivalItem.swift */; };
 		C736EB6C2AA8AA79005A42F7 /* ShuttleEmptyListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C736EB6B2AA8AA79005A42F7 /* ShuttleEmptyListItemView.swift */; };
+		C74040A82AB02015007CBF7D /* TransferItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74040A72AB02015007CBF7D /* TransferItem.swift */; };
 		C7548F832AA5A5F800C354A2 /* Navigation.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = C7548F822AA5A5F800C354A2 /* Navigation.xcstrings */; };
 		C7548F852AA5A72400C354A2 /* Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7548F842AA5A72400C354A2 /* Localization.swift */; };
 		C7548F872AA5A86900C354A2 /* ShuttleNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7548F862AA5A86900C354A2 /* ShuttleNavigationController.swift */; };
@@ -145,6 +146,7 @@
 		C736EB662AA88E4B005A42F7 /* ShuttleRealtimeListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShuttleRealtimeListItemView.swift; sourceTree = "<group>"; };
 		C736EB692AA8A883005A42F7 /* ShuttleArrivalItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShuttleArrivalItem.swift; sourceTree = "<group>"; };
 		C736EB6B2AA8AA79005A42F7 /* ShuttleEmptyListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShuttleEmptyListItemView.swift; sourceTree = "<group>"; };
+		C74040A72AB02015007CBF7D /* TransferItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferItem.swift; sourceTree = "<group>"; };
 		C7548F822AA5A5F800C354A2 /* Navigation.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Navigation.xcstrings; sourceTree = "<group>"; };
 		C7548F842AA5A72400C354A2 /* Localization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localization.swift; sourceTree = "<group>"; };
 		C7548F862AA5A86900C354A2 /* ShuttleNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShuttleNavigationController.swift; sourceTree = "<group>"; };
@@ -404,6 +406,7 @@
 			isa = PBXGroup;
 			children = (
 				C7874FDC2AAF217200BB9EF5 /* SubwayRealtimeViewController.swift */,
+				C74040A72AB02015007CBF7D /* TransferItem.swift */,
 				C7874FE02AAF2E1500BB9EF5 /* SubwayType.swift */,
 				C7874FE22AAF2E8000BB9EF5 /* SubwayEmptyListView.swift */,
 				C7874FE42AAF2EAE00BB9EF5 /* SubwayRealtimeFooterView.swift */,
@@ -730,6 +733,7 @@
 				C736EB6C2AA8AA79005A42F7 /* ShuttleEmptyListItemView.swift in Sources */,
 				C736EB6A2AA8A883005A42F7 /* ShuttleArrivalItem.swift in Sources */,
 				C7874FE32AAF2E8000BB9EF5 /* SubwayEmptyListView.swift in Sources */,
+				C74040A82AB02015007CBF7D /* TransferItem.swift in Sources */,
 				C7874FE82AAF2F5000BB9EF5 /* SubwayTimetableQueryParams.swift in Sources */,
 				C7548F872AA5A86900C354A2 /* ShuttleNavigationController.swift in Sources */,
 				C7874FD02AAEE21000BB9EF5 /* ShuttleStopViewController.swift in Sources */,

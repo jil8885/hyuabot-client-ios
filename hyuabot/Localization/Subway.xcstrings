@@ -1,6 +1,17 @@
 {
   "sourceLanguage" : "ko",
   "strings" : {
+    "oido.transfer" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "오이도 환승"
+          }
+        }
+      }
+    },
     "out.of.service" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -177,6 +188,17 @@
         }
       }
     },
+    "subway.timetable.item.%@.%@" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$@시 %2$@분"
+          }
+        }
+      }
+    },
     "subway.transfer.down" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -221,6 +243,17 @@
         }
       }
     },
+    "suin.direct" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "수인선 탑승"
+          }
+        }
+      }
+    },
     "transfer" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -228,6 +261,28 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "4호선 ⇄ 수인선"
+          }
+        }
+      }
+    },
+    "transfer.realtime.%@.%@" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "(%1$@행) %2$@ 도착"
+          }
+        }
+      }
+    },
+    "transfer.realtime.%@.%@.%@.%@" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "(%1$@행) %2$@ 도착 ⇀ (%3$@행) %4$@ 출발"
           }
         }
       }
