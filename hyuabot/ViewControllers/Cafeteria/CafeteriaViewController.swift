@@ -8,16 +8,16 @@ class CafeteriaViewController: UIViewController {
     let disposeBag = DisposeBag()
     
     lazy var viewPager: ViewPager = {
-//        let localVC = BusRealtimeListViewController(busType: .local)
-//        let seoulVC = BusRealtimeListViewController(busType: .seoul)
-//        let suwonVC = BusRealtimeListViewController(busType: .suwon)
+        let breakfastView = CafeteriaListViewController(mealType: .breakfast)
+        let lunchView = CafeteriaListViewController(mealType: .lunch)
+        let dinnerView = CafeteriaListViewController(mealType: .dinner)
         
         let viewPager = ViewPager(tabSizeConfiguration: .fillEqually(height: 60, spacing: 0)).then {
             $0.translatesAutoresizingMaskIntoConstraints = false
             $0.pagedView.pages = [
-                UIView(),
-                UIView(),
-                UIView(),
+                breakfastView.view,
+                lunchView.view,
+                dinnerView.view,
             ]
             $0.tabbedView.tabs = [
                 AppTabItem(title: String.localizedCafeteriaItem(resourceID: "cafeteria.type.breakfast")),
