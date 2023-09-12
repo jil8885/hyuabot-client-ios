@@ -28,15 +28,39 @@ class CafeteriaViewController: UIViewController {
         return viewPager
     }()
     
+    private lazy var calendarButton: UIButton = {
+        let button = UIButton()
+        
+        var config = UIButton.Configuration.filled()
+        config.baseBackgroundColor = UIColor(named: "HanyangSecondary")
+        config.cornerStyle = .capsule
+        config.image = UIImage(systemName: "calendar")?.withConfiguration(UIImage.SymbolConfiguration(pointSize: 20, weight: .medium))
+        config.contentInsets = NSDirectionalEdgeInsets(top: 12, leading: 12, bottom: 12, trailing: 12)
+        button.configuration = config
+        button.layer.cornerRadius = 10
+        button.addTarget(self, action: #selector(calendarButtonClicked), for: .touchUpInside)
+        button.translatesAutoresizingMaskIntoConstraints = false
+        button.titleLabel?.font = .systemFont(ofSize: 40)
+        return button
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.setupView()
         appDelegate.queryCafeteriaPage()
+        appDelegate.cafeteriaQueryParams.subscribe(onNext: {(params) in
+            if (params != nil) {
+                let dateFormater = DateFormatter()
+                dateFormater.dateFormat = "yyyy-MM-dd"
+                self.appDelegate.queryCafeteriaPage(dateQuery: dateFormater.string(from: params!))
+            }
+        }).disposed(by: disposeBag)
     }
     
     func setupView(){
         self.view.do {
             $0.addSubview(viewPager)
+            $0.addSubview(calendarButton)
             $0.backgroundColor = .systemBackground
         }
         NSLayoutConstraint.activate([
@@ -44,6 +68,13 @@ class CafeteriaViewController: UIViewController {
             viewPager.leftAnchor.constraint(equalTo: self.view.leftAnchor),
             viewPager.rightAnchor.constraint(equalTo: self.view.rightAnchor),
             viewPager.bottomAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.bottomAnchor),
+            calendarButton.rightAnchor.constraint(equalTo: self.view.rightAnchor, constant: -20),
+            calendarButton.bottomAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.bottomAnchor, constant: -20),
         ])
+    }
+    
+    @objc func calendarButtonClicked(){
+        let popUpViewController = CafeteriaParamViewController()
+        present(popUpViewController, animated: false, completion: nil)
     }
 }

@@ -48,6 +48,7 @@
 		C74040BE2AB063E7007CBF7D /* ReadingRoomController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74040BD2AB063E7007CBF7D /* ReadingRoomController.swift */; };
 		C74040C02AB06432007CBF7D /* ReadingRoomListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74040BF2AB06431007CBF7D /* ReadingRoomListItemView.swift */; };
 		C74040C22AB064B0007CBF7D /* ReadingRoom.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = C74040C12AB064B0007CBF7D /* ReadingRoom.xcstrings */; };
+		C74040C62AB069CB007CBF7D /* CafeteriaParamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74040C52AB069CB007CBF7D /* CafeteriaParamViewController.swift */; };
 		C7548F832AA5A5F800C354A2 /* Navigation.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = C7548F822AA5A5F800C354A2 /* Navigation.xcstrings */; };
 		C7548F852AA5A72400C354A2 /* Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7548F842AA5A72400C354A2 /* Localization.swift */; };
 		C7548F872AA5A86900C354A2 /* ShuttleNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7548F862AA5A86900C354A2 /* ShuttleNavigationController.swift */; };
@@ -171,6 +172,7 @@
 		C74040BD2AB063E7007CBF7D /* ReadingRoomController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadingRoomController.swift; sourceTree = "<group>"; };
 		C74040BF2AB06431007CBF7D /* ReadingRoomListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadingRoomListItemView.swift; sourceTree = "<group>"; };
 		C74040C12AB064B0007CBF7D /* ReadingRoom.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = ReadingRoom.xcstrings; sourceTree = "<group>"; };
+		C74040C52AB069CB007CBF7D /* CafeteriaParamViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CafeteriaParamViewController.swift; sourceTree = "<group>"; };
 		C7548F822AA5A5F800C354A2 /* Navigation.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Navigation.xcstrings; sourceTree = "<group>"; };
 		C7548F842AA5A72400C354A2 /* Localization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localization.swift; sourceTree = "<group>"; };
 		C7548F862AA5A86900C354A2 /* ShuttleNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShuttleNavigationController.swift; sourceTree = "<group>"; };
@@ -378,6 +380,7 @@
 				C74040B62AB04F59007CBF7D /* CafeteriaListViewController.swift */,
 				C74040B82AB05BAC007CBF7D /* CafeteriaHeaderView.swift */,
 				C74040BA2AB05F04007CBF7D /* CafeteriaListItemView.swift */,
+				C74040C52AB069CB007CBF7D /* CafeteriaParamViewController.swift */,
 			);
 			path = Cafeteria;
 			sourceTree = "<group>";
@@ -807,6 +810,7 @@
 				C7E751E02AAB3B9B001FD1B3 /* ShuttleTimetableListViewController.swift in Sources */,
 				A08D945FA4DB5FAC1469A9BD /* ShuttleRealtimeViewController.swift in Sources */,
 				C74040B12AB0433B007CBF7D /* CafeteriaViewController.swift in Sources */,
+				C74040C62AB069CB007CBF7D /* CafeteriaParamViewController.swift in Sources */,
 				C7874FCD2AAEDAFF00BB9EF5 /* ShuttleFooterView.swift in Sources */,
 				C74040B92AB05BAC007CBF7D /* CafeteriaHeaderView.swift in Sources */,
 				C7E751E62AAC90FA001FD1B3 /* ShuttleTimetableParamViewController.swift in Sources */,

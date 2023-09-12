@@ -116,6 +116,12 @@
         }
       }
     },
+    "search.option.cancel" : {
+
+    },
+    "search.option.ok" : {
+
+    },
     "show_entire_schedule" : {
 
     },

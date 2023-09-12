@@ -33,6 +33,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     let shuttleStopQueryParams = BehaviorSubject<ShuttleStop?>(value: nil)
     let busTimetableQueryParams = BehaviorSubject<BusTimetableQueryParams?>(value: nil)
     let subwayTimetableQueryParams = BehaviorSubject<SubwayTimetableQueryParams?>(value: nil)
+    let cafeteriaQueryParams = BehaviorSubject<Foundation.Date?>(value: nil)
     
     
     let timeFormatter: DateFormatter = {
@@ -207,9 +208,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
     }
     
-    func queryCafeteriaPage() {
-        let now = Foundation.Date()
-        let date: GraphQLNullable<String> = GraphQLNullable(stringLiteral: dateFormatter.string(from: now))
+    func queryCafeteriaPage(dateQuery: String? = nil) {
+        var date: GraphQLNullable<String> = GraphQLNullable(stringLiteral: dateQuery ?? "")
+        if dateQuery == nil {
+            let now = Foundation.Date()
+            date = GraphQLNullable(stringLiteral: dateFormatter.string(from: now))
+        }
         Network.shared.apollo.fetch(query: CafeteriaQuery(date: date)) { result in
             switch result {
             case .success(let graphQLResult):
