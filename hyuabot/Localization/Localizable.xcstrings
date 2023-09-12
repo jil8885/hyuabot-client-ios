@@ -219,6 +219,12 @@
         }
       }
     },
+    "subway.days.weekdays" : {
+
+    },
+    "subway.days.weekends" : {
+
+    },
     "subway.realtime" : {
 
     },

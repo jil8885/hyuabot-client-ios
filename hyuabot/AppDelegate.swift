@@ -20,6 +20,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     let busRealtimeQuery = BehaviorSubject<[BusRealtimeQuery.Data.Bus]>(value: [])
     let busTimetableQuery = BehaviorSubject<[BusTimetableQuery.Data.Bus]>(value: [])
     let subwayRealtimeQuery = BehaviorSubject<[SubwayRealtimeQuery.Data.Subway]>(value: [])
+    let subwayTimetableUpQuery = BehaviorSubject<[SubwayTimetableUpQuery.Data.Subway.Timetable.Up]>(value: [])
+    let subwayTimetableDownQuery = BehaviorSubject<[SubwayTimetableDownQuery.Data.Subway.Timetable.Down]>(value: [])
     
     // Data formatter
     let showShuttleRemainingTime = BehaviorSubject<Bool>(value: false)
@@ -177,6 +179,28 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 self.subwayRealtimeQuery.onNext(graphQLResult.data?.subway ?? [])
             case .failure(let error):
                 print(error)
+            }
+        }
+    }
+    
+    func querySubwayTimetablePage(stationID: String, heading: SubwayHeading) {
+        if heading == .up {
+            Network.shared.apollo.fetch(query: SubwayTimetableUpQuery(station: [stationID])) { result in
+                switch result {
+                case .success(let graphQLResult):
+                    self.subwayTimetableUpQuery.onNext(graphQLResult.data?.subway.first?.timetable.up ?? [])
+                case .failure(let error):
+                    print(error)
+                }
+            }
+        } else {
+            Network.shared.apollo.fetch(query: SubwayTimetableDownQuery(station: [stationID])) { result in
+                switch result {
+                case .success(let graphQLResult):
+                    self.subwayTimetableDownQuery.onNext(graphQLResult.data?.subway.first?.timetable.down ?? [])
+                case .failure(let error):
+                    print(error)
+                }
             }
         }
     }

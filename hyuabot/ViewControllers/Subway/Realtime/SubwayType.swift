@@ -8,3 +8,9 @@ enum SubwayHeading {
     case up
     case down
 }
+
+enum SubwayWeekdays {
+    case weekdays
+    case weekends
+}
+

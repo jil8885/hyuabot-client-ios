@@ -1,0 +1,9 @@
+query SubwayTimetableUpQuery($station: [String!]!) {
+  subway(station: $station, start: "00:00") {
+    timetable {
+      up {
+        destinationID, destinationName, weekday, time
+      }
+    }
+  }
+}

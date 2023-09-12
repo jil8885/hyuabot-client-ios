@@ -19,19 +19,18 @@ class SubwayNavigationController: UINavigationController {
     
     // Listen timetable query params
     func subscribeTimetableQueryParams(){
-//        appDelegate.shuttleTimetableQueryParams
-//            .subscribe(onNext: {(params) in
-//                if (params != nil) {
-//                    let shuttleTimetableVC = ShuttleTimetableViewController()
-//                    guard let stopID = params?.stopID else { return }
-//                    guard let destinationID = params?.destination else { return }
-//                    let destinationKey = "\(destinationID)_shorten"
-//                    let stop = String.localizedShuttleItem(resourceID: String.LocalizationValue(stopID))
-//                    let destination = String.localizedShuttleItem(resourceID: String.LocalizationValue(destinationKey))
-//                    shuttleTimetableVC.navigationItem.title = String.localizedShuttleItem(resourceID: "shuttle.timetable.\(stop).\(destination)")
-//                    self.pushViewController(shuttleTimetableVC, animated: true)
-//                }
-//            })
-//            .disposed(by: disposeBag)
+        appDelegate.subwayTimetableQueryParams
+            .subscribe(onNext: {(params) in
+                if (params != nil) {
+                    guard let subwayType = params?.subwayType else { return }
+                    guard let heading = params?.heading else { return }
+                    let subwayTimetableVC = SubwayTimetableViewController(
+                        stationID: subwayType == .skyblue ? "K449" : "K251",
+                        heading: heading
+                    )
+                    self.pushViewController(subwayTimetableVC, animated: true)
+                }
+            })
+            .disposed(by: disposeBag)
     }
 }

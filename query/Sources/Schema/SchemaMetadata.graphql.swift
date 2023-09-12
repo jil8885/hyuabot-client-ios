@@ -24,10 +24,10 @@ public enum SchemaMetadata: ApolloAPI.SchemaMetadata {
     switch typename {
     case "Query": return QueryAPI.Objects.Query
     case "StationItem": return QueryAPI.Objects.StationItem
-    case "RealtimeListResponse": return QueryAPI.Objects.RealtimeListResponse
-    case "RealtimeItemResponse": return QueryAPI.Objects.RealtimeItemResponse
     case "TimetableListResponse": return QueryAPI.Objects.TimetableListResponse
     case "TimetableItemResponse": return QueryAPI.Objects.TimetableItemResponse
+    case "RealtimeListResponse": return QueryAPI.Objects.RealtimeListResponse
+    case "RealtimeItemResponse": return QueryAPI.Objects.RealtimeItemResponse
     case "BusRouteStopItem": return QueryAPI.Objects.BusRouteStopItem
     case "BusTimetable": return QueryAPI.Objects.BusTimetable
     case "ShuttleItem": return QueryAPI.Objects.ShuttleItem

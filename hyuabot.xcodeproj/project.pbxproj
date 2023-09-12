@@ -36,6 +36,9 @@
 		C736EB6A2AA8A883005A42F7 /* ShuttleArrivalItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C736EB692AA8A883005A42F7 /* ShuttleArrivalItem.swift */; };
 		C736EB6C2AA8AA79005A42F7 /* ShuttleEmptyListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C736EB6B2AA8AA79005A42F7 /* ShuttleEmptyListItemView.swift */; };
 		C74040A82AB02015007CBF7D /* TransferItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74040A72AB02015007CBF7D /* TransferItem.swift */; };
+		C74040AA2AB03928007CBF7D /* SubwayTimetableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74040A92AB03928007CBF7D /* SubwayTimetableViewController.swift */; };
+		C74040AC2AB0396C007CBF7D /* SubwayTimetableListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74040AB2AB0396C007CBF7D /* SubwayTimetableListViewController.swift */; };
+		C74040AE2AB03981007CBF7D /* SubwayTimetableListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74040AD2AB03981007CBF7D /* SubwayTimetableListItemView.swift */; };
 		C7548F832AA5A5F800C354A2 /* Navigation.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = C7548F822AA5A5F800C354A2 /* Navigation.xcstrings */; };
 		C7548F852AA5A72400C354A2 /* Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7548F842AA5A72400C354A2 /* Localization.swift */; };
 		C7548F872AA5A86900C354A2 /* ShuttleNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7548F862AA5A86900C354A2 /* ShuttleNavigationController.swift */; };
@@ -147,6 +150,9 @@
 		C736EB692AA8A883005A42F7 /* ShuttleArrivalItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShuttleArrivalItem.swift; sourceTree = "<group>"; };
 		C736EB6B2AA8AA79005A42F7 /* ShuttleEmptyListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShuttleEmptyListItemView.swift; sourceTree = "<group>"; };
 		C74040A72AB02015007CBF7D /* TransferItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferItem.swift; sourceTree = "<group>"; };
+		C74040A92AB03928007CBF7D /* SubwayTimetableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubwayTimetableViewController.swift; sourceTree = "<group>"; };
+		C74040AB2AB0396C007CBF7D /* SubwayTimetableListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubwayTimetableListViewController.swift; sourceTree = "<group>"; };
+		C74040AD2AB03981007CBF7D /* SubwayTimetableListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubwayTimetableListItemView.swift; sourceTree = "<group>"; };
 		C7548F822AA5A5F800C354A2 /* Navigation.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Navigation.xcstrings; sourceTree = "<group>"; };
 		C7548F842AA5A72400C354A2 /* Localization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localization.swift; sourceTree = "<group>"; };
 		C7548F862AA5A86900C354A2 /* ShuttleNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShuttleNavigationController.swift; sourceTree = "<group>"; };
@@ -422,6 +428,9 @@
 			isa = PBXGroup;
 			children = (
 				C7874FE72AAF2F5000BB9EF5 /* SubwayTimetableQueryParams.swift */,
+				C74040A92AB03928007CBF7D /* SubwayTimetableViewController.swift */,
+				C74040AB2AB0396C007CBF7D /* SubwayTimetableListViewController.swift */,
+				C74040AD2AB03981007CBF7D /* SubwayTimetableListItemView.swift */,
 			);
 			path = Timetable;
 			sourceTree = "<group>";
@@ -700,8 +709,10 @@
 				C7874FEC2AAF307E00BB9EF5 /* SubwayRealtimeListViewController.swift in Sources */,
 				C7E751FE2AAD9BF2001FD1B3 /* BusEmptyListView.swift in Sources */,
 				C7874FC42AAEAC9500BB9EF5 /* BusTimetableViewController.swift in Sources */,
+				C74040AE2AB03981007CBF7D /* SubwayTimetableListItemView.swift in Sources */,
 				C7E9F8232AA99DD30064B873 /* ShuttleStop.swift in Sources */,
 				C7874FEA2AAF305900BB9EF5 /* SubwayRealtimeHeaderView.swift in Sources */,
+				C74040AA2AB03928007CBF7D /* SubwayTimetableViewController.swift in Sources */,
 				C7548F892AA5B7EE00C354A2 /* StatusBar.swift in Sources */,
 				C7E751F42AAD95B8001FD1B3 /* BusType.swift in Sources */,
 				C7548F912AA5E8CB00C354A2 /* TabCollectionViewCell.swift in Sources */,
@@ -712,6 +723,7 @@
 				C7874FDD2AAF217200BB9EF5 /* SubwayRealtimeViewController.swift in Sources */,
 				C7E751F82AAD96F6001FD1B3 /* BusArrivalItem.swift in Sources */,
 				C7E751EB2AAD8BB4001FD1B3 /* BusRealtimeViewController.swift in Sources */,
+				C74040AC2AB0396C007CBF7D /* SubwayTimetableListViewController.swift in Sources */,
 				C7DD8F072AAAED36006958D7 /* ShuttleTimetableQueryParams.swift in Sources */,
 				C7548F952AA5F0E900C354A2 /* PagedCollectionViewCell.swift in Sources */,
 				C7874FD72AAF0C7800BB9EF5 /* ShuttleFirstLastItem.swift in Sources */,

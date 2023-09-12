@@ -45,6 +45,17 @@
         }
       }
     },
+    "subway.arrival.destination.K209" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "청량리"
+          }
+        }
+      }
+    },
     "subway.arrival.destination.K210" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -122,6 +133,28 @@
         }
       }
     },
+    "subway.arrival.destination.K419" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "한성대입구"
+          }
+        }
+      }
+    },
+    "subway.arrival.destination.K443" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "금정"
+          }
+        }
+      }
+    },
     "subway.arrival.destination.K453" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -162,6 +195,28 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%1$@시 %2$@분 도착 예정"
+          }
+        }
+      }
+    },
+    "subway.days.weekdays" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "평일"
+          }
+        }
+      }
+    },
+    "subway.days.weekends" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "주말"
           }
         }
       }
