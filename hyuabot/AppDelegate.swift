@@ -22,6 +22,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     let subwayRealtimeQuery = BehaviorSubject<[SubwayRealtimeQuery.Data.Subway]>(value: [])
     let subwayTimetableUpQuery = BehaviorSubject<[SubwayTimetableUpQuery.Data.Subway.Timetable.Up]>(value: [])
     let subwayTimetableDownQuery = BehaviorSubject<[SubwayTimetableDownQuery.Data.Subway.Timetable.Down]>(value: [])
+    let cafeteriaQuery = BehaviorSubject<[CafeteriaQuery.Data.Cafeterium]>(value: [])
     
     // Data formatter
     let showShuttleRemainingTime = BehaviorSubject<Bool>(value: false)
@@ -201,6 +202,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 case .failure(let error):
                     print(error)
                 }
+            }
+        }
+    }
+    
+    func queryCafeteriaPage() {
+        let now = Foundation.Date()
+        let date: GraphQLNullable<String> = GraphQLNullable(stringLiteral: dateFormatter.string(from: now))
+        Network.shared.apollo.fetch(query: CafeteriaQuery(date: date)) { result in
+            switch result {
+            case .success(let graphQLResult):
+                self.cafeteriaQuery.onNext(graphQLResult.data?.cafeteria ?? [])
+            case .failure(let error):
+                print(error)
             }
         }
     }

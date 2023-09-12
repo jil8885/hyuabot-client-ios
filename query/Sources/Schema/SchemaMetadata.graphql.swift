@@ -23,6 +23,8 @@ public enum SchemaMetadata: ApolloAPI.SchemaMetadata {
   public static func objectType(forTypename typename: String) -> Object? {
     switch typename {
     case "Query": return QueryAPI.Objects.Query
+    case "CafeteriaItem": return QueryAPI.Objects.CafeteriaItem
+    case "MenuItem": return QueryAPI.Objects.MenuItem
     case "StationItem": return QueryAPI.Objects.StationItem
     case "TimetableListResponse": return QueryAPI.Objects.TimetableListResponse
     case "TimetableItemResponse": return QueryAPI.Objects.TimetableItemResponse

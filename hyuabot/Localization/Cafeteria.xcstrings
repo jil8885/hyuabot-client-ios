@@ -1,0 +1,39 @@
+{
+  "sourceLanguage" : "ko",
+  "strings" : {
+    "cafeteria.type.breakfast" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "조식"
+          }
+        }
+      }
+    },
+    "cafeteria.type.dinner" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "석식"
+          }
+        }
+      }
+    },
+    "cafeteria.type.lunch" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "중식"
+          }
+        }
+      }
+    }
+  },
+  "version" : "1.0"
+}

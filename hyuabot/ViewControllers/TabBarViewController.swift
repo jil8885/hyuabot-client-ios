@@ -14,12 +14,16 @@ class TabBarViewController: UITabBarController {
         let shuttleVC = ShuttleRealtimeViewController()
         let busVC = BusRealtimeViewController()
         let subwayVC = SubwayRealtimeViewController()
+        let cafeteriaVC = CafeteriaViewController()
         
         
         // Declare navigation controllers
         let shuttleNC = ShuttleNavigationController(rootViewController: shuttleVC)
         let busNC = BusNavigationController(rootViewController: busVC)
         let subwayNC = SubwayNavigationController(rootViewController: subwayVC)
+        let cafeteriaNC = UINavigationController(rootViewController: cafeteriaVC)
+        cafeteriaNC.navigationBar.backgroundColor = UIColor(named: "HanyangPrimary")
+        cafeteriaNC.navigationBar.titleTextAttributes = [.foregroundColor: UIColor.white]
         
         
         // Set navigation item for each view controller
@@ -32,10 +36,12 @@ class TabBarViewController: UITabBarController {
         subwayNC.tabBarItem = UITabBarItem(title: String.localizedNavTitle(resourceID: "subway.realtime"), image: UIImage(systemName: "tram"), tag: 2)
         subwayNC.navigationBar.topItem?.title = String.localizedNavTitle(resourceID: "subway.realtime")
         subwayNC.navigationBar.tintColor = .white
-        
+        cafeteriaNC.tabBarItem = UITabBarItem(title: String.localizedNavTitle(resourceID: "cafeteria"), image: UIImage(systemName: "fork.knife"), tag: 3)
+        cafeteriaNC.navigationBar.topItem?.title = String.localizedNavTitle(resourceID: "cafeteria")
+        cafeteriaNC.navigationBar.tintColor = .white
         
         // Set view controllers
-        self.viewControllers = [shuttleNC, busNC, subwayNC]
+        self.viewControllers = [shuttleNC, busNC, subwayNC, cafeteriaNC]
     }
 }
 

@@ -65,6 +65,18 @@
     "bus.type.suwon" : {
 
     },
+    "cafeteria" : {
+
+    },
+    "cafeteria.type.breakfast" : {
+
+    },
+    "cafeteria.type.dinner" : {
+
+    },
+    "cafeteria.type.lunch" : {
+
+    },
     "dormitory_o" : {
 
     },

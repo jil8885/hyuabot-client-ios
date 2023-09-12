@@ -1,0 +1,7 @@
+query CafeteriaQuery ($date: Date) {
+  cafeteria (date: $date, campus: 2) {
+    id, name, menu {
+      food, price, slot
+    }
+  }
+}
