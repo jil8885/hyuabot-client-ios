@@ -45,6 +45,9 @@
 		C74040B72AB04F59007CBF7D /* CafeteriaListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74040B62AB04F59007CBF7D /* CafeteriaListViewController.swift */; };
 		C74040B92AB05BAC007CBF7D /* CafeteriaHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74040B82AB05BAC007CBF7D /* CafeteriaHeaderView.swift */; };
 		C74040BB2AB05F04007CBF7D /* CafeteriaListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74040BA2AB05F04007CBF7D /* CafeteriaListItemView.swift */; };
+		C74040BE2AB063E7007CBF7D /* ReadingRoomController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74040BD2AB063E7007CBF7D /* ReadingRoomController.swift */; };
+		C74040C02AB06432007CBF7D /* ReadingRoomListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74040BF2AB06431007CBF7D /* ReadingRoomListItemView.swift */; };
+		C74040C22AB064B0007CBF7D /* ReadingRoom.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = C74040C12AB064B0007CBF7D /* ReadingRoom.xcstrings */; };
 		C7548F832AA5A5F800C354A2 /* Navigation.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = C7548F822AA5A5F800C354A2 /* Navigation.xcstrings */; };
 		C7548F852AA5A72400C354A2 /* Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7548F842AA5A72400C354A2 /* Localization.swift */; };
 		C7548F872AA5A86900C354A2 /* ShuttleNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7548F862AA5A86900C354A2 /* ShuttleNavigationController.swift */; };
@@ -165,6 +168,9 @@
 		C74040B62AB04F59007CBF7D /* CafeteriaListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CafeteriaListViewController.swift; sourceTree = "<group>"; };
 		C74040B82AB05BAC007CBF7D /* CafeteriaHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CafeteriaHeaderView.swift; sourceTree = "<group>"; };
 		C74040BA2AB05F04007CBF7D /* CafeteriaListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CafeteriaListItemView.swift; sourceTree = "<group>"; };
+		C74040BD2AB063E7007CBF7D /* ReadingRoomController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadingRoomController.swift; sourceTree = "<group>"; };
+		C74040BF2AB06431007CBF7D /* ReadingRoomListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadingRoomListItemView.swift; sourceTree = "<group>"; };
+		C74040C12AB064B0007CBF7D /* ReadingRoom.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = ReadingRoom.xcstrings; sourceTree = "<group>"; };
 		C7548F822AA5A5F800C354A2 /* Navigation.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Navigation.xcstrings; sourceTree = "<group>"; };
 		C7548F842AA5A72400C354A2 /* Localization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localization.swift; sourceTree = "<group>"; };
 		C7548F862AA5A86900C354A2 /* ShuttleNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShuttleNavigationController.swift; sourceTree = "<group>"; };
@@ -299,6 +305,7 @@
 				C7548F822AA5A5F800C354A2 /* Navigation.xcstrings */,
 				C7548F982AA6031500C354A2 /* Shuttle.xcstrings */,
 				C7DD8F042AAAD695006958D7 /* Localizable.xcstrings */,
+				C74040C12AB064B0007CBF7D /* ReadingRoom.xcstrings */,
 				C7E751F02AAD929F001FD1B3 /* Bus.xcstrings */,
 				C7874FDE2AAF223D00BB9EF5 /* Subway.xcstrings */,
 				C74040B22AB0435E007CBF7D /* Cafeteria.xcstrings */,
@@ -309,6 +316,7 @@
 		A08D994272B2A93FFB8CCC16 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				C74040BC2AB063C1007CBF7D /* ReadingRoom */,
 				C74040AF2AB04316007CBF7D /* Cafeteria */,
 				A08D97FFF292F33C23014BE2 /* TabBarViewController.swift */,
 				C7E751E72AAD8B25001FD1B3 /* Bus */,
@@ -372,6 +380,15 @@
 				C74040BA2AB05F04007CBF7D /* CafeteriaListItemView.swift */,
 			);
 			path = Cafeteria;
+			sourceTree = "<group>";
+		};
+		C74040BC2AB063C1007CBF7D /* ReadingRoom */ = {
+			isa = PBXGroup;
+			children = (
+				C74040BD2AB063E7007CBF7D /* ReadingRoomController.swift */,
+				C74040BF2AB06431007CBF7D /* ReadingRoomListItemView.swift */,
+			);
+			path = ReadingRoom;
 			sourceTree = "<group>";
 		};
 		C7548F8A2AA5E75C00C354A2 /* Components */ = {
@@ -696,6 +713,7 @@
 				A08D923FE3C01291E6A66436 /* Poppins-MediumItalic.ttf in Resources */,
 				A08D9DEE87D59F792DE68ECE /* Poppins-Regular.ttf in Resources */,
 				A08D9FFD4FB070D483DB725F /* Poppins-SemiBold.ttf in Resources */,
+				C74040C22AB064B0007CBF7D /* ReadingRoom.xcstrings in Resources */,
 				A08D9ACB4F723B1504C35BB5 /* Poppins-SemiBoldItalic.ttf in Resources */,
 				A08D940E87B520C08DC6A313 /* Poppins-Thin.ttf in Resources */,
 				A08D9572B82F61D1E4F2C0A8 /* Poppins-ThinItalic.ttf in Resources */,
@@ -741,8 +759,10 @@
 				C7874FEA2AAF305900BB9EF5 /* SubwayRealtimeHeaderView.swift in Sources */,
 				C74040AA2AB03928007CBF7D /* SubwayTimetableViewController.swift in Sources */,
 				C7548F892AA5B7EE00C354A2 /* StatusBar.swift in Sources */,
+				C74040C02AB06432007CBF7D /* ReadingRoomListItemView.swift in Sources */,
 				C7E751F42AAD95B8001FD1B3 /* BusType.swift in Sources */,
 				C7548F912AA5E8CB00C354A2 /* TabCollectionViewCell.swift in Sources */,
+				C74040BE2AB063E7007CBF7D /* ReadingRoomController.swift in Sources */,
 				A08D907B293A2173B6E179F6 /* TabBarViewController.swift in Sources */,
 				C74040BB2AB05F04007CBF7D /* CafeteriaListItemView.swift in Sources */,
 				C7548F8D2AA5E77900C354A2 /* ViewPager.swift in Sources */,

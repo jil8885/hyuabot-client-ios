@@ -56,7 +56,7 @@
         }
       }
     },
-    "readingRoom" : {
+    "reading.room" : {
       "extractionState" : "manual",
       "localizations" : {
         "ko" : {

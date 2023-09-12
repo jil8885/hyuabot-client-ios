@@ -23,6 +23,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     let subwayTimetableUpQuery = BehaviorSubject<[SubwayTimetableUpQuery.Data.Subway.Timetable.Up]>(value: [])
     let subwayTimetableDownQuery = BehaviorSubject<[SubwayTimetableDownQuery.Data.Subway.Timetable.Down]>(value: [])
     let cafeteriaQuery = BehaviorSubject<[CafeteriaQuery.Data.Cafeterium]>(value: [])
+    let readingRoomQuery = BehaviorSubject<[ReadingRoomQuery.Data.ReadingRoom]>(value: [])
     
     // Data formatter
     let showShuttleRemainingTime = BehaviorSubject<Bool>(value: false)
@@ -213,6 +214,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             switch result {
             case .success(let graphQLResult):
                 self.cafeteriaQuery.onNext(graphQLResult.data?.cafeteria ?? [])
+            case .failure(let error):
+                print(error)
+            }
+        }
+    }
+    
+    func queryReadingRoomPage() {
+        Network.shared.apollo.fetch(query: ReadingRoomQuery()) { result in
+            switch result {
+            case .success(let graphQLResult):
+                self.readingRoomQuery.onNext(graphQLResult.data?.readingRoom ?? [])
             case .failure(let error):
                 print(error)
             }

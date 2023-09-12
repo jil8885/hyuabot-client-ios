@@ -22,4 +22,8 @@ extension String {
     static func localizedCafeteriaItem(resourceID: String.LocalizationValue, arguments: CVarArg...) -> String {
         return String(localized: resourceID, table: "Cafeteria")
     }
+    
+    static func localizedReadingRoomItem(resourceID: String.LocalizationValue) -> String {
+        return String(localized: resourceID, table: "ReadingRoom")
+    }
 }

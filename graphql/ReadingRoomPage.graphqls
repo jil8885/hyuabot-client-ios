@@ -1,0 +1,9 @@
+query ReadingRoomQuery {
+  readingRoom (campus: 2) {
+    id, name, seats{
+      active, occupied, total, available
+    }, status {
+      reservable
+    }
+  }
+}

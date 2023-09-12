@@ -103,6 +103,19 @@
     "out.of.service" : {
 
     },
+    "reading.room" : {
+
+    },
+    "reading.room.seat.%@.%@" : {
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "reading.room.seat.%1$@.%2$@"
+          }
+        }
+      }
+    },
     "show_entire_schedule" : {
 
     },

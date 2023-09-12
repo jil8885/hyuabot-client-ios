@@ -1,0 +1,61 @@
+{
+  "sourceLanguage" : "ko",
+  "strings" : {
+    "reading.room.61" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "제1열람실 (2F)"
+          }
+        }
+      }
+    },
+    "reading.room.63" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "제2열람실 (4F)"
+          }
+        }
+      }
+    },
+    "reading.room.131" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "집중열람실 (4F)"
+          }
+        }
+      }
+    },
+    "reading.room.132" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "노상일 HOLMZ (4F)"
+          }
+        }
+      }
+    },
+    "reading.room.seat.%@.%@" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$@ / %2$@ 석"
+          }
+        }
+      }
+    }
+  },
+  "version" : "1.0"
+}

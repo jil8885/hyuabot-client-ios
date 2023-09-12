@@ -15,6 +15,7 @@ class TabBarViewController: UITabBarController {
         let busVC = BusRealtimeViewController()
         let subwayVC = SubwayRealtimeViewController()
         let cafeteriaVC = CafeteriaViewController()
+        let readingRoomVC = ReadingRoomController()
         
         
         // Declare navigation controllers
@@ -22,8 +23,11 @@ class TabBarViewController: UITabBarController {
         let busNC = BusNavigationController(rootViewController: busVC)
         let subwayNC = SubwayNavigationController(rootViewController: subwayVC)
         let cafeteriaNC = UINavigationController(rootViewController: cafeteriaVC)
+        let readingRoomNC = UINavigationController(rootViewController: readingRoomVC)
         cafeteriaNC.navigationBar.backgroundColor = UIColor(named: "HanyangPrimary")
         cafeteriaNC.navigationBar.titleTextAttributes = [.foregroundColor: UIColor.white]
+        readingRoomNC.navigationBar.backgroundColor = UIColor(named: "HanyangPrimary")
+        readingRoomNC.navigationBar.titleTextAttributes = [.foregroundColor: UIColor.white]
         
         
         // Set navigation item for each view controller
@@ -39,9 +43,11 @@ class TabBarViewController: UITabBarController {
         cafeteriaNC.tabBarItem = UITabBarItem(title: String.localizedNavTitle(resourceID: "cafeteria"), image: UIImage(systemName: "fork.knife"), tag: 3)
         cafeteriaNC.navigationBar.topItem?.title = String.localizedNavTitle(resourceID: "cafeteria")
         cafeteriaNC.navigationBar.tintColor = .white
+        readingRoomNC.tabBarItem = UITabBarItem(title: String.localizedNavTitle(resourceID: "reading.room"), image: UIImage(systemName: "book"), tag: 4)
+        readingRoomNC.navigationBar.topItem?.title = String.localizedNavTitle(resourceID: "reading.room")
         
         // Set view controllers
-        self.viewControllers = [shuttleNC, busNC, subwayNC, cafeteriaNC]
+        self.viewControllers = [shuttleNC, busNC, subwayNC, cafeteriaNC, readingRoomNC]
     }
 }
 
