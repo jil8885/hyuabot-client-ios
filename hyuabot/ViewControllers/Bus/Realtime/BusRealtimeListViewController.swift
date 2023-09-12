@@ -188,12 +188,14 @@ class BusRealtimeListViewController: UIViewController {
             self.section1List = section1List
             self.section2List = section2List
             self.section3List = section3List
-            
+            self.tableView.refreshControl?.endRefreshing()
             self.tableView.reloadData()
         }).disposed(by: disposeBag)
     }
     
-    @objc private func refreshTableView(_ sender: AnyObject) {}
+    @objc private func refreshTableView(_ sender: AnyObject) {
+        self.appDelegate.queryBusRealtimePage()
+    }
 }
 
 extension BusRealtimeListViewController: UITableViewDelegate {

@@ -178,11 +178,14 @@ class SubwayRealtimeListViewController: UIViewController {
 
             self.section1List = section1List
             self.section2List = section2List
+            self.tableView.refreshControl?.endRefreshing()
             self.tableView.reloadData()
         }).disposed(by: disposeBag)
     }
     
-    @objc private func refreshTableView(_ sender: AnyObject) {}
+    @objc private func refreshTableView(_ sender: AnyObject) {
+        self.appDelegate.querySubwayRealtimePage()
+    }
     
     func caculateRemainingTime(current: Foundation.Date, departureTime: String) -> Int {
         let splitTime = departureTime.split(separator: ":")
