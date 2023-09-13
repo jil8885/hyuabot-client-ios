@@ -16,6 +16,7 @@ class TabBarViewController: UITabBarController {
         let subwayVC = SubwayRealtimeViewController()
         let cafeteriaVC = CafeteriaViewController()
         let readingRoomVC = ReadingRoomController()
+        let settingVC = SettingViewController()
         
         
         // Declare navigation controllers
@@ -24,10 +25,10 @@ class TabBarViewController: UITabBarController {
         let subwayNC = SubwayNavigationController(rootViewController: subwayVC)
         let cafeteriaNC = UINavigationController(rootViewController: cafeteriaVC)
         let readingRoomNC = UINavigationController(rootViewController: readingRoomVC)
-        cafeteriaNC.navigationBar.backgroundColor = UIColor(named: "HanyangPrimary")
-        cafeteriaNC.navigationBar.titleTextAttributes = [.foregroundColor: UIColor.white, .font: UIFont.godo(size: 18, weight: .bold)]
-        readingRoomNC.navigationBar.backgroundColor = UIColor(named: "HanyangPrimary")
-        readingRoomNC.navigationBar.titleTextAttributes = [.foregroundColor: UIColor.white, .font: UIFont.godo(size: 18, weight: .bold)]
+        let settingNC = UINavigationController(rootViewController: settingVC)
+        cafeteriaNC.configureNavigationBar()
+        readingRoomNC.configureNavigationBar()
+        settingNC.configureNavigationBar()
         
         
         // Set navigation item for each view controller
@@ -45,9 +46,19 @@ class TabBarViewController: UITabBarController {
         cafeteriaNC.navigationBar.tintColor = .white
         readingRoomNC.tabBarItem = UITabBarItem(title: String.localizedNavTitle(resourceID: "reading.room"), image: UIImage(systemName: "book"), tag: 4)
         readingRoomNC.navigationBar.topItem?.title = String.localizedNavTitle(resourceID: "reading.room")
+        readingRoomNC.navigationBar.tintColor = .white
+        settingNC.tabBarItem = UITabBarItem(title: String.localizedNavTitle(resourceID: "setting"), image: UIImage(systemName: "gear"), tag: 5)
+        settingNC.navigationBar.topItem?.title = String.localizedNavTitle(resourceID: "setting")
+        settingNC.navigationBar.tintColor = .white
         
         // Set view controllers
-        self.viewControllers = [shuttleNC, busNC, subwayNC, cafeteriaNC, readingRoomNC]
+        self.viewControllers = [shuttleNC, busNC, subwayNC, cafeteriaNC, readingRoomNC, settingNC]
+        // Config more navigation controller
+        self.moreNavigationController.configureNavigationBar()
+        self.moreNavigationController.navigationBar.topItem?.title = String.localizedNavTitle(resourceID: "more")
+        self.moreNavigationController.tabBarItem = UITabBarItem(title: String.localizedNavTitle(resourceID: "more"), image: UIImage(systemName: "ellipsis"), tag: 6)
+        self.moreNavigationController.editButtonItem.title = String.localizedNavTitle(resourceID: "edit")
+        self.moreNavigationController.navigationBar.tintColor = .white
     }
 }
 

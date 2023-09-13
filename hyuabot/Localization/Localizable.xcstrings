@@ -1,6 +1,21 @@
 {
   "sourceLanguage" : "ko",
   "strings" : {
+    "app.contact" : {
+
+    },
+    "app.developer" : {
+
+    },
+    "app.language" : {
+
+    },
+    "app.theme" : {
+
+    },
+    "app.version" : {
+
+    },
     "bus.arrival.realtime.no.seat.%@.%@" : {
       "localizations" : {
         "ko" : {
@@ -77,7 +92,16 @@
     "cafeteria.type.lunch" : {
 
     },
+    "cancel.button" : {
+
+    },
     "dormitory_o" : {
+
+    },
+    "edit" : {
+
+    },
+    "email.sent.failed" : {
 
     },
     "food.price.%@" : {
@@ -100,6 +124,12 @@
         }
       }
     },
+    "more" : {
+
+    },
+    "ok.button" : {
+
+    },
     "out.of.service" : {
 
     },
@@ -120,6 +150,9 @@
 
     },
     "search.option.ok" : {
+
+    },
+    "setting" : {
 
     },
     "show_entire_schedule" : {

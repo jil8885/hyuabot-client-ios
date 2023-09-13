@@ -26,4 +26,8 @@ extension String {
     static func localizedReadingRoomItem(resourceID: String.LocalizationValue) -> String {
         return String(localized: resourceID, table: "ReadingRoom")
     }
+    
+    static func localizedSettingsItem(resourceID: String.LocalizationValue) -> String {
+        return String(localized: resourceID, table: "Settings")
+    }
 }

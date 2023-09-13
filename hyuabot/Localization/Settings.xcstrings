@@ -1,123 +1,90 @@
 {
   "sourceLanguage" : "ko",
   "strings" : {
-    "bus.realtime" : {
+    "app.contact" : {
       "extractionState" : "manual",
       "localizations" : {
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "노선버스"
+            "value" : "개발자 이메일"
           }
         }
       }
     },
-    "cafeteria" : {
+    "app.developer" : {
       "extractionState" : "manual",
       "localizations" : {
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "학식"
+            "value" : "개발자 정보"
           }
         }
       }
     },
-    "calendar" : {
+    "app.language" : {
       "extractionState" : "manual",
       "localizations" : {
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "학사력"
+            "value" : "언어 설정"
           }
         }
       }
     },
-    "campus.contact" : {
+    "app.theme" : {
       "extractionState" : "manual",
       "localizations" : {
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "전화부"
+            "value" : "테마 설정"
           }
         }
       }
     },
-    "campus.map" : {
+    "app.version" : {
       "extractionState" : "manual",
       "localizations" : {
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "지도"
+            "value" : "앱 버전"
           }
         }
       }
     },
-    "edit" : {
+    "cancel.button" : {
       "extractionState" : "manual",
       "localizations" : {
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "편집"
+            "value" : "취소"
           }
         }
       }
     },
-    "more" : {
+    "email.sent.failed" : {
       "extractionState" : "manual",
       "localizations" : {
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "더보기"
+            "value" : "이메일을 보낼 수 있는 앱이 없습니다."
           }
         }
       }
     },
-    "reading.room" : {
+    "ok.button" : {
       "extractionState" : "manual",
       "localizations" : {
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "열람실"
-          }
-        }
-      }
-    },
-    "setting" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "설정"
-          }
-        }
-      }
-    },
-    "shuttle.realtime" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "셔틀버스"
-          }
-        }
-      }
-    },
-    "subway.realtime" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "전철"
+            "value" : "확인"
           }
         }
       }

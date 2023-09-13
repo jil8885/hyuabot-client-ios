@@ -87,6 +87,12 @@
 		C7874FF02AAF316A00BB9EF5 /* SubwayRealtimeItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7874FEF2AAF316A00BB9EF5 /* SubwayRealtimeItem.swift */; };
 		C7C51CAA2AB1CB7400B049AD /* GodoB.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C7C51CA82AB1CB7400B049AD /* GodoB.ttf */; };
 		C7C51CAB2AB1CB7400B049AD /* GodoM.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C7C51CA92AB1CB7400B049AD /* GodoM.ttf */; };
+		C7C51CAE2AB1D09500B049AD /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7C51CAD2AB1D09500B049AD /* SettingViewController.swift */; };
+		C7C51CB02AB1D12400B049AD /* SettingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7C51CAF2AB1D12400B049AD /* SettingTableViewCell.swift */; };
+		C7C51CB22AB1D2A800B049AD /* Settings.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = C7C51CB12AB1D2A800B049AD /* Settings.xcstrings */; };
+		C7C51CB42AB2069900B049AD /* AppThemeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7C51CB32AB2069900B049AD /* AppThemeViewController.swift */; };
+		C7C51CB62AB2092400B049AD /* LanguageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7C51CB52AB2092400B049AD /* LanguageViewController.swift */; };
+		C7C51CB82AB2094600B049AD /* DeveloperViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7C51CB72AB2094600B049AD /* DeveloperViewController.swift */; };
 		C7CF65372AA490B1001EF16F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7CF65362AA490B1001EF16F /* AppDelegate.swift */; };
 		C7CF65402AA490B2001EF16F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7CF653F2AA490B2001EF16F /* Assets.xcassets */; };
 		C7CF65432AA490B2001EF16F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7CF65412AA490B2001EF16F /* LaunchScreen.storyboard */; };
@@ -213,6 +219,12 @@
 		C7874FEF2AAF316A00BB9EF5 /* SubwayRealtimeItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubwayRealtimeItem.swift; sourceTree = "<group>"; };
 		C7C51CA82AB1CB7400B049AD /* GodoB.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = GodoB.ttf; sourceTree = "<group>"; };
 		C7C51CA92AB1CB7400B049AD /* GodoM.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = GodoM.ttf; sourceTree = "<group>"; };
+		C7C51CAD2AB1D09500B049AD /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		C7C51CAF2AB1D12400B049AD /* SettingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingTableViewCell.swift; sourceTree = "<group>"; };
+		C7C51CB12AB1D2A800B049AD /* Settings.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Settings.xcstrings; sourceTree = "<group>"; };
+		C7C51CB32AB2069900B049AD /* AppThemeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppThemeViewController.swift; sourceTree = "<group>"; };
+		C7C51CB52AB2092400B049AD /* LanguageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageViewController.swift; sourceTree = "<group>"; };
+		C7C51CB72AB2094600B049AD /* DeveloperViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeveloperViewController.swift; sourceTree = "<group>"; };
 		C7CF65332AA490B1001EF16F /* hyuabot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hyuabot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7CF65362AA490B1001EF16F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C7CF653F2AA490B2001EF16F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -319,6 +331,7 @@
 				C7E751F02AAD929F001FD1B3 /* Bus.xcstrings */,
 				C7874FDE2AAF223D00BB9EF5 /* Subway.xcstrings */,
 				C74040B22AB0435E007CBF7D /* Cafeteria.xcstrings */,
+				C7C51CB12AB1D2A800B049AD /* Settings.xcstrings */,
 			);
 			path = Localization;
 			sourceTree = "<group>";
@@ -326,6 +339,7 @@
 		A08D994272B2A93FFB8CCC16 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				C7C51CAC2AB1D08300B049AD /* Setting */,
 				C74040BC2AB063C1007CBF7D /* ReadingRoom */,
 				C74040AF2AB04316007CBF7D /* Cafeteria */,
 				A08D97FFF292F33C23014BE2 /* TabBarViewController.swift */,
@@ -489,6 +503,18 @@
 				C74040AD2AB03981007CBF7D /* SubwayTimetableListItemView.swift */,
 			);
 			path = Timetable;
+			sourceTree = "<group>";
+		};
+		C7C51CAC2AB1D08300B049AD /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				C7C51CAD2AB1D09500B049AD /* SettingViewController.swift */,
+				C7C51CAF2AB1D12400B049AD /* SettingTableViewCell.swift */,
+				C7C51CB72AB2094600B049AD /* DeveloperViewController.swift */,
+				C7C51CB32AB2069900B049AD /* AppThemeViewController.swift */,
+				C7C51CB52AB2092400B049AD /* LanguageViewController.swift */,
+			);
+			path = Setting;
 			sourceTree = "<group>";
 		};
 		C7CF652A2AA490B1001EF16F = {
@@ -728,6 +754,7 @@
 				C74040B32AB0435E007CBF7D /* Cafeteria.xcstrings in Resources */,
 				A08D9E98A23DB695B8D15249 /* Poppins-LightItalic.ttf in Resources */,
 				A08D9CFCE4C634791F7F3EC3 /* Poppins-Medium.ttf in Resources */,
+				C7C51CB22AB1D2A800B049AD /* Settings.xcstrings in Resources */,
 				A08D923FE3C01291E6A66436 /* Poppins-MediumItalic.ttf in Resources */,
 				A08D9DEE87D59F792DE68ECE /* Poppins-Regular.ttf in Resources */,
 				A08D9FFD4FB070D483DB725F /* Poppins-SemiBold.ttf in Resources */,
@@ -781,6 +808,7 @@
 				C74040C02AB06432007CBF7D /* ReadingRoomListItemView.swift in Sources */,
 				C7E751F42AAD95B8001FD1B3 /* BusType.swift in Sources */,
 				C7548F912AA5E8CB00C354A2 /* TabCollectionViewCell.swift in Sources */,
+				C7C51CB62AB2092400B049AD /* LanguageViewController.swift in Sources */,
 				C74040BE2AB063E7007CBF7D /* ReadingRoomController.swift in Sources */,
 				A08D907B293A2173B6E179F6 /* TabBarViewController.swift in Sources */,
 				C74040BB2AB05F04007CBF7D /* CafeteriaListItemView.swift in Sources */,
@@ -815,16 +843,20 @@
 				C736EB6A2AA8A883005A42F7 /* ShuttleArrivalItem.swift in Sources */,
 				C7874FE32AAF2E8000BB9EF5 /* SubwayEmptyListView.swift in Sources */,
 				C74040A82AB02015007CBF7D /* TransferItem.swift in Sources */,
+				C7C51CB42AB2069900B049AD /* AppThemeViewController.swift in Sources */,
 				C7874FE82AAF2F5000BB9EF5 /* SubwayTimetableQueryParams.swift in Sources */,
+				C7C51CB82AB2094600B049AD /* DeveloperViewController.swift in Sources */,
 				C7548F872AA5A86900C354A2 /* ShuttleNavigationController.swift in Sources */,
 				C7874FD02AAEE21000BB9EF5 /* ShuttleStopViewController.swift in Sources */,
 				C7E751E22AAB3D2B001FD1B3 /* ShuttleTimetableItem.swift in Sources */,
 				A08D9B3CC14B7CB1B316B2D4 /* CustomFont.swift in Sources */,
+				C7C51CAE2AB1D09500B049AD /* SettingViewController.swift in Sources */,
 				C7874FCB2AAECB6100BB9EF5 /* BusTimetableListItemView.swift in Sources */,
 				C7E751DA2AAB2F90001FD1B3 /* ShuttleTimetableViewController.swift in Sources */,
 				C7874FC92AAEB04F00BB9EF5 /* BusTimetableListViewController.swift in Sources */,
 				C7E751E02AAB3B9B001FD1B3 /* ShuttleTimetableListViewController.swift in Sources */,
 				A08D945FA4DB5FAC1469A9BD /* ShuttleRealtimeViewController.swift in Sources */,
+				C7C51CB02AB1D12400B049AD /* SettingTableViewCell.swift in Sources */,
 				C74040B12AB0433B007CBF7D /* CafeteriaViewController.swift in Sources */,
 				C74040C62AB069CB007CBF7D /* CafeteriaParamViewController.swift in Sources */,
 				C7874FCD2AAEDAFF00BB9EF5 /* ShuttleFooterView.swift in Sources */,
