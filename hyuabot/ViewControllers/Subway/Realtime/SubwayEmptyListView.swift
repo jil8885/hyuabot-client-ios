@@ -5,7 +5,7 @@ class SubwayEmptyListView: UITableViewCell {
     static let identifier = "SubwayEmptyListView"
     private let noInfoLabel: UILabel = {
         let label = UILabel()
-        label.font = .systemFont(ofSize: 16)
+        label.font = .godo(size: 16)
         label.textColor = .darkText
         label.textAlignment = .center
         label.text = String.localizedSubwayItem(resourceID: "out.of.service")

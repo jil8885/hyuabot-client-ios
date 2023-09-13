@@ -7,6 +7,8 @@
 	<key>UIAppFonts</key>
 	<array>
 		<string>Poppins-Black.ttf</string>
+		<string>GodoB.ttf</string>
+		<string>GodoM.ttf</string>
 		<string>Poppins-BlackItalic.ttf</string>
 		<string>Poppins-Bold.ttf</string>
 		<string>Poppins-BoldItalic.ttf</string>

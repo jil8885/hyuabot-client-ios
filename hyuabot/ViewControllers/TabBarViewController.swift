@@ -25,9 +25,9 @@ class TabBarViewController: UITabBarController {
         let cafeteriaNC = UINavigationController(rootViewController: cafeteriaVC)
         let readingRoomNC = UINavigationController(rootViewController: readingRoomVC)
         cafeteriaNC.navigationBar.backgroundColor = UIColor(named: "HanyangPrimary")
-        cafeteriaNC.navigationBar.titleTextAttributes = [.foregroundColor: UIColor.white]
+        cafeteriaNC.navigationBar.titleTextAttributes = [.foregroundColor: UIColor.white, .font: UIFont.godo(size: 18, weight: .bold)]
         readingRoomNC.navigationBar.backgroundColor = UIColor(named: "HanyangPrimary")
-        readingRoomNC.navigationBar.titleTextAttributes = [.foregroundColor: UIColor.white]
+        readingRoomNC.navigationBar.titleTextAttributes = [.foregroundColor: UIColor.white, .font: UIFont.godo(size: 18, weight: .bold)]
         
         
         // Set navigation item for each view controller

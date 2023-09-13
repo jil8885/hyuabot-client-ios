@@ -7,7 +7,7 @@ final class ShuttleFooterView: UIView {
     private let showStopInformationButton: UIButton = {
         var config = UIButton.Configuration.plain()
         var title = AttributedString.init(String.localizedShuttleItem(resourceID: "show.stop.info"))
-        title.font = .systemFont(ofSize: 16)
+        title.font = .godo(size: 16)
         config.attributedTitle = title
         
         return UIButton(configuration: config, primaryAction: nil)

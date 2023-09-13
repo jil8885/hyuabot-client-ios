@@ -17,19 +17,30 @@ extension UIFont {
             case .thin: weightString = "Thin"
             default: weightString = "Regular"
         }
-        return UIFont(name: "\(familyName)-\(weightString)", size: size) ?? UIFont.systemFont(ofSize: size, weight: weight)
+        return UIFont(name: "\(familyName)-\(weightString)", size: size) ?? UIFont.godo(size: size, weight: weight)
+    }
+    
+    static func godo(size: CGFloat, weight: UIFont.Weight = .regular) -> UIFont {
+        let familyName = "Godo"
+        var weightString: String
+        switch weight {
+            case .regular: weightString = "M"
+            case .bold: weightString = "B"
+            default: weightString = "M"
+        }
+        return UIFont(name: "\(familyName)\(weightString)", size: size) ?? UIFont.godo(size: size, weight: weight)
     }
 
     @objc class func mySystemFont(ofSize size: CGFloat) -> UIFont {
-        UIFont.poppins(size: size, weight: .regular)
+        UIFont.godo(size: size, weight: .regular)
     }
 
     @objc class func myBoldSystemFont(ofSize size: CGFloat) -> UIFont {
-        UIFont.poppins(size: size, weight: .bold)
+        UIFont.godo(size: size, weight: .bold)
     }
 
     @objc class func myItalicSystemFont(ofSize size: CGFloat) -> UIFont {
-        UIFont.poppins(size: size, weight: .regular)
+        UIFont.godo(size: size, weight: .regular)
     }
 
     @objc convenience init(myCoder aDecoder: NSCoder) {
@@ -44,13 +55,13 @@ extension UIFont {
         var fontName = ""
         switch fontAttribute {
             case "CTFontRegularUsage":
-                fontName = "Poppins-Regular"
+                fontName = "GodoM"
             case "CTFontEmphasizedUsage", "CTFontBoldUsage":
-                fontName = "Poppins-Bold"
+                fontName = "GodoB"
             case "CTFontObliqueUsage":
-                fontName = "Poppins-Regular"
+                fontName = "GodoM"
             default:
-                fontName = "Poppins-Regular"
+                fontName = "GodoM"
         }
 
         self.init(name: fontName, size: fontDescriptor.pointSize)!

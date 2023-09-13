@@ -4,7 +4,7 @@ final class SubwayRealtimeHeaderView: UITableViewHeaderFooterView {
     static let identifier = "SubwayRealtimeHeaderView"
     private let titleLabel: UILabel = {
         let label = UILabel()
-        label.font = .systemFont(ofSize: 16, weight: .bold)
+        label.font = .godo(size: 16, weight: .bold)
         label.textColor = .white
         label.textAlignment = .center
         return label

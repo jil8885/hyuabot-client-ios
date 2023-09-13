@@ -75,7 +75,7 @@ class ShuttleRealtimeViewController: UIViewController, CLLocationManagerDelegate
         button.layer.cornerRadius = 10
         button.addTarget(self, action: #selector(toggleButtonClicked), for: .touchUpInside)
         button.translatesAutoresizingMaskIntoConstraints = false
-        button.titleLabel?.font = .systemFont(ofSize: 40)
+        button.titleLabel?.font = .godo(size: 40)
         return button
     }()
     

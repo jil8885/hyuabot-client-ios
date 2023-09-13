@@ -44,7 +44,7 @@ class AppTabItem: UIView, TabItemProtocol {
     }
     
     func onNotselected() {
-        self.titleLabel.font = UIFont.systemFont(ofSize: 18)
+        self.titleLabel.font = .godo(size: 16, weight: .regular)
         self.layer.shadowOpacity = 0
         indicatorView.removeFromSuperview()
     }

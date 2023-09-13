@@ -5,7 +5,7 @@ class BusEmptyListItemView: UITableViewCell {
     static let identifier = "BusEmptyListItemView"
     private let noInfoLabel: UILabel = {
         let label = UILabel()
-        label.font = .systemFont(ofSize: 16)
+        label.font = .godo(size: 16)
         label.textColor = .darkText
         label.textAlignment = .center
         label.text = String.localizedBusItem(resourceID: "out.of.service")

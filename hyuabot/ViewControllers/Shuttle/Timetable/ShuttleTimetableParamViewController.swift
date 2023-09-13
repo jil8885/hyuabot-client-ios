@@ -36,7 +36,7 @@ class ShuttleTimetableParamViewController: UIViewController {
     private lazy var titleLabel: UILabel = {
         let label = UILabel()
         label.textAlignment = .center
-        label.font = .systemFont(ofSize: 18.0, weight: .bold)
+        label.font = .godo(size: 18.0, weight: .bold)
         label.numberOfLines = 0
         label.textColor = .black
         label.text = String.localizedShuttleItem(resourceID: "shuttle.search.option")

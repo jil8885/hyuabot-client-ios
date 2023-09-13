@@ -6,21 +6,21 @@ final class ShuttleTableCellView: UIView {
     private let disposeBag = DisposeBag()
     private let typeLabel: UILabel = {
         let label = UILabel()
-        label.font = .systemFont(ofSize: 16, weight: .bold)
+        label.font = .godo(size: 16, weight: .bold)
         label.textColor = .white
         label.textAlignment = .center
         return label
     }()
     private let timeLabel: UILabel = {
         let label = UILabel()
-        label.font = .systemFont(ofSize: 16)
+        label.font = .godo(size: 16)
         label.textColor = .darkText
         label.textAlignment = .center
         return label
     }()
     private let remainingTimeLabel: UILabel = {
         let label = UILabel()
-        label.font = .systemFont(ofSize: 16)
+        label.font = .godo(size: 16)
         label.textColor = .darkText
         label.textAlignment = .center
         label.isHidden = true

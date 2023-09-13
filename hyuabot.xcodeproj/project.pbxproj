@@ -85,6 +85,8 @@
 		C7874FEC2AAF307E00BB9EF5 /* SubwayRealtimeListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7874FEB2AAF307E00BB9EF5 /* SubwayRealtimeListViewController.swift */; };
 		C7874FEE2AAF313800BB9EF5 /* SubwayRealtimeListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7874FED2AAF313800BB9EF5 /* SubwayRealtimeListItemView.swift */; };
 		C7874FF02AAF316A00BB9EF5 /* SubwayRealtimeItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7874FEF2AAF316A00BB9EF5 /* SubwayRealtimeItem.swift */; };
+		C7C51CAA2AB1CB7400B049AD /* GodoB.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C7C51CA82AB1CB7400B049AD /* GodoB.ttf */; };
+		C7C51CAB2AB1CB7400B049AD /* GodoM.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C7C51CA92AB1CB7400B049AD /* GodoM.ttf */; };
 		C7CF65372AA490B1001EF16F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7CF65362AA490B1001EF16F /* AppDelegate.swift */; };
 		C7CF65402AA490B2001EF16F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7CF653F2AA490B2001EF16F /* Assets.xcassets */; };
 		C7CF65432AA490B2001EF16F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7CF65412AA490B2001EF16F /* LaunchScreen.storyboard */; };
@@ -209,6 +211,8 @@
 		C7874FEB2AAF307E00BB9EF5 /* SubwayRealtimeListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubwayRealtimeListViewController.swift; sourceTree = "<group>"; };
 		C7874FED2AAF313800BB9EF5 /* SubwayRealtimeListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubwayRealtimeListItemView.swift; sourceTree = "<group>"; };
 		C7874FEF2AAF316A00BB9EF5 /* SubwayRealtimeItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubwayRealtimeItem.swift; sourceTree = "<group>"; };
+		C7C51CA82AB1CB7400B049AD /* GodoB.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = GodoB.ttf; sourceTree = "<group>"; };
+		C7C51CA92AB1CB7400B049AD /* GodoM.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = GodoM.ttf; sourceTree = "<group>"; };
 		C7CF65332AA490B1001EF16F /* hyuabot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hyuabot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7CF65362AA490B1001EF16F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C7CF653F2AA490B2001EF16F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -335,6 +339,8 @@
 		A08D9C8E0B0FBB48EDB21AD7 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
+				C7C51CA82AB1CB7400B049AD /* GodoB.ttf */,
+				C7C51CA92AB1CB7400B049AD /* GodoM.ttf */,
 				A08D92BB1E56D196F86E94B9 /* Poppins-Black.ttf */,
 				A08D9F35C13E093067817748 /* Poppins-BlackItalic.ttf */,
 				A08D99F6BDF039A4AE174903 /* Poppins-Bold.ttf */,
@@ -704,6 +710,7 @@
 				C7CF65402AA490B2001EF16F /* Assets.xcassets in Resources */,
 				C7DD8F052AAAD695006958D7 /* Localizable.xcstrings in Resources */,
 				A08D98EBFEE07997A5D800A1 /* Poppins-Black.ttf in Resources */,
+				C7C51CAB2AB1CB7400B049AD /* GodoM.ttf in Resources */,
 				C74040CA2AB06EA1007CBF7D /* GoogleService-Info.plist in Resources */,
 				C7548F832AA5A5F800C354A2 /* Navigation.xcstrings in Resources */,
 				A08D9D7CA3D24F10890DCE64 /* Poppins-BlackItalic.ttf in Resources */,
@@ -728,6 +735,7 @@
 				A08D9ACB4F723B1504C35BB5 /* Poppins-SemiBoldItalic.ttf in Resources */,
 				A08D940E87B520C08DC6A313 /* Poppins-Thin.ttf in Resources */,
 				A08D9572B82F61D1E4F2C0A8 /* Poppins-ThinItalic.ttf in Resources */,
+				C7C51CAA2AB1CB7400B049AD /* GodoB.ttf in Resources */,
 				C7CF65692AA59C27001EF16F /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

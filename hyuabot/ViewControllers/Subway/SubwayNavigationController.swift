@@ -14,7 +14,7 @@ class SubwayNavigationController: UINavigationController {
     // Configure navigation bar
     func configureNavigationBar(){
         navigationBar.backgroundColor = UIColor(named: "HanyangPrimary")
-        navigationBar.titleTextAttributes = [.foregroundColor: UIColor.white]
+        navigationBar.titleTextAttributes = [.foregroundColor: UIColor.white, .font: UIFont.godo(size: 18, weight: .bold)]
     }
     
     // Listen timetable query params

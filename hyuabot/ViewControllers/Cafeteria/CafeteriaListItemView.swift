@@ -8,7 +8,7 @@ class CafeteriaListItemView: UITableViewCell {
     private let disposeBag = DisposeBag()
     private let menuLabel: UILabel = {
         let label = UILabel()
-        label.font = .systemFont(ofSize: 16)
+        label.font = .godo(size: 16)
         label.textColor = .darkText
         label.textAlignment = .center
         label.numberOfLines = 0
@@ -16,7 +16,7 @@ class CafeteriaListItemView: UITableViewCell {
     }()
     private let priceLabel: UILabel = {
         let label = UILabel()
-        label.font = .systemFont(ofSize: 16, weight: .bold)
+        label.font = .godo(size: 16, weight: .bold)
         label.textColor = .darkText
         label.textAlignment = .center
         return label
