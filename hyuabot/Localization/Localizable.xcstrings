@@ -13,6 +13,15 @@
     "app.theme" : {
 
     },
+    "app.theme.dark" : {
+
+    },
+    "app.theme.light" : {
+
+    },
+    "app.theme.system" : {
+
+    },
     "app.version" : {
 
     },

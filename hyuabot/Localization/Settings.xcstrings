@@ -45,6 +45,39 @@
         }
       }
     },
+    "app.theme.dark" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "주간"
+          }
+        }
+      }
+    },
+    "app.theme.light" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "야간"
+          }
+        }
+      }
+    },
+    "app.theme.system" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "시스템 (자동)"
+          }
+        }
+      }
+    },
     "app.version" : {
       "extractionState" : "manual",
       "localizations" : {

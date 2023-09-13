@@ -2,6 +2,7 @@ import Foundation
 import UIKit
 
 class AppThemeViewController: UIViewController {
+    var theme: Int = -1
     private lazy var containerView: UIView = {
         let view = UIView()
         view.backgroundColor = .white
@@ -38,20 +39,27 @@ class AppThemeViewController: UIViewController {
         return label
     }()
     
-    
-    private lazy var okButton: UIButton? = {
+    private lazy var lightModeButton: UIButton = {
         var configuration = UIButton.Configuration.plain()
         let button = UIButton(configuration: configuration)
-        button.setTitle(String.localizedSettingsItem(resourceID: "ok.button"), for: .normal)
-        button.addTarget(self, action: #selector(okButtonTapped), for: .touchUpInside)
+        button.setTitle(String.localizedSettingsItem(resourceID: "app.theme.light"), for: .normal)
+        button.addTarget(self, action: #selector(lightModeButtonTapped), for: .touchUpInside)
         return button
     }()
-
-    private lazy var cancelButton: UIButton? = {
+    
+    private lazy var darkModeButton: UIButton = {
         var configuration = UIButton.Configuration.plain()
         let button = UIButton(configuration: configuration)
-        button.setTitle(String.localizedSettingsItem(resourceID: "cancel.button"), for: .normal)
-        button.addTarget(self, action: #selector(cancelButtonTapped), for: .touchUpInside)
+        button.setTitle(String.localizedSettingsItem(resourceID: "app.theme.dark"), for: .normal)
+        button.addTarget(self, action: #selector(darkModeButtonTapped), for: .touchUpInside)
+        return button
+    }()
+    
+    private lazy var systemModeButton: UIButton = {
+        var configuration = UIButton.Configuration.plain()
+        let button = UIButton(configuration: configuration)
+        button.setTitle(String.localizedSettingsItem(resourceID: "app.theme.system"), for: .normal)
+        button.addTarget(self, action: #selector(systemModeButtonTapped), for: .touchUpInside)
         return button
     }()
 
@@ -68,7 +76,6 @@ class AppThemeViewController: UIViewController {
         super.viewDidLoad()
         setupViews()
         addSubviews()
-        addButtons()
         makeConstraints()
     }
 
@@ -97,21 +104,14 @@ class AppThemeViewController: UIViewController {
     private func addSubviews() {
         view.addSubview(containerStackView)
         containerStackView.addArrangedSubview(titleLabel)
-        if let lastView = containerStackView.subviews.last {
-            containerStackView.setCustomSpacing(24.0, after: lastView)
-        }
-        containerStackView.addArrangedSubview(buttonStackView)
-    }
-    
-    private func addButtons() {
-        buttonStackView.addArrangedSubview(okButton!)
-        buttonStackView.addArrangedSubview(cancelButton!)
+        containerStackView.addArrangedSubview(lightModeButton)
+        containerStackView.addArrangedSubview(darkModeButton)
+        containerStackView.addArrangedSubview(systemModeButton)
     }
 
     private func makeConstraints() {
         containerView.translatesAutoresizingMaskIntoConstraints = false
         containerStackView.translatesAutoresizingMaskIntoConstraints = false
-        buttonStackView.translatesAutoresizingMaskIntoConstraints = false
 
         NSLayoutConstraint.activate([
             containerView.centerYAnchor.constraint(equalTo: view.centerYAnchor),
@@ -122,16 +122,29 @@ class AppThemeViewController: UIViewController {
 
             containerStackView.topAnchor.constraint(equalTo: containerView.topAnchor, constant: 24),
             containerStackView.leadingAnchor.constraint(equalTo: containerView.leadingAnchor, constant: 10),
-            containerStackView.bottomAnchor.constraint(equalTo: containerView.bottomAnchor, constant: -10),
+            containerStackView.bottomAnchor.constraint(equalTo: containerView.bottomAnchor, constant: -24),
             containerStackView.trailingAnchor.constraint(equalTo: containerView.trailingAnchor, constant: -10),
-
-            buttonStackView.heightAnchor.constraint(equalToConstant: 48),
-            buttonStackView.widthAnchor.constraint(equalTo: containerStackView.widthAnchor)
         ])
+    }
+    
+    @objc func lightModeButtonTapped() {
+        theme = 0
+        okButtonTapped()
+    }
+    
+    @objc func darkModeButtonTapped() {
+        theme = 1
+        okButtonTapped()
+    }
+    
+    @objc func systemModeButtonTapped() {
+        theme = 2
+        okButtonTapped()
     }
     
     @objc func okButtonTapped() {
         dismiss(animated: true, completion: nil)
+        print(theme)
     }
     
     @objc func cancelButtonTapped() {

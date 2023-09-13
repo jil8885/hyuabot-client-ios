@@ -93,6 +93,7 @@
 		C7C51CB42AB2069900B049AD /* AppThemeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7C51CB32AB2069900B049AD /* AppThemeViewController.swift */; };
 		C7C51CB62AB2092400B049AD /* LanguageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7C51CB52AB2092400B049AD /* LanguageViewController.swift */; };
 		C7C51CB82AB2094600B049AD /* DeveloperViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7C51CB72AB2094600B049AD /* DeveloperViewController.swift */; };
+		C7C51CBA2AB20D0600B049AD /* SettingItemViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7C51CB92AB20D0600B049AD /* SettingItemViewCell.swift */; };
 		C7CF65372AA490B1001EF16F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7CF65362AA490B1001EF16F /* AppDelegate.swift */; };
 		C7CF65402AA490B2001EF16F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7CF653F2AA490B2001EF16F /* Assets.xcassets */; };
 		C7CF65432AA490B2001EF16F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7CF65412AA490B2001EF16F /* LaunchScreen.storyboard */; };
@@ -225,6 +226,7 @@
 		C7C51CB32AB2069900B049AD /* AppThemeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppThemeViewController.swift; sourceTree = "<group>"; };
 		C7C51CB52AB2092400B049AD /* LanguageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageViewController.swift; sourceTree = "<group>"; };
 		C7C51CB72AB2094600B049AD /* DeveloperViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeveloperViewController.swift; sourceTree = "<group>"; };
+		C7C51CB92AB20D0600B049AD /* SettingItemViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingItemViewCell.swift; sourceTree = "<group>"; };
 		C7CF65332AA490B1001EF16F /* hyuabot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hyuabot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7CF65362AA490B1001EF16F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C7CF653F2AA490B2001EF16F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -513,6 +515,7 @@
 				C7C51CB72AB2094600B049AD /* DeveloperViewController.swift */,
 				C7C51CB32AB2069900B049AD /* AppThemeViewController.swift */,
 				C7C51CB52AB2092400B049AD /* LanguageViewController.swift */,
+				C7C51CB92AB20D0600B049AD /* SettingItemViewCell.swift */,
 			);
 			path = Setting;
 			sourceTree = "<group>";
@@ -809,6 +812,7 @@
 				C7E751F42AAD95B8001FD1B3 /* BusType.swift in Sources */,
 				C7548F912AA5E8CB00C354A2 /* TabCollectionViewCell.swift in Sources */,
 				C7C51CB62AB2092400B049AD /* LanguageViewController.swift in Sources */,
+				C7C51CBA2AB20D0600B049AD /* SettingItemViewCell.swift in Sources */,
 				C74040BE2AB063E7007CBF7D /* ReadingRoomController.swift in Sources */,
 				A08D907B293A2173B6E179F6 /* TabBarViewController.swift in Sources */,
 				C74040BB2AB05F04007CBF7D /* CafeteriaListItemView.swift in Sources */,
