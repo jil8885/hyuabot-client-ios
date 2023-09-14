@@ -55,12 +55,20 @@ class SubwayTimetableListViewController: UIViewController {
     func subscribeData() {
         if self.heading == .up {
             appDelegate.subwayTimetableUpQuery.subscribe(onNext: { data in
-                self.upTimetableList = data
+                if self.weekdays == .weekdays {
+                    self.upTimetableList = data.filter({ $0.weekday == "weekdays" })
+                } else {
+                    self.upTimetableList = data.filter({ $0.weekday == "weekends" })
+                }
                 self.tableView.reloadData()
             }).disposed(by: disposeBag)
         } else {
             appDelegate.subwayTimetableDownQuery.subscribe(onNext: { data in
-                self.downTimetableList = data
+                if self.weekdays == .weekdays {
+                    self.downTimetableList = data.filter({ $0.weekday == "weekdays" })
+                } else {
+                    self.downTimetableList = data.filter({ $0.weekday == "weekends" })
+                }
                 self.tableView.reloadData()
             }).disposed(by: disposeBag)
         }

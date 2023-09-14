@@ -1,5 +1,5 @@
 query SubwayTimetableUpQuery($station: [String!]!) {
-  subway(station: $station, start: "00:00") {
+  subway(station: $station, start: "00:00", weekday: ["weekdays", "weekends"]) {
     timetable {
       up {
         destinationID, destinationName, weekday, time

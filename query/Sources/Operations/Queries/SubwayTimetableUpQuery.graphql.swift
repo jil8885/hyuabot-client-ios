@@ -7,7 +7,7 @@ public class SubwayTimetableUpQuery: GraphQLQuery {
   public static let operationName: String = "SubwayTimetableUpQuery"
   public static let operationDocument: ApolloAPI.OperationDocument = .init(
     definition: .init(
-      #"query SubwayTimetableUpQuery($station: [String!]!) { subway(station: $station, start: "00:00") { __typename timetable { __typename up { __typename destinationID destinationName weekday time } } } }"#
+      #"query SubwayTimetableUpQuery($station: [String!]!) { subway(station: $station, start: "00:00", weekday: ["weekdays", "weekends"]) { __typename timetable { __typename up { __typename destinationID destinationName weekday time } } } }"#
     ))
 
   public var station: [String]
@@ -26,7 +26,8 @@ public class SubwayTimetableUpQuery: GraphQLQuery {
     public static var __selections: [ApolloAPI.Selection] { [
       .field("subway", [Subway].self, arguments: [
         "station": .variable("station"),
-        "start": "00:00"
+        "start": "00:00",
+        "weekday": ["weekdays", "weekends"]
       ]),
     ] }
 
