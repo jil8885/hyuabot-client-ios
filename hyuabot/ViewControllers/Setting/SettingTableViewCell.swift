@@ -5,14 +5,12 @@ class SettingTableViewCell: UITableViewCell {
     private let iconImageView: UIImageView = {
         let imageView = UIImageView()
         imageView.contentMode = .scaleAspectFit
-        imageView.tintColor = .darkText
         return imageView
     }()
     
     private let settingLabel: UILabel = {
         let label = UILabel()
         label.font = .godo(size: 16, weight: .regular)
-        label.textColor = .black
         label.textAlignment = .left
         return label
     }()
@@ -20,7 +18,6 @@ class SettingTableViewCell: UITableViewCell {
     private let dataLabel: UILabel = {
         let label = UILabel()
         label.font = .godo(size: 16, weight: .regular)
-        label.textColor = .black
         label.textAlignment = .right
         return label
     }()
@@ -28,7 +25,7 @@ class SettingTableViewCell: UITableViewCell {
     private let rightArrowImageView: UIImageView = {
         let imageView = UIImageView()
         imageView.contentMode = .scaleAspectFit
-        imageView.tintColor = .darkText
+        imageView.tintColor = .label
         imageView.image = UIImage(systemName: "chevron.right")
         return imageView
     }()

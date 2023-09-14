@@ -9,7 +9,7 @@ class ShuttleTimetableParamViewController: UIViewController {
     private let appDelegate = UIApplication.shared.delegate as! AppDelegate
     private lazy var containerView: UIView = {
         let view = UIView()
-        view.backgroundColor = .white
+        view.backgroundColor = .systemBackground
         view.layer.cornerRadius = 8
         view.transform = CGAffineTransform(scaleX: 1.1, y: 1.1)
 
@@ -38,7 +38,7 @@ class ShuttleTimetableParamViewController: UIViewController {
         label.textAlignment = .center
         label.font = .godo(size: 18.0, weight: .bold)
         label.numberOfLines = 0
-        label.textColor = .black
+        label.textColor = .label
         label.text = String.localizedShuttleItem(resourceID: "shuttle.search.option")
         return label
     }()

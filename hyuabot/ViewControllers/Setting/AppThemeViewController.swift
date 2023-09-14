@@ -144,7 +144,26 @@ class AppThemeViewController: UIViewController {
     
     @objc func okButtonTapped() {
         dismiss(animated: true, completion: nil)
-        print(theme)
+        if theme == -1 {
+            return
+        }
+        
+        let scenes = UIApplication.shared.connectedScenes
+        let windowScene = scenes.first as? UIWindowScene
+        guard let window = windowScene?.windows.first else { return }
+        switch theme {
+            case 0:
+                UserDefaults.standard.set("light", forKey: "theme")
+                window.overrideUserInterfaceStyle = .light
+            case 1:
+                UserDefaults.standard.set("dark", forKey: "theme")
+                window.overrideUserInterfaceStyle = .dark
+            case 2:
+                UserDefaults.standard.set("system", forKey: "theme")
+                window.overrideUserInterfaceStyle = .unspecified
+            default:
+                break
+        }
     }
     
     @objc func cancelButtonTapped() {

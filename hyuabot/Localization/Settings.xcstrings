@@ -51,7 +51,7 @@
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "주간"
+            "value" : "야간"
           }
         }
       }
@@ -62,7 +62,7 @@
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "야간"
+            "value" : "주간"
           }
         }
       }

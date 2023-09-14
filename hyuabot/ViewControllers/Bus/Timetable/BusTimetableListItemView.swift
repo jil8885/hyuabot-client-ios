@@ -8,7 +8,6 @@ class BusTimetableListItemView: UITableViewCell {
     private let timeLabel: UILabel = {
         let label = UILabel()
         label.font = .godo(size: 16)
-        label.textColor = .darkText
         label.textAlignment = .center
         return label
     }()

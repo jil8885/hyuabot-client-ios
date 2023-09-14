@@ -9,14 +9,12 @@ class ReadingRoomListItemView: UITableViewCell {
     private let roomLabel: UILabel = {
         let label = UILabel()
         label.font = .godo(size: 16, weight: .bold)
-        label.textColor = .darkText
         label.textAlignment = .left
         return label
     }()
     private let seatLabel: UILabel = {
         let label = UILabel()
         label.font = .godo(size: 16)
-        label.textColor = .darkText
         label.textAlignment = .right
         return label
     }()

@@ -14,5 +14,14 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         window?.rootViewController = tabVC
         window?.makeKeyAndVisible()
         window?.windowScene = windowScene
+        
+        let theme = UserDefaults.standard.string(forKey: "theme") ?? "system"
+        if theme == "dark" {
+            window?.overrideUserInterfaceStyle = .dark
+        } else if theme == "light" {
+            window?.overrideUserInterfaceStyle = .light
+        } else if theme == "system" {
+            window?.overrideUserInterfaceStyle = .unspecified
+        }
     }
 }

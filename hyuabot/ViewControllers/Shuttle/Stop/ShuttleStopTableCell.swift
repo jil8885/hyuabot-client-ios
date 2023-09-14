@@ -5,14 +5,12 @@ final class ShuttleStopTableCell: UITableViewCell {
     private let typeLabel: UILabel = {
         let label = UILabel()
         label.font = .godo(size: 16, weight: .bold)
-        label.textColor = .darkText
         label.textAlignment = .center
         return label
     }()
     private let timeLabel: UILabel = {
         let label = UILabel()
         label.font = .godo(size: 16)
-        label.textColor = .darkText
         label.textAlignment = .center
         return label
     }()

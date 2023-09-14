@@ -7,21 +7,18 @@ final class ShuttleTableCellView: UIView {
     private let typeLabel: UILabel = {
         let label = UILabel()
         label.font = .godo(size: 16, weight: .bold)
-        label.textColor = .white
         label.textAlignment = .center
         return label
     }()
     private let timeLabel: UILabel = {
         let label = UILabel()
         label.font = .godo(size: 16)
-        label.textColor = .darkText
         label.textAlignment = .center
         return label
     }()
     private let remainingTimeLabel: UILabel = {
         let label = UILabel()
         label.font = .godo(size: 16)
-        label.textColor = .darkText
         label.textAlignment = .center
         label.isHidden = true
         return label
@@ -78,20 +75,19 @@ final class ShuttleTableCellView: UIView {
         if stopType == .dormitoryOut || stopType == .shuttlecockOut || stopType == .station {
             if item.tag == "C" {
                 typeLabel.text = String.localizedShuttleItem(resourceID: "shuttle_tag_C")
-                typeLabel.textColor = .darkText
             } else if (item.tag == "DH" || item.tag == "DY") {
                 typeLabel.text = String.localizedShuttleItem(resourceID: "shuttle_tag_DH")
-                typeLabel.textColor = .red
+                typeLabel.textColor = .shuttleRed
             } else {
                 typeLabel.text = String.localizedShuttleItem(resourceID: "shuttle_tag_DJ")
-                typeLabel.textColor = .blue
+                typeLabel.textColor = .shuttleBlue
             }
         } else if stopType == .terminal {
             typeLabel.text = String.localizedShuttleItem(resourceID: "shuttle_tag_DY")
-            typeLabel.textColor = .darkText
+            typeLabel.textColor = .label
         } else if stopType == .shuttlecockIn || stopType == .jungangStation {
             typeLabel.text = String.localizedShuttleItem(resourceID: "shuttle_tag_D")
-            typeLabel.textColor = .darkText
+            typeLabel.textColor = .label
         }
     }
 }

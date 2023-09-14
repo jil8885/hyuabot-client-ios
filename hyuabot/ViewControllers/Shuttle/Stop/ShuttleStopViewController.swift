@@ -20,7 +20,6 @@ class ShuttleStopViewController: UIViewController  {
     ]
     private lazy var stopLabel: UILabel = {
         let label = UILabel()
-        label.textColor = .darkText
         label.textAlignment = .center
         label.translatesAutoresizingMaskIntoConstraints = false
         return label

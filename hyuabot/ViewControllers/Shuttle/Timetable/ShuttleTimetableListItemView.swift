@@ -18,7 +18,6 @@ class ShuttleTimetableListItemView: UITableViewCell {
     private let timeLabel: UILabel = {
         let label = UILabel()
         label.font = .godo(size: 16)
-        label.textColor = .darkText
         label.textAlignment = .center
         return label
     }()
@@ -43,20 +42,20 @@ class ShuttleTimetableListItemView: UITableViewCell {
             if params?.stopID == "dormitory_o" || params?.stopID == "shuttlecock_o" || params?.stopID == "station" {
                 if item.tag == "C" {
                     typeLabel.text = String.localizedShuttleItem(resourceID: "shuttle_tag_C")
-                    typeLabel.textColor = .darkText
+                    typeLabel.textColor = .label
                 } else if (item.tag == "DH" || item.tag == "DY") {
                     typeLabel.text = String.localizedShuttleItem(resourceID: "shuttle_tag_DH")
-                    typeLabel.textColor = .red
+                    typeLabel.textColor = .shuttleRed
                 } else {
                     typeLabel.text = String.localizedShuttleItem(resourceID: "shuttle_tag_DJ")
-                    typeLabel.textColor = .blue
+                    typeLabel.textColor = .shuttleBlue
                 }
             } else if params?.stopID == "terminal" {
                 typeLabel.text = String.localizedShuttleItem(resourceID: "shuttle_tag_DY")
-                typeLabel.textColor = .darkText
+                typeLabel.textColor = .label
             } else if params?.stopID == "shuttlecock_i" || params?.stopID == "jungang_stn" {
                 typeLabel.text = String.localizedShuttleItem(resourceID: "shuttle_tag_D")
-                typeLabel.textColor = .darkText
+                typeLabel.textColor = .label
             }
         }).disposed(by: disposeBag)
     }
