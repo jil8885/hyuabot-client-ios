@@ -71,8 +71,6 @@ class SettingTableViewCell: UITableViewCell {
         dataLabel.text = ""
         rightArrowImageView.isHidden = false
         switch label {
-            case "app.language":
-                iconImageView.image = UIImage(systemName: "globe")
             case "app.version":
                 iconImageView.image = UIImage(systemName: "info.circle")
                 rightArrowImageView.isHidden = true

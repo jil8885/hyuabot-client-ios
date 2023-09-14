@@ -9,7 +9,7 @@ class SettingViewController: UIViewController {
     }()
     
     private let settingList: [String.LocalizationValue] = [
-        "app.language", "app.theme",  "app.developer", "app.contact", "app.version"
+        "app.theme",  "app.developer", "app.contact", "app.version"
     ]
     
     override func viewDidLoad() {
@@ -44,15 +44,12 @@ extension SettingViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         switch indexPath.row {
         case 0:
-            let popUpViewController = LanguageViewController()
-            present(popUpViewController, animated: false, completion: nil)
-        case 1:
             let popUpViewController = AppThemeViewController()
             present(popUpViewController, animated: false, completion: nil)
-        case 2:
+        case 1:
             let popUpViewController = DeveloperViewController()
             present(popUpViewController, animated: false, completion: nil)
-        case 3:
+        case 2:
             let email = "mailto:jil8885@hanyang.ac.kr"
             guard let url = URL(string: email) else { return }
             if UIApplication.shared.canOpenURL(url) {
