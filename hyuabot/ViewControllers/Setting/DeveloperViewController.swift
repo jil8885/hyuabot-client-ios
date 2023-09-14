@@ -4,7 +4,7 @@ import UIKit
 class DeveloperViewController: UIViewController {
     private lazy var containerView: UIView = {
         let view = UIView()
-        view.backgroundColor = .white
+        view.backgroundColor = .systemBackground
         view.layer.cornerRadius = 8
         view.transform = CGAffineTransform(scaleX: 1.1, y: 1.1)
 
@@ -15,7 +15,7 @@ class DeveloperViewController: UIViewController {
         let view = UIStackView()
         view.axis = .vertical
         view.spacing = 12.0
-        view.alignment = .center
+        view.alignment = .fill
 
         return view
     }()
@@ -33,9 +33,70 @@ class DeveloperViewController: UIViewController {
         label.textAlignment = .center
         label.font = .godo(size: 18.0, weight: .bold)
         label.numberOfLines = 0
-        label.textColor = .black
         label.text = String.localizedSettingsItem(resourceID: "app.developer")
         return label
+    }()
+    
+    private lazy var nameItem: UIView = {
+        let item = UIView()
+        let label = UILabel().then {
+            $0.font = .godo(size: 14.0, weight: .bold)
+            $0.textAlignment = .left
+            $0.text = String.localizedSettingsItem(resourceID: "app.developer.name")
+            $0.translatesAutoresizingMaskIntoConstraints = false
+        }
+        let value = UILabel().then {
+            $0.font = .godo(size: 14.0, weight: .medium)
+            $0.textAlignment = .right
+            $0.text = String.localizedSettingsItem(resourceID: "app.developer.name.value")
+            $0.translatesAutoresizingMaskIntoConstraints = false
+        }
+        
+        item.addSubview(label)
+        item.addSubview(value)
+        NSLayoutConstraint.activate([
+            label.topAnchor.constraint(equalTo: item.topAnchor),
+            label.leftAnchor.constraint(equalTo: item.leftAnchor, constant: 16),
+            label.bottomAnchor.constraint(equalTo: item.bottomAnchor),
+            label.widthAnchor.constraint(equalToConstant: 200),
+            
+            value.topAnchor.constraint(equalTo: item.topAnchor),
+            value.rightAnchor.constraint(equalTo: item.rightAnchor, constant: -16),
+            value.bottomAnchor.constraint(equalTo: item.bottomAnchor),
+            value.widthAnchor.constraint(equalToConstant: 200),
+        ])
+        return item
+    }()
+    
+    private lazy var majorItem: UIView = {
+        let item = UIView()
+        let label = UILabel().then {
+            $0.font = .godo(size: 14.0, weight: .bold)
+            $0.textAlignment = .left
+            $0.text = String.localizedSettingsItem(resourceID: "app.developer.major")
+            $0.translatesAutoresizingMaskIntoConstraints = false
+        }
+        let value = UILabel().then {
+            $0.font = .godo(size: 14.0, weight: .medium)
+            $0.textAlignment = .right
+            $0.text = String.localizedSettingsItem(resourceID: "app.developer.major.value")
+            $0.translatesAutoresizingMaskIntoConstraints = false
+        }
+        
+        item.addSubview(label)
+        item.addSubview(value)
+        NSLayoutConstraint.activate([
+            label.topAnchor.constraint(equalTo: item.topAnchor),
+            label.leftAnchor.constraint(equalTo: item.leftAnchor, constant: 16),
+            label.bottomAnchor.constraint(equalTo: item.bottomAnchor),
+            label.widthAnchor.constraint(equalToConstant: 200),
+            
+            value.topAnchor.constraint(equalTo: item.topAnchor),
+            value.rightAnchor.constraint(equalTo: item.rightAnchor, constant: -16),
+            value.bottomAnchor.constraint(equalTo: item.bottomAnchor),
+            value.widthAnchor.constraint(equalToConstant: 200),
+        ])
+        return item
     }()
     
     
@@ -47,13 +108,6 @@ class DeveloperViewController: UIViewController {
         return button
     }()
 
-    private lazy var cancelButton: UIButton? = {
-        var configuration = UIButton.Configuration.plain()
-        let button = UIButton(configuration: configuration)
-        button.setTitle(String.localizedSettingsItem(resourceID: "cancel.button"), for: .normal)
-        button.addTarget(self, action: #selector(cancelButtonTapped), for: .touchUpInside)
-        return button
-    }()
 
     init() {
         super.init(nibName: nil, bundle: nil)
@@ -97,6 +151,8 @@ class DeveloperViewController: UIViewController {
     private func addSubviews() {
         view.addSubview(containerStackView)
         containerStackView.addArrangedSubview(titleLabel)
+        containerStackView.addArrangedSubview(nameItem)
+        containerStackView.addArrangedSubview(majorItem)
         if let lastView = containerStackView.subviews.last {
             containerStackView.setCustomSpacing(24.0, after: lastView)
         }
@@ -105,7 +161,6 @@ class DeveloperViewController: UIViewController {
     
     private func addButtons() {
         buttonStackView.addArrangedSubview(okButton!)
-        buttonStackView.addArrangedSubview(cancelButton!)
     }
 
     private func makeConstraints() {

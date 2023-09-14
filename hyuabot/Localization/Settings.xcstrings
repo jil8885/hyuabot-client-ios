@@ -23,6 +23,50 @@
         }
       }
     },
+    "app.developer.major" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "전공 / 학번"
+          }
+        }
+      }
+    },
+    "app.developer.major.value" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "소프트웨어학부 / 17학번"
+          }
+        }
+      }
+    },
+    "app.developer.name" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "이름"
+          }
+        }
+      }
+    },
+    "app.developer.name.value" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "이정인"
+          }
+        }
+      }
+    },
     "app.language" : {
       "extractionState" : "manual",
       "localizations" : {

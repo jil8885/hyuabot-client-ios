@@ -5,7 +5,7 @@ class AppThemeViewController: UIViewController {
     var theme: Int = -1
     private lazy var containerView: UIView = {
         let view = UIView()
-        view.backgroundColor = .white
+        view.backgroundColor = .systemBackground
         view.layer.cornerRadius = 8
         view.transform = CGAffineTransform(scaleX: 1.1, y: 1.1)
 
@@ -34,7 +34,6 @@ class AppThemeViewController: UIViewController {
         label.textAlignment = .center
         label.font = .godo(size: 18.0, weight: .bold)
         label.numberOfLines = 0
-        label.textColor = .black
         label.text = String.localizedSettingsItem(resourceID: "app.theme")
         return label
     }()

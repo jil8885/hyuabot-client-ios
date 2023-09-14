@@ -7,6 +7,18 @@
     "app.developer" : {
 
     },
+    "app.developer.major" : {
+
+    },
+    "app.developer.major.value" : {
+
+    },
+    "app.developer.name" : {
+
+    },
+    "app.developer.name.value" : {
+
+    },
     "app.theme" : {
 
     },
@@ -96,9 +108,6 @@
 
     },
     "cafeteria.type.lunch" : {
-
-    },
-    "cancel.button" : {
 
     },
     "dormitory_o" : {
