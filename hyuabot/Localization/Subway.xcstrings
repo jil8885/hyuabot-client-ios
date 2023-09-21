@@ -4,6 +4,12 @@
     "oido.transfer" : {
       "extractionState" : "manual",
       "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Oido Stn. (Transfer)"
+          }
+        },
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
@@ -15,6 +21,12 @@
     "out.of.service" : {
       "extractionState" : "manual",
       "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Out of service"
+          }
+        },
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
@@ -26,6 +38,12 @@
     "show.entire.schedule" : {
       "extractionState" : "manual",
       "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Entire schedule"
+          }
+        },
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
@@ -37,6 +55,12 @@
     "skyblue" : {
       "extractionState" : "manual",
       "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Line 4"
+          }
+        },
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
@@ -48,6 +72,12 @@
     "subway.arrival.destination.K209" : {
       "extractionState" : "manual",
       "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cheongnyang-ri"
+          }
+        },
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
@@ -59,6 +89,12 @@
     "subway.arrival.destination.K210" : {
       "extractionState" : "manual",
       "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Wangsimni"
+          }
+        },
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
@@ -70,6 +106,12 @@
     "subway.arrival.destination.K233" : {
       "extractionState" : "manual",
       "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Jukjeon"
+          }
+        },
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
@@ -81,6 +123,12 @@
     "subway.arrival.destination.K246" : {
       "extractionState" : "manual",
       "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gosaek"
+          }
+        },
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
@@ -92,6 +140,12 @@
     "subway.arrival.destination.K258" : {
       "extractionState" : "manual",
       "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Oido"
+          }
+        },
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
@@ -103,6 +157,12 @@
     "subway.arrival.destination.K272" : {
       "extractionState" : "manual",
       "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Incheon"
+          }
+        },
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
@@ -114,6 +174,12 @@
     "subway.arrival.destination.K409" : {
       "extractionState" : "manual",
       "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Danggogae"
+          }
+        },
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
@@ -125,6 +191,12 @@
     "subway.arrival.destination.K411" : {
       "extractionState" : "manual",
       "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nowon"
+          }
+        },
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
@@ -136,6 +208,12 @@
     "subway.arrival.destination.K419" : {
       "extractionState" : "manual",
       "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hansung Univ."
+          }
+        },
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
@@ -144,9 +222,32 @@
         }
       }
     },
+    "subway.arrival.destination.K433" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sadang"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "사당"
+          }
+        }
+      }
+    },
     "subway.arrival.destination.K443" : {
       "extractionState" : "manual",
       "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Geumjeong"
+          }
+        },
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
@@ -158,6 +259,12 @@
     "subway.arrival.destination.K453" : {
       "extractionState" : "manual",
       "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ansan"
+          }
+        },
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
@@ -169,6 +276,12 @@
     "subway.arrival.destination.K456" : {
       "extractionState" : "manual",
       "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Oido"
+          }
+        },
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
@@ -180,6 +293,12 @@
     "subway.arrival.information.%@.%@" : {
       "extractionState" : "manual",
       "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$@ mins left"
+          }
+        },
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
@@ -191,6 +310,12 @@
     "subway.arrival.timetable.%@.%@" : {
       "extractionState" : "manual",
       "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Arrive at %1$@:%2$@"
+          }
+        },
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
@@ -202,6 +327,12 @@
     "subway.days.weekdays" : {
       "extractionState" : "manual",
       "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Weekdays"
+          }
+        },
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
@@ -213,6 +344,12 @@
     "subway.days.weekends" : {
       "extractionState" : "manual",
       "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Weekends"
+          }
+        },
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
@@ -224,6 +361,12 @@
     "subway.skyblue.down" : {
       "extractionState" : "manual",
       "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Line 4 (Ansan, Oido)"
+          }
+        },
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
@@ -235,6 +378,12 @@
     "subway.skyblue.up" : {
       "extractionState" : "manual",
       "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Line 4 (Seoul)"
+          }
+        },
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
@@ -246,6 +395,12 @@
     "subway.timetable.item.%@.%@" : {
       "extractionState" : "manual",
       "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$@:%2$@"
+          }
+        },
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
@@ -257,6 +412,12 @@
     "subway.transfer.down" : {
       "extractionState" : "manual",
       "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Campus ➝ Incheon"
+          }
+        },
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
@@ -268,6 +429,12 @@
     "subway.transfer.up" : {
       "extractionState" : "manual",
       "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Incheon ➝ Campus"
+          }
+        },
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
@@ -279,6 +446,12 @@
     "subway.yellow.down" : {
       "extractionState" : "manual",
       "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Suin-bundang line (Incheon)"
+          }
+        },
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
@@ -290,6 +463,12 @@
     "subway.yellow.up" : {
       "extractionState" : "manual",
       "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Suin-bundang line (Suwon)"
+          }
+        },
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
@@ -301,6 +480,12 @@
     "suin.direct" : {
       "extractionState" : "manual",
       "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Suin-line"
+          }
+        },
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
@@ -312,6 +497,12 @@
     "transfer" : {
       "extractionState" : "manual",
       "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Line 4 ⇄ Suin line"
+          }
+        },
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
@@ -323,6 +514,12 @@
     "transfer.realtime.%@.%@" : {
       "extractionState" : "manual",
       "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "(For %1$@) %2$@ 도착"
+          }
+        },
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
@@ -334,6 +531,12 @@
     "transfer.realtime.%@.%@.%@.%@" : {
       "extractionState" : "manual",
       "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "(For %1$@) %2$@ ⇀ (For %3$@) %4$@"
+          }
+        },
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
@@ -345,6 +548,12 @@
     "yellow" : {
       "extractionState" : "manual",
       "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Suin line"
+          }
+        },
         "ko" : {
           "stringUnit" : {
             "state" : "translated",

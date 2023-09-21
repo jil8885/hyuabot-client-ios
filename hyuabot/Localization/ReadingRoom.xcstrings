@@ -4,6 +4,12 @@
     "reading.room.61" : {
       "extractionState" : "manual",
       "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Room 1 (2F)"
+          }
+        },
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
@@ -15,6 +21,12 @@
     "reading.room.63" : {
       "extractionState" : "manual",
       "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Room 2 (4F)"
+          }
+        },
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
@@ -26,6 +38,12 @@
     "reading.room.131" : {
       "extractionState" : "manual",
       "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Room 3 (4F)"
+          }
+        },
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
@@ -37,6 +55,12 @@
     "reading.room.132" : {
       "extractionState" : "manual",
       "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "HOLMZ (4F)"
+          }
+        },
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
@@ -48,6 +72,12 @@
     "reading.room.seat.%@.%@" : {
       "extractionState" : "manual",
       "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$@ / %2$@ seats"
+          }
+        },
         "ko" : {
           "stringUnit" : {
             "state" : "translated",

@@ -4,6 +4,12 @@
     "app.contact" : {
       "extractionState" : "manual",
       "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Developer contact"
+          }
+        },
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
@@ -15,6 +21,12 @@
     "app.developer" : {
       "extractionState" : "manual",
       "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Developer info"
+          }
+        },
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
@@ -26,6 +38,12 @@
     "app.developer.major" : {
       "extractionState" : "manual",
       "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Major / Grade"
+          }
+        },
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
@@ -37,6 +55,12 @@
     "app.developer.major.value" : {
       "extractionState" : "manual",
       "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "CSE / 17"
+          }
+        },
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
@@ -48,6 +72,12 @@
     "app.developer.name" : {
       "extractionState" : "manual",
       "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Name"
+          }
+        },
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
@@ -59,6 +89,12 @@
     "app.developer.name.value" : {
       "extractionState" : "manual",
       "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Jeongin Lee"
+          }
+        },
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
@@ -70,6 +106,12 @@
     "app.language" : {
       "extractionState" : "manual",
       "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Language"
+          }
+        },
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
@@ -81,6 +123,12 @@
     "app.language.english" : {
       "extractionState" : "manual",
       "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "English"
+          }
+        },
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
@@ -92,6 +140,12 @@
     "app.language.korean" : {
       "extractionState" : "manual",
       "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "한국어"
+          }
+        },
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
@@ -103,6 +157,12 @@
     "app.theme" : {
       "extractionState" : "manual",
       "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Theme"
+          }
+        },
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
@@ -114,6 +174,12 @@
     "app.theme.dark" : {
       "extractionState" : "manual",
       "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dark"
+          }
+        },
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
@@ -125,6 +191,12 @@
     "app.theme.light" : {
       "extractionState" : "manual",
       "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Light"
+          }
+        },
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
@@ -136,6 +208,12 @@
     "app.theme.system" : {
       "extractionState" : "manual",
       "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "System (Auto)"
+          }
+        },
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
@@ -147,6 +225,12 @@
     "app.version" : {
       "extractionState" : "manual",
       "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Version"
+          }
+        },
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
@@ -158,6 +242,12 @@
     "cancel.button" : {
       "extractionState" : "manual",
       "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cancel"
+          }
+        },
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
@@ -169,6 +259,12 @@
     "email.sent.failed" : {
       "extractionState" : "manual",
       "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Can't find a app to send email"
+          }
+        },
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
@@ -180,6 +276,12 @@
     "ok.button" : {
       "extractionState" : "manual",
       "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "OK"
+          }
+        },
         "ko" : {
           "stringUnit" : {
             "state" : "translated",

@@ -4,6 +4,12 @@
     "dormitory_o" : {
       "extractionState" : "manual",
       "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dormitory"
+          }
+        },
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
@@ -15,6 +21,12 @@
     "jungang_station" : {
       "extractionState" : "manual",
       "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Jungang Stn."
+          }
+        },
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
@@ -26,6 +38,12 @@
     "jungang_stn" : {
       "extractionState" : "manual",
       "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Jungang Stn."
+          }
+        },
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
@@ -37,6 +55,12 @@
     "semester" : {
       "extractionState" : "manual",
       "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Semester"
+          }
+        },
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
@@ -48,6 +72,12 @@
     "show_entire_schedule" : {
       "extractionState" : "manual",
       "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Entire schedule"
+          }
+        },
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
@@ -59,6 +89,12 @@
     "show.stop.info" : {
       "extractionState" : "manual",
       "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Stop Information"
+          }
+        },
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
@@ -70,6 +106,12 @@
     "shuttle_destination_campus" : {
       "extractionState" : "manual",
       "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "To campus"
+          }
+        },
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
@@ -81,6 +123,12 @@
     "shuttle_destination_campus_shorten" : {
       "extractionState" : "manual",
       "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "To campus"
+          }
+        },
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
@@ -92,6 +140,12 @@
     "shuttle_destination_dormitory" : {
       "extractionState" : "manual",
       "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "To dormitory"
+          }
+        },
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
@@ -103,6 +157,12 @@
     "shuttle_destination_dormitory_shorten" : {
       "extractionState" : "manual",
       "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "To dormitory"
+          }
+        },
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
@@ -114,6 +174,12 @@
     "shuttle_destination_jungang_station" : {
       "extractionState" : "manual",
       "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "To Jungang Stn."
+          }
+        },
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
@@ -125,6 +191,12 @@
     "shuttle_destination_jungang_station_shorten" : {
       "extractionState" : "manual",
       "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "To Jungang Stn."
+          }
+        },
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
@@ -136,6 +208,12 @@
     "shuttle_destination_subway" : {
       "extractionState" : "manual",
       "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "To station"
+          }
+        },
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
@@ -147,6 +225,12 @@
     "shuttle_destination_subway_shorten" : {
       "extractionState" : "manual",
       "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "To station"
+          }
+        },
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
@@ -158,6 +242,12 @@
     "shuttle_destination_terminal" : {
       "extractionState" : "manual",
       "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "To terminal"
+          }
+        },
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
@@ -169,6 +259,12 @@
     "shuttle_destination_terminal_shorten" : {
       "extractionState" : "manual",
       "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "To terminal"
+          }
+        },
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
@@ -180,6 +276,12 @@
     "shuttle_realtime_empty" : {
       "extractionState" : "manual",
       "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Out of service"
+          }
+        },
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
@@ -191,6 +293,12 @@
     "shuttle_remaining_time_format_%lld" : {
       "extractionState" : "manual",
       "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld mins left"
+          }
+        },
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
@@ -202,6 +310,12 @@
     "shuttle_stop_dormitory_i" : {
       "extractionState" : "manual",
       "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dormitory"
+          }
+        },
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
@@ -213,6 +327,12 @@
     "shuttle_stop_dormitory_o" : {
       "extractionState" : "manual",
       "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dormitory"
+          }
+        },
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
@@ -224,6 +344,12 @@
     "shuttle_stop_jungang_station" : {
       "extractionState" : "manual",
       "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Jungang Stn."
+          }
+        },
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
@@ -235,6 +361,12 @@
     "shuttle_stop_shuttlecock_i" : {
       "extractionState" : "manual",
       "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Shuttlecock (Op.)"
+          }
+        },
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
@@ -246,6 +378,12 @@
     "shuttle_stop_shuttlecock_o" : {
       "extractionState" : "manual",
       "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Shuttlecock"
+          }
+        },
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
@@ -257,6 +395,12 @@
     "shuttle_stop_station" : {
       "extractionState" : "manual",
       "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Station"
+          }
+        },
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
@@ -268,6 +412,12 @@
     "shuttle_stop_terminal" : {
       "extractionState" : "manual",
       "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Terminal"
+          }
+        },
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
@@ -279,6 +429,12 @@
     "shuttle_tag_C" : {
       "extractionState" : "manual",
       "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cycle"
+          }
+        },
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
@@ -290,6 +446,12 @@
     "shuttle_tag_D" : {
       "extractionState" : "manual",
       "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dormitory"
+          }
+        },
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
@@ -301,6 +463,12 @@
     "shuttle_tag_DH" : {
       "extractionState" : "manual",
       "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Direct"
+          }
+        },
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
@@ -312,6 +480,12 @@
     "shuttle_tag_DJ" : {
       "extractionState" : "manual",
       "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Jungang Stn."
+          }
+        },
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
@@ -323,6 +497,12 @@
     "shuttle_tag_DY" : {
       "extractionState" : "manual",
       "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Direct"
+          }
+        },
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
@@ -334,6 +514,12 @@
     "shuttle_time_format_%@_%@" : {
       "extractionState" : "manual",
       "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Depart at %1$@:%2$@"
+          }
+        },
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
@@ -345,6 +531,12 @@
     "shuttle.days.weekdays" : {
       "extractionState" : "manual",
       "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Weekdays"
+          }
+        },
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
@@ -356,6 +548,12 @@
     "shuttle.days.weekends" : {
       "extractionState" : "manual",
       "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Weekends"
+          }
+        },
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
@@ -367,6 +565,12 @@
     "shuttle.first.last.%@.%@.%@.%@" : {
       "extractionState" : "manual",
       "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$@:%2$@분 (First) / %3$@: %4$@분 (Last)"
+          }
+        },
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
@@ -378,6 +582,12 @@
     "shuttle.search.option" : {
       "extractionState" : "manual",
       "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Search option"
+          }
+        },
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
@@ -389,6 +599,12 @@
     "shuttle.search.option.cancel" : {
       "extractionState" : "manual",
       "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cancel"
+          }
+        },
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
@@ -400,6 +616,12 @@
     "shuttle.search.option.ok" : {
       "extractionState" : "manual",
       "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "OK"
+          }
+        },
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
@@ -411,6 +633,12 @@
     "shuttle.timetable.%@.%@" : {
       "extractionState" : "manual",
       "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$@ → %2$@"
+          }
+        },
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
@@ -422,6 +650,12 @@
     "shuttlecock_i" : {
       "extractionState" : "manual",
       "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Shuttlecock (Op.)"
+          }
+        },
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
@@ -433,6 +667,12 @@
     "shuttlecock_o" : {
       "extractionState" : "manual",
       "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Shuttlecock"
+          }
+        },
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
@@ -444,6 +684,12 @@
     "station" : {
       "extractionState" : "manual",
       "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Station"
+          }
+        },
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
@@ -455,6 +701,12 @@
     "terminal" : {
       "extractionState" : "manual",
       "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Terminal"
+          }
+        },
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
@@ -466,6 +718,12 @@
     "vacation" : {
       "extractionState" : "manual",
       "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vacation"
+          }
+        },
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
@@ -477,6 +735,12 @@
     "vacation_session" : {
       "extractionState" : "manual",
       "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vacation Session"
+          }
+        },
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
