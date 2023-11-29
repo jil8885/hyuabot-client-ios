@@ -34,6 +34,71 @@
     "app.version" : {
 
     },
+    "birthday.action" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Close"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "확인"
+          }
+        }
+      }
+    },
+    "birthday.action.anymore" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Close for this year"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "올해는 그만 보기"
+          }
+        }
+      }
+    },
+    "birthday.message" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Today is my birthday.\n\nAnyone who uses this services are important gift for me. I always try to provide better service everyday.\n\nThank you"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "오늘(12/12)은 개발자의 생일입니다.\n\n항상 잘 사용해주시는 여러분이 저에게는 크나큰 선물입니다. 앞으로도 더 좋은 서비스를 제공할 수 있도록 노력하겠습니다.\n\n감사합니다."
+          }
+        }
+      }
+    },
+    "birthday.title" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Notice"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "공지"
+          }
+        }
+      }
+    },
     "bus.arrival.realtime.no.seat.%@.%@" : {
       "localizations" : {
         "ko" : {

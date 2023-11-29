@@ -95,7 +95,7 @@ class ShuttleRealtimeViewController: UIViewController, CLLocationManagerDelegate
         self.view.addSubview(viewPager)
         self.view.addSubview(toggleButton)
         appDelegate.queryShuttleRealtimePage()
-        
+        openBirthdayDialog()
         NSLayoutConstraint.activate([
             toggleButton.rightAnchor.constraint(equalTo: self.view.rightAnchor, constant: -20),
             toggleButton.bottomAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.bottomAnchor, constant: -20),
@@ -141,5 +141,29 @@ class ShuttleRealtimeViewController: UIViewController, CLLocationManagerDelegate
         self.viewPager.tabbedView.moveToTab(at: position!)
         self.viewPager.pagedView.moveToPage(at: position!)
         locationManager.stopUpdatingLocation()
+    }
+    
+    func openBirthdayDialog() {
+        let today = Date.now
+        let calendar = Calendar.current
+        let year = calendar.component(.year, from: today)
+        let month = calendar.component(.month, from: today)
+        let day = calendar.component(.day, from: today)
+        if month == 12 && day == 12 {
+            let sharedPreferences = UserDefaults.standard
+            if sharedPreferences.integer(forKey: "birthdayDialogLastShown") == year {
+                return
+            }
+            let dialog = UIAlertController(title: String.localizedItem(resourceID: "birthday.title"), message: String.localizedItem(resourceID: "birthday.message"), preferredStyle: .alert)
+            dialog.addAction(UIAlertAction(title: String.localizedItem(resourceID: "birthday.action"), style: .default) { _ in
+                self.dismiss(animated: true)
+            })
+            dialog.addAction(UIAlertAction(title: String.localizedItem(resourceID: "birthday.action.anymore"), style: .default) { _ in
+                sharedPreferences.set(year, forKey: "birthdayDialogLastShown")
+                self.dismiss(animated: true)
+                
+            })
+            self.present(dialog, animated: true, completion: nil)
+        }
     }
 }
