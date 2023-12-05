@@ -2,6 +2,7 @@ import UIKit
 import QueryAPI
 import RxSwift
 import CoreLocation
+import AppTrackingTransparency
 
 class ShuttleRealtimeViewController: UIViewController, CLLocationManagerDelegate {
     let appDelegate = UIApplication.shared.delegate as! AppDelegate
@@ -83,13 +84,16 @@ class ShuttleRealtimeViewController: UIViewController, CLLocationManagerDelegate
         super.viewDidLoad()
         locationManager.delegate = self
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
-        locationManager.requestWhenInUseAuthorization()
         DispatchQueue.global().async {
             if CLLocationManager.locationServicesEnabled(){
                 self.locationManager.startUpdatingLocation()
             } else {
                 self.showToast(message: String.localizedItem(resourceID: "location_disabled"))
             }
+        }
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+            self.locationManager.requestWhenInUseAuthorization()
+            self.requestTrackingAuthorization()
         }
         self.view.backgroundColor = .systemBackground
         self.view.addSubview(viewPager)
@@ -164,6 +168,25 @@ class ShuttleRealtimeViewController: UIViewController, CLLocationManagerDelegate
                 
             })
             self.present(dialog, animated: true, completion: nil)
+        }
+    }
+    
+    private func requestTrackingAuthorization() {
+        if #available(iOS 14, *) {
+            ATTrackingManager.requestTrackingAuthorization { status in
+                switch status {
+                case .authorized:
+                    print("authorized")
+                case .denied:
+                    print("denied")
+                case .notDetermined:
+                    print("notDetermined")
+                case .restricted:
+                    print("restricted")
+                @unknown default:
+                    print("unknown")
+                }
+            }
         }
     }
 }

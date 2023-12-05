@@ -1,3 +1,4 @@
 "CFBundleDisplayName" = "휴아봇";
 "CFBundleName" = "휴아봇";
 "NSLocationWhenInUseUsageDescription" = "가장 가까운 셔틀버스 정류장을 찾기 위해 위치 정보를 사용합니다.";
+"NSUserTrackingUsageDescription" = "사용자 통계를 수집하기 위해 사용자 추적을 사용합니다.";

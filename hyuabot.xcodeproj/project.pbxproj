@@ -84,6 +84,7 @@
 		C7874FEC2AAF307E00BB9EF5 /* SubwayRealtimeListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7874FEB2AAF307E00BB9EF5 /* SubwayRealtimeListViewController.swift */; };
 		C7874FEE2AAF313800BB9EF5 /* SubwayRealtimeListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7874FED2AAF313800BB9EF5 /* SubwayRealtimeListItemView.swift */; };
 		C7874FF02AAF316A00BB9EF5 /* SubwayRealtimeItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7874FEF2AAF316A00BB9EF5 /* SubwayRealtimeItem.swift */; };
+		C7A5B8042B1F5DEF00670B30 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = C7A5B8032B1F5DEF00670B30 /* FirebaseAnalytics */; };
 		C7C51CAA2AB1CB7400B049AD /* GodoB.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C7C51CA82AB1CB7400B049AD /* GodoB.ttf */; };
 		C7C51CAB2AB1CB7400B049AD /* GodoM.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C7C51CA92AB1CB7400B049AD /* GodoM.ttf */; };
 		C7C51CAE2AB1D09500B049AD /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7C51CAD2AB1D09500B049AD /* SettingViewController.swift */; };
@@ -269,6 +270,7 @@
 				C736EB632AA87E86005A42F7 /* RxSwift in Frameworks */,
 				C736EB5D2AA87AA4005A42F7 /* QueryAPI in Frameworks */,
 				C7548FA02AA6BB3D00C354A2 /* Apollo in Frameworks */,
+				C7A5B8042B1F5DEF00670B30 /* FirebaseAnalytics in Frameworks */,
 				C7E751EF2AAD9226001FD1B3 /* Then in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -632,6 +634,7 @@
 				C736EB5C2AA87AA4005A42F7 /* QueryAPI */,
 				C736EB622AA87E86005A42F7 /* RxSwift */,
 				C7E751EE2AAD9226001FD1B3 /* Then */,
+				C7A5B8032B1F5DEF00670B30 /* FirebaseAnalytics */,
 			);
 			productName = hyuabot;
 			productReference = C7CF65332AA490B1001EF16F /* hyuabot.app */;
@@ -711,6 +714,7 @@
 				C736EB5B2AA87AA4005A42F7 /* XCLocalSwiftPackageReference "query" */,
 				C736EB612AA87E86005A42F7 /* XCRemoteSwiftPackageReference "RxSwift" */,
 				C7E751ED2AAD9226001FD1B3 /* XCRemoteSwiftPackageReference "Then" */,
+				C7A5B8022B1F5DEF00670B30 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 			);
 			productRefGroup = C7CF65342AA490B1001EF16F /* Products */;
 			projectDirPath = "";
@@ -1246,6 +1250,14 @@
 				minimumVersion = 1.4.0;
 			};
 		};
+		C7A5B8022B1F5DEF00670B30 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.18.0;
+			};
+		};
 		C7E751ED2AAD9226001FD1B3 /* XCRemoteSwiftPackageReference "Then" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/devxoul/Then";
@@ -1270,6 +1282,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = C7548F9E2AA6BB3D00C354A2 /* XCRemoteSwiftPackageReference "apollo-ios" */;
 			productName = Apollo;
+		};
+		C7A5B8032B1F5DEF00670B30 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C7A5B8022B1F5DEF00670B30 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
 		};
 		C7E751EE2AAD9226001FD1B3 /* Then */ = {
 			isa = XCSwiftPackageProductDependency;
